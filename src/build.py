@@ -189,7 +189,7 @@ def render_home():
 <p class="lead">Assessment and surgery for hip and knee arthritis, meniscal tears and problem joint replacements, for patients across Suffolk and north Essex.</p>
 <div class="cta-row"><a class="btn" href="{C.BOOK_URL}">Book online</a><a class="btn btn-outline" href="/contact/">Contact my secretary</a></div>
 <ul class="trust">
-<li><strong>More than 1,000</strong><span>hip and knee replacements, with outcomes <a href="{C.NJR}">better than expected on the National Joint Registry</a></span></li>
+<li><strong>More than 1,000</strong><span>hip and knee replacements, with outcomes <a href="/outcomes-reviews/#hip-results">better than expected on the National Joint Registry</a></span></li>
 <li><strong>4.96 out of 5</strong><span>from 124 reviews on Doctify</span></li>
 <li><strong>FRCS (Tr &amp; Orth)</strong><span>fellowship-trained in hip and knee replacement</span></li>
 <li><strong>NHS consultant</strong><span>at Ipswich Hospital</span></li>
