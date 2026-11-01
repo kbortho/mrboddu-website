@@ -14,7 +14,6 @@ NJR_REPORTS = '<a href="https://reports.njrcentre.org.uk/">National Joint Regist
 WILSON = '<a href="https://doi.org/10.1136/bmj.l352">Wilson HA et al. Patient relevant outcomes of unicompartmental versus total knee replacement: systematic review and meta-analysis. BMJ 2019;364:l352.</a>'
 RACER_KNEE = '<a href="https://doi.org/10.1016/S0140-6736(26)00986-4">Parsons H et al. Robotic-arm-assisted versus conventional total knee replacement (RACER-Knee): a pragmatic, multicentre, participant-masked and assessor-masked, superiority, randomised controlled trial. Lancet 2026.</a>'
 RASKAL = '<a href="https://doi.org/10.1302/0301-620X.108B.BJJ-2025-1472.R2">MacDessi SJ et al. Robotic-assisted surgery and functional alignment in total knee arthroplasty: the RASKAL registry-nested 2 &times; 2 factorial randomized trial. Bone Joint J 2026;108-B:622&ndash;33.</a>'
-ODEP_ZUK = '<a href="https://www.odep.org.uk/about/rating-system/">Orthopaedic Data Evaluation Panel (ODEP): implant rating system. The Physica ZUK unicondylar knee is rated 15A*.</a>'
 GILL_ZUK = "Gill JR, Nicolai P. Clinical results and 12-year survivorship of the Physica ZUK unicompartmental knee replacement. Knee 2019;26:750&ndash;8."
 NJR_ROBOTIC = '<a href="https://doi.org/10.1136/bmj-2026-100691">Mohammad HR et al. Early national comparison of robotic versus conventional knee replacements for arthritis using National Joint Registry data: target trial emulation study. BMJ 2026;394:e100691.</a>'
 
@@ -209,7 +208,7 @@ PROCEDURES = [
 </ul>
 
 <h2>How long does a partial knee replacement last?</h2>
-<p>For most partial knee replacements, I use the ZUK implant, one of the best-performing partial knees in the UK National Joint Registry, with one of the longest track records. It holds the highest rating (15A*) from the Orthopaedic Data Evaluation Panel (ODEP), an independent panel that rates implants on their results over up to 15 years. Registry figures show that 91 in 100 of these partial knee replacements last more than 15 years after surgery, and many last longer. This compares with 95 in 100 for the total knee replacements I use. However, individual factors, such as your age and activity level, can affect this significantly.</p>
+<p>For most partial knee replacements, I use the ZUK implant, one of the best-performing partial knees in the UK National Joint Registry, with one of the longest track records. Registry figures show that 91 in 100 of these partial knee replacements last more than 15 years after surgery, and many last longer. This compares with 95 in 100 for the total knee replacements I use. However, individual factors, such as your age and activity level, can affect this significantly.</p>
 
 <h2>Robotic assistance</h2>
 <p>Where it is suitable, I can perform a partial knee replacement with <a href="/robotic-hip-and-knee-replacement/">Mako robotic assistance</a>, which helps position the implant precisely.</p>
@@ -217,7 +216,7 @@ PROCEDURES = [
 <h2>Risks</h2>
 <p>Risks are similar to those of a total knee replacement, including infection, blood clots, stiffness and ongoing pain. Arthritis can also progress in the rest of the knee, which may lead to a total knee replacement in the future.</p>
 """ + COSTS,
-"sources": [NICE_157, TOPKAT, WILSON, LIDDLE, NJR_REPORTS, ODEP_ZUK, GILL_ZUK],
+"sources": [NICE_157, TOPKAT, WILSON, LIDDLE, NJR_REPORTS, GILL_ZUK],
 "related": ["knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
 },
 {
