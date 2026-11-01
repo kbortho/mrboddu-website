@@ -259,7 +259,6 @@ FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect w
 
 NETLIFY = """[build]
   publish = "site"
-  command = ""
 
 [[headers]]
   for = "/*"
