@@ -209,7 +209,7 @@ PROCEDURES = [
 </ul>
 
 <h2>How long does a partial knee replacement last?</h2>
-<p>For most partial knee replacements, I use the ZUK implant, one of the best-performing partial knees in the UK National Joint Registry, with one of the longest track records. It holds the highest rating (15A*) from the Orthopaedic Data Evaluation Panel (ODEP), an independent panel that rates implants on their results over up to 15 years. Registry figures show that 91 in 100 of these partial knee replacements last more than 15 years after surgery, and many last longer. However, individual factors, such as your age and activity level, can affect this significantly.</p>
+<p>For most partial knee replacements, I use the ZUK implant, one of the best-performing partial knees in the UK National Joint Registry, with one of the longest track records. It holds the highest rating (15A*) from the Orthopaedic Data Evaluation Panel (ODEP), an independent panel that rates implants on their results over up to 15 years. Registry figures show that 91 in 100 of these partial knee replacements last more than 15 years after surgery, and many last longer. This compares with 95 in 100 for the total knee replacements I use. However, individual factors, such as your age and activity level, can affect this significantly.</p>
 
 <h2>Robotic assistance</h2>
 <p>Where it is suitable, I can perform a partial knee replacement with <a href="/robotic-hip-and-knee-replacement/">Mako robotic assistance</a>, which helps position the implant precisely.</p>
