@@ -191,7 +191,7 @@ PROCEDURES = [
 "lead": "If arthritis affects only one part of your knee, a partial (unicompartmental) knee replacement resurfaces just that part. It keeps the healthy rest of the knee, including its ligaments.",
 "about": ("MedicalProcedure", "Unicompartmental knee replacement"),
 "glance": [
-  ("Hospital stay", "Usually 1 to 2 nights"),
+  ("Hospital stay", "Usually 0 to 1 nights"),
   ("Recovery", "Usually quicker than after a total knee replacement"),
   ("Driving", "Often after 4 to 6 weeks"),
 ],
