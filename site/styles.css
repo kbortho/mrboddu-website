@@ -71,7 +71,7 @@ mark.todo { background: #fff0a0; color: #5a4300; padding: 0 .2em; border-radius:
 .eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; font-weight: 700; color: var(--muted); margin-bottom: .6rem; }
 .lead { font-size: 1.25rem; color: var(--ink); }
 .hero-photo img { border-radius: 22px; box-shadow: 0 18px 40px rgba(18,48,77,.18); width: 100%; max-width: 400px; margin-left: auto; }
-.trust { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; }
+.trust { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; }
 .trust li { background: var(--white); border-radius: 12px; padding: .8rem 1rem; margin: 0; border: 1px solid var(--line); font-size: .92rem; line-height: 1.35; }
 .trust strong { display: block; color: var(--navy); font-size: 1.05rem; }
 .trust span { color: var(--muted); }
