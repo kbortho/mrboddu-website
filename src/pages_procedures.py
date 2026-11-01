@@ -10,10 +10,25 @@ TOPKAT = "Beard DJ et al. The clinical and cost-effectiveness of total versus pa
 LIDDLE = "Liddle AD et al. Adverse outcomes after total and unicompartmental knee replacement in 101,330 matched patients: a study of data from the National Joint Registry for England and Wales. Lancet 2014;384:1437&ndash;45."
 BMJ_RR = "Siemieniuk RAC et al. Arthroscopic surgery for degenerative knee arthritis and meniscal tears: a clinical practice guideline. BMJ 2017;357:j1982."
 FIDELITY = "Sihvonen R et al. Arthroscopic partial meniscectomy versus sham surgery for a degenerative meniscal tear. N Engl J Med 2013;369:2515&ndash;24."
+NJR_REPORTS = '<a href="https://reports.njrcentre.org.uk/">National Joint Registry annual reports: implant survival</a>'
+WILSON = '<a href="https://doi.org/10.1136/bmj.l352">Wilson HA et al. Patient relevant outcomes of unicompartmental versus total knee replacement: systematic review and meta-analysis. BMJ 2019;364:l352.</a>'
+RACER_KNEE = '<a href="https://doi.org/10.1016/S0140-6736(26)00986-4">Parsons H et al. Robotic-arm-assisted versus conventional total knee replacement (RACER-Knee): a pragmatic, multicentre, participant-masked and assessor-masked, superiority, randomised controlled trial. Lancet 2026.</a>'
+RASKAL = '<a href="https://doi.org/10.1302/0301-620X.108B.BJJ-2025-1472.R2">MacDessi SJ et al. Robotic-assisted surgery and functional alignment in total knee arthroplasty: the RASKAL registry-nested 2 &times; 2 factorial randomized trial. Bone Joint J 2026;108-B:622&ndash;33.</a>'
+NJR_ROBOTIC = '<a href="https://doi.org/10.1136/bmj-2026-100691">Mohammad HR et al. Early national comparison of robotic versus conventional knee replacements for arthritis using National Joint Registry data: target trial emulation study. BMJ 2026;394:e100691.</a>'
 
 COSTS = """
 <h2>Costs and insurance</h2>
 <p>I am recognised by Bupa, AXA Health, Aviva, Vitality, Aetna and Healix. Please check your policy and ask your insurer for a pre-authorisation number before your first appointment. If you are paying for yourself, Nuffield Health Ipswich will give you a fixed-price package after your consultation. See <a href="/fees-insurance/">fees and insurance</a>.</p>
+"""
+
+REVISION_WHERE = """
+<h2>Where I carry out revision surgery</h2>
+<p>Revision surgery is a bigger operation, and patients may need high-dependency care afterwards. For this reason, I prefer to carry out most revision operations at the Essex and Suffolk Elective Orthopaedic Centre (ESEOC) at Colchester Hospital, which offers <a href="https://www.esneft.nhs.uk/your-visit/information-for-private-patients/">a private patient service</a> for both insured and self-paying patients. Some less complicated revision operations are done at Nuffield Health Ipswich. We will discuss which hospital is best for you at your first consultation at Nuffield Health Ipswich.</p>
+"""
+
+REVISION_COSTS = """
+<h2>Costs and insurance</h2>
+<p>I am recognised by Bupa, AXA Health, Aviva, Vitality, Aetna and Healix. Please check that your policy covers your treatment and the hospital where it will take place, and ask your insurer for a pre-authorisation number before your first appointment. If you are paying for yourself, you will be given a quote for your surgery once we have agreed your treatment plan and where it will take place. See <a href="/fees-insurance/">fees and insurance</a>.</p>
 """
 
 PROCEDURES = [
@@ -28,7 +43,7 @@ PROCEDURES = [
 "lead": "A hip replacement can relieve the pain and stiffness of hip arthritis when other treatments are no longer enough. I perform hip replacements at Nuffield Health Ipswich Hospital for patients from across Suffolk and north Essex.",
 "about": ("MedicalProcedure", "Total hip replacement"),
 "glance": [
-  ("Hospital stay", "Usually 1 to 3 nights"),
+  ("Hospital stay", "Usually 1 to 2 nights"),
   ("Anaesthetic", "Usually a spinal anaesthetic, sometimes with sedation"),
   ("Walking", "With a frame or crutches, usually on the day of surgery or the next day"),
   ("Driving", "Usually after about 6 weeks"),
@@ -36,7 +51,7 @@ PROCEDURES = [
 ],
 "body": """
 <h2>What is a hip replacement?</h2>
-<p>In a total hip replacement, the worn ball at the top of the thigh bone and the worn socket in the pelvis are replaced with artificial parts made of metal, ceramic and a hard-wearing plastic. The new joint is designed to move smoothly and without pain.</p>
+<p>In a total hip replacement, the worn ball at the top of the thigh bone and the worn socket in the pelvis are replaced with artificial parts, usually made of metal and ceramic. The new joint is designed to move smoothly and without pain.</p>
 
 <h2>Who might it help?</h2>
 <p>Surgery is worth considering when hip pain or stiffness has a real effect on your daily life, such as walking, sleeping, working or caring for others, and exercise, weight management and painkillers are no longer enough. Age, weight or other health conditions do not on their own rule you out, but they affect the balance of benefits and risks, which we will discuss together.</p>
@@ -49,7 +64,7 @@ PROCEDURES = [
 
 <h2>Recovery</h2>
 <ul>
-<li>Most people go home after 1 to 3 nights.</li>
+<li>Most people go home after 1 to 2 nights.</li>
 <li>You will use crutches or sticks for the first few weeks.</li>
 <li>Most people can drive after about 6 weeks, once they can safely make an emergency stop.</li>
 <li>Office work is often possible after 4 to 6 weeks; heavier work may take around 3 months.</li>
@@ -58,7 +73,7 @@ PROCEDURES = [
 <p>Read more about <a href="/your-operation/">preparing for and recovering from your operation</a>.</p>
 
 <h2>How long does a hip replacement last?</h2>
-<p>Large studies of joint registries show that about 9 in 10 hip replacements are still working 15 years after surgery, and many last longer.</p>
+<p>I use one of the best-performing implant combinations in the UK National Joint Registry, with one of the longest track records. Registry figures show that 95 in 100 of these hip replacements last more than 15 years after surgery, and many last longer. However, individual factors, such as your age and activity level, can affect this significantly.</p>
 
 <h2>Risks</h2>
 <p>Hip replacement is a common and generally successful operation, but every operation carries risks. They include infection (about 1 in 100), blood clots in the leg or lungs, dislocation of the new joint, a difference in leg length, a fracture around the implant, nerve or blood vessel injury, and wear or loosening that may need further surgery in the future. I will explain how these apply to you and the steps we take to reduce them.</p>
@@ -68,7 +83,7 @@ PROCEDURES = [
 """ + COSTS + """
 <p>Already had a hip replacement that is causing problems? See <a href="/revision-hip-replacement/">revision hip replacement</a>.</p>
 """,
-"sources": [NICE_157, NICE_226, EVANS_HIP],
+"sources": [NICE_157, NICE_226, NJR_REPORTS],
 "related": ["hip-arthritis", "robotic-hip-and-knee-replacement", "revision-hip-replacement", "your-operation"],
 },
 {
@@ -77,7 +92,7 @@ PROCEDURES = [
 "group": "treatments",
 "card": "Redo surgery for a hip replacement that is worn, loose or causing problems.",
 "title": "Revision Hip Replacement in Suffolk | Mr Krishna Boddu",
-"description": "Assessment and revision surgery for painful, worn or failed hip replacements at Nuffield Health Ipswich, with fellowship-trained surgeon Mr Krishna Boddu.",
+"description": "Assessment and revision surgery for painful, worn or failed hip replacements in Suffolk and north Essex, with fellowship-trained surgeon Mr Krishna Boddu.",
 "h1": "Revision hip replacement",
 "lead": "Most hip replacements last many years, but some wear out, loosen or cause problems. Revision surgery replaces some or all of the original implant. I trained in revision hip and knee surgery during fellowships in Montreal and at King's College Hospital, London.",
 "about": ("MedicalProcedure", "Revision hip replacement"),
@@ -85,6 +100,7 @@ PROCEDURES = [
   ("Hospital stay", "Usually 3 to 5 nights"),
   ("Tests beforehand", "Blood tests and X-rays, often a CT scan, sometimes a sample of joint fluid"),
   ("Recovery", "Slower than a first hip replacement, often 3 to 12 months"),
+  ("Where", "Most revisions at the Essex and Suffolk Elective Orthopaedic Centre, Colchester Hospital"),
 ],
 "body": """
 <h2>Why a hip replacement may need revising</h2>
@@ -105,7 +121,7 @@ PROCEDURES = [
 
 <h2>Recovery and risks</h2>
 <p>Recovery is usually slower than after a first hip replacement, and you may need to limit the weight you put on the leg for a time. The risks are similar to those of a first hip replacement but higher, particularly infection, dislocation and the need for further surgery. Results are generally good but less predictable, and I will give you a realistic picture for your own situation.</p>
-""" + COSTS,
+""" + REVISION_WHERE + REVISION_COSTS,
 "sources": [NJR_SITE, NICE_157],
 "related": ["problem-joint-replacement", "hip-replacement", "second-opinion", "fees-insurance"],
 },
@@ -120,7 +136,7 @@ PROCEDURES = [
 "lead": "A knee replacement can relieve the pain of knee arthritis and help you walk further and sleep better. I perform total, partial and robotic-assisted knee replacements at Nuffield Health Ipswich Hospital.",
 "about": ("MedicalProcedure", "Total knee replacement"),
 "glance": [
-  ("Hospital stay", "Usually 1 to 3 nights"),
+  ("Hospital stay", "Usually 1 to 2 nights"),
   ("Anaesthetic", "Usually a spinal anaesthetic, sometimes with sedation"),
   ("Walking", "With a frame or crutches, usually on the day of surgery or the next day"),
   ("Driving", "Usually after about 6 weeks"),
@@ -128,7 +144,7 @@ PROCEDURES = [
 ],
 "body": """
 <h2>What is a knee replacement?</h2>
-<p>A total knee replacement resurfaces the worn ends of the thigh bone and shin bone with metal parts, with a smooth plastic insert between them. The back of the kneecap is sometimes resurfaced too.</p>
+<p>A total knee replacement resurfaces the worn ends of the thigh bone and shin bone with metal parts, with a smooth plastic insert between them. The back of the kneecap is rarely resurfaced.</p>
 
 <h2>Is it right for you?</h2>
 <p>A knee replacement is usually considered when arthritis pain limits walking, sleep or daily life, and non-surgical treatments have stopped helping. If arthritis affects only one part of your knee, a <a href="/partial-knee-replacement/">partial knee replacement</a> may be an option, and national guidance recommends that suitable patients are offered that choice.</p>
@@ -141,7 +157,7 @@ PROCEDURES = [
 
 <h2>Recovery</h2>
 <ul>
-<li>Most people go home after 1 to 3 nights.</li>
+<li>Most people go home after 1 to 2 nights.</li>
 <li>Regular exercises to bend and straighten the knee are the key to a good result.</li>
 <li>Swelling and aching are normal for several months.</li>
 <li>Most people can drive after about 6 weeks, once they can safely make an emergency stop.</li>
@@ -150,7 +166,10 @@ PROCEDURES = [
 <p>Read more about <a href="/your-operation/">preparing for and recovering from your operation</a>.</p>
 
 <h2>What results can you expect?</h2>
-<p>Most people have much less pain and can do more after a knee replacement. Around 1 in 5 people still have some pain or are not fully satisfied, so I will help you weigh this up before you decide. Registry studies show that more than 9 in 10 total knee replacements are still working 15 years after surgery.</p>
+<p>Most people have much less pain and can do more after a knee replacement. Around 1 in 5 people still have some pain or are not fully satisfied, so I will help you weigh this up before you decide.</p>
+
+<h2>How long does a knee replacement last?</h2>
+<p>I use one of the best-performing implant combinations in the UK National Joint Registry, with one of the longest track records. Registry figures show that 95 in 100 of these knee replacements last more than 15 years after surgery, and many last longer. However, individual factors, such as your age and activity level, can affect this significantly.</p>
 
 <h2>Risks</h2>
 <p>Risks include infection (about 1 in 100), blood clots, stiffness (occasionally needing a manipulation under anaesthetic), ongoing pain, wound problems, nerve or blood vessel injury, a fracture around the implant, and wear or loosening that may need further surgery in the future.</p>
@@ -158,7 +177,7 @@ PROCEDURES = [
 <h2>Alternatives to surgery</h2>
 <p>Exercise and physiotherapy, weight loss where appropriate, anti-inflammatory gels and painkillers, and steroid injections for short-term relief can all help. See <a href="/knee-arthritis/">knee arthritis</a>.</p>
 """ + COSTS,
-"sources": [NICE_157, NICE_226, EVANS_KNEE, BESWICK],
+"sources": [NICE_157, NICE_226, NJR_REPORTS, BESWICK],
 "related": ["partial-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "your-operation"],
 },
 {
@@ -172,7 +191,7 @@ PROCEDURES = [
 "lead": "If arthritis affects only one part of your knee, a partial (unicompartmental) knee replacement resurfaces just that part. It keeps the healthy rest of the knee, including its ligaments.",
 "about": ("MedicalProcedure", "Unicompartmental knee replacement"),
 "glance": [
-  ("Hospital stay", "Often 0 to 1 nights"),
+  ("Hospital stay", "Usually 1 to 2 nights"),
   ("Recovery", "Usually quicker than after a total knee replacement"),
   ("Driving", "Often after 4 to 6 weeks"),
 ],
@@ -181,11 +200,14 @@ PROCEDURES = [
 <p>A partial knee replacement can be a good option when arthritis is limited to one compartment of the knee, most often the inner (medial) side, the knee ligaments are healthy and the knee bends and straightens well. I assess this with an examination and standing X-rays, and sometimes further X-rays or an MRI scan.</p>
 
 <h2>Partial or total knee replacement?</h2>
-<p>National guidance recommends that people with arthritis in the inner part of the knee are offered the choice of a partial or a total knee replacement. A large UK trial (TOPKAT) found that patients did as well after a partial as after a total knee replacement at five years, and that the partial operation was more cost-effective.</p>
+<p>National guidance recommends that people with arthritis in the inner part of the knee are offered the choice of a partial or a total knee replacement. A large UK trial (TOPKAT) found that patients did as well after a partial as after a total knee replacement at five years. A review of studies published in the BMJ found lower risks of complications, such as blood clots, heart attack, stroke and deep infection, after a partial than after a total knee replacement.</p>
 <ul>
 <li><strong>Advantages:</strong> recovery is often quicker, the knee often feels more natural, and serious complications in the first months are less common.</li>
-<li><strong>Trade-off:</strong> partial replacements are more likely to need further surgery later. Registry studies suggest about 3 in 4 are still working 15 years after surgery, compared with more than 9 in 10 total knee replacements. If needed, a partial replacement can usually be converted to a total one.</li>
+<li><strong>Trade-off:</strong> partial replacements are more likely to need further surgery later. If needed, a partial replacement can usually be converted to a total one.</li>
 </ul>
+
+<h2>How long does a partial knee replacement last?</h2>
+<p>I use one of the best-performing implant combinations in the UK National Joint Registry, with one of the longest track records. Registry figures show that 93 in 100 of these partial knee replacements last more than 15 years after surgery, and many last longer. However, individual factors, such as your age and activity level, can affect this significantly.</p>
 
 <h2>Robotic assistance</h2>
 <p>Where it is suitable, I can perform a partial knee replacement with <a href="/robotic-hip-and-knee-replacement/">Mako robotic assistance</a>, which helps position the implant precisely.</p>
@@ -193,7 +215,7 @@ PROCEDURES = [
 <h2>Risks</h2>
 <p>Risks are similar to those of a total knee replacement, including infection, blood clots, stiffness and ongoing pain. Arthritis can also progress in the rest of the knee, which may lead to a total knee replacement in the future.</p>
 """ + COSTS,
-"sources": [NICE_157, TOPKAT, LIDDLE, EVANS_KNEE],
+"sources": [NICE_157, TOPKAT, WILSON, LIDDLE, NJR_REPORTS],
 "related": ["knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
 },
 {
@@ -202,7 +224,7 @@ PROCEDURES = [
 "group": "treatments",
 "card": "Redo surgery for a knee replacement that is loose, unstable, infected or worn.",
 "title": "Revision Knee Replacement in Suffolk | Mr Krishna Boddu",
-"description": "Assessment and revision surgery for painful, unstable or failed knee replacements at Nuffield Health Ipswich, with fellowship-trained surgeon Mr Krishna Boddu.",
+"description": "Assessment and revision surgery for painful, unstable or failed knee replacements in Suffolk and north Essex, with fellowship-trained surgeon Mr Krishna Boddu.",
 "h1": "Revision knee replacement",
 "lead": "When a knee replacement becomes loose, unstable, infected or worn, revision surgery replaces some or all of it. I trained in revision hip and knee surgery during fellowships in Montreal and at King's College Hospital, London.",
 "about": ("MedicalProcedure", "Revision knee replacement"),
@@ -210,6 +232,7 @@ PROCEDURES = [
   ("Hospital stay", "Usually 3 to 5 nights"),
   ("Tests beforehand", "Blood tests and X-rays, often a CT scan, sometimes a sample of joint fluid"),
   ("Recovery", "Slower than a first knee replacement, often 6 to 12 months"),
+  ("Where", "Most revisions at the Essex and Suffolk Elective Orthopaedic Centre, Colchester Hospital"),
 ],
 "body": """
 <h2>Why a knee replacement may need revising</h2>
@@ -228,7 +251,7 @@ PROCEDURES = [
 
 <h2>The operation and recovery</h2>
 <p>Revision surgery is more complex than a first knee replacement. It often uses implants designed for revision, which give extra stability and fixation. Recovery is slower, and the risks, particularly infection, stiffness and further surgery, are higher. Results are generally good when there is a clear cause to correct.</p>
-""" + COSTS,
+""" + REVISION_WHERE + REVISION_COSTS,
 "sources": [NJR_SITE, NICE_157],
 "related": ["problem-joint-replacement", "knee-replacement", "second-opinion", "fees-insurance"],
 },
@@ -292,14 +315,20 @@ PROCEDURES = [
 <p>A CT scan before surgery creates a 3D model of your hip or knee, which I use to plan the size and position of the implants. During the operation I guide a robotic arm that helps prepare the bone and position the implants within the limits of that plan. The robot does not operate on its own.</p>
 
 <h2>What the evidence shows</h2>
-<p>Studies show that robotic assistance positions hip and knee implants more precisely and closer to the plan. Some studies of knee replacement report less pain and quicker recovery in the first weeks. Whether this leads to better long-term results or longer-lasting implants has not yet been proven, and large UK trials are under way. Standard hip and knee replacements remain excellent operations.</p>
+<p>Studies show that robotic assistance positions hip and knee implants more precisely and closer to the plan, and some earlier, smaller studies reported less pain and a quicker recovery in the first weeks after robotic knee replacement. Recent large studies have tested whether this leads to better results for patients:</p>
+<ul>
+<li><strong>RACER-Knee</strong>, a UK trial of 339 patients in 10 hospitals, compared Mako robotic-assisted with conventional total knee replacement. The robotic operations were more precise, but at one year there was no significant difference in patients' outcomes, and early recovery and pain were similar (Lancet, 2026).</li>
+<li><strong>RASKAL</strong>, an Australian trial of 334 patients, compared robotic-assisted with computer-navigated total knee replacement and found no significant difference in outcomes at one or two years (Bone &amp; Joint Journal, 2026).</li>
+<li><strong>A National Joint Registry study</strong> of almost 700,000 knee replacements, including more than 22,000 robotic operations, found no significant difference in the risk of revision (further surgery) in the first few years between robotic and conventional total or partial knee replacements (BMJ, 2026).</li>
+</ul>
+<p>So when robotic assistance is used routinely, these studies found no significant difference in outcomes at one year, and standard hip and knee replacements remain excellent operations. There may, however, be a case for robotic assistance in more complex surgery, where placing the components accurately is technically challenging.</p>
 
 <h2>Is it right for you?</h2>
 <p>We will decide together at your consultation. It depends on your joint, the type of implant that suits you, and your insurance, as cover for robotic surgery varies between insurers. Read more about <a href="/hip-replacement/">hip replacement</a>, <a href="/knee-replacement/">knee replacement</a> and <a href="/partial-knee-replacement/">partial knee replacement</a>.</p>
 
 <p class="small">Mako is a trademark of Stryker Corporation.</p>
 """ + COSTS,
-"sources": ["Domb BG et al. Comparison of robotic-assisted and conventional acetabular cup placement in THA: a matched-pair controlled study. Clin Orthop Relat Res 2014;472:329&ndash;36.", "Kayani B et al. Robotic-arm assisted total knee arthroplasty is associated with improved early functional recovery and reduced short-term inpatient length of stay compared with conventional jig-based total knee arthroplasty. Bone Joint J 2018;100-B:930&ndash;7.", NICE_157],
+"sources": ["Domb BG et al. Comparison of robotic-assisted and conventional acetabular cup placement in THA: a matched-pair controlled study. Clin Orthop Relat Res 2014;472:329&ndash;36.", "Kayani B et al. Robotic-arm assisted total knee arthroplasty is associated with improved early functional recovery and reduced short-term inpatient length of stay compared with conventional jig-based total knee arthroplasty. Bone Joint J 2018;100-B:930&ndash;7.", RACER_KNEE, RASKAL, NJR_ROBOTIC, NICE_157],
 "related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "fees-insurance"],
 },
 ]

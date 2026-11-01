@@ -104,14 +104,15 @@ OTHER = [
 "title": "Fees and Insurance | Mr Krishna Boddu, Ipswich",
 "description": "Consultation fees, recognised insurers (Bupa, AXA Health, Aviva, Vitality, Aetna, Healix) and self-pay surgery packages at Nuffield Health Ipswich.",
 "h1": "Fees and insurance",
-"lead": "My consultation fees are below. If you are paying for yourself, Nuffield Health Ipswich gives you a fixed-price package for surgery after your consultation, so you know the cost before you decide.",
+"lead": "My fees are below. If you are paying for yourself, Nuffield Health Ipswich gives you a fixed-price package for surgery after your consultation, so you know the cost before you decide.",
 "body": """
-<h2>Consultation fees for self-paying patients</h2>
+<h2>Fees for self-paying patients</h2>
 <table>
 <thead><tr><th scope="col">Appointment</th><th scope="col">Fee</th></tr></thead>
 <tbody>
 <tr><td>New consultation</td><td>&pound;200</td></tr>
 <tr><td>Follow-up consultation</td><td>&pound;100</td></tr>
+<tr><td>Injections</td><td>&pound;100, plus hospital fees charged separately by Nuffield Health Ipswich</td></tr>
 <tr><td>X-rays and scans</td><td>Charged separately by Nuffield Health Ipswich</td></tr>
 <tr><td>Surgery</td><td>A fixed-price package from Nuffield Health Ipswich, quoted after your consultation</td></tr>
 </tbody>
@@ -263,7 +264,6 @@ OTHER = [
 <h2>Call or email Daniela</h2>
 <p>%SECRETARY%, my secretary</p>
 <p><a href="tel:%SEC_PHONE_TEL%">%SEC_PHONE%</a><br><a href="mailto:%SEC_EMAIL%">%SEC_EMAIL%</a></p>
-<p class="small">Please do not send medical details by email unless Daniela asks for them.</p>
 </div>
 </div>
 
