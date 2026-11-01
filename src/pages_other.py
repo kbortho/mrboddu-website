@@ -33,7 +33,8 @@ OTHER = [
 <ul>
 <li>Trainer of orthopaedic registrars in the East of England</li>
 <li>Faculty member on FRCS (Tr &amp; Orth) courses at King's College Hospital</li>
-<li>24 peer-reviewed research papers, and reviewer for the Bone &amp; Joint Journal</li>
+<li>25 research publications (<a href="%RESEARCHGATE%">see them on ResearchGate</a>)</li>
+<li>Reviewer for the Bone &amp; Joint Journal</li>
 <li>Research grants from ARC and Hammersmith Hospitals</li>
 <li>Research interest in artificial intelligence in orthopaedics</li>
 </ul>

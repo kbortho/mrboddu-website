@@ -31,6 +31,7 @@ TOKENS = {
     "ADDRESS_INLINE": ", ".join(C.ADDRESS_LINES),
     "ADDRESS_HTML": "<br>".join(C.ADDRESS_LINES),
     "INSURER_LIST": "".join(f"<li>{i}</li>" for i in C.INSURERS),
+    "RESEARCHGATE": C.RESEARCHGATE,
 }
 
 def fill(s):
@@ -62,7 +63,7 @@ PHYSICIAN = {
     "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "08:30", "closes": "12:30"}],
     "knowsLanguage": ["en", "hi", "te", "ur"],
     "identifier": {"@type": "PropertyValue", "propertyID": "GMC", "value": C.GMC},
-    "sameAs": [C.DOCTIFY, C.TOPDOCTORS, C.NUFFIELD_PROFILE, C.PHIN, C.BUPA, C.NJR, C.LINKEDIN, C.GOOGLE_PROFILE],
+    "sameAs": [C.DOCTIFY, C.TOPDOCTORS, C.NUFFIELD_PROFILE, C.PHIN, C.BUPA, C.NJR, C.LINKEDIN, C.RESEARCHGATE, C.GOOGLE_PROFILE],
 }
 
 NAV = [("/#treatments", "Treatments"), ("/#conditions", "Conditions"), ("/fees-insurance/", "Fees and insurance"),
@@ -84,7 +85,7 @@ def footer():
                    ["hip-knee-clinic", "fees-insurance", "outcomes-reviews", "your-operation", "gps-physiotherapists", "about", "contact"])
     return f"""<footer class="site-footer"><div class="wrap footer-grid">
 <div><p class="f-name">{C.NAME}</p><p>MBBS, MS (Orth), MRCSEd, AFRCSI, FRCS (Tr &amp; Orth)<br>Consultant Orthopaedic Surgeon<br>GMC {C.GMC}</p>
-<p class="f-links"><a href="{C.DOCTIFY}">Doctify</a> · <a href="{C.TOPDOCTORS}">Top Doctors</a> · <a href="{C.GOOGLE_PROFILE}">Google</a> · <a href="{C.NJR}">NJR</a> · <a href="{C.PHIN}">PHIN</a> · <a href="{C.LINKEDIN}">LinkedIn</a></p></div>
+<p class="f-links"><a href="{C.DOCTIFY}">Doctify</a> · <a href="{C.TOPDOCTORS}">Top Doctors</a> · <a href="{C.GOOGLE_PROFILE}">Google</a> · <a href="{C.NJR}">NJR</a> · <a href="{C.PHIN}">PHIN</a> · <a href="{C.LINKEDIN}">LinkedIn</a> · <a href="{C.RESEARCHGATE}">ResearchGate</a></p></div>
 <div><p class="f-h">Private practice</p><p>{"<br>".join(C.ADDRESS_LINES)}</p><p>Clinic: {C.CLINIC_TIMES}</p><p>Secretary: {C.SECRETARY}<br><a href="tel:{tel(C.SEC_PHONE)}">{C.SEC_PHONE}</a><br><a href="mailto:{C.SEC_EMAIL}">{C.SEC_EMAIL}</a></p></div>
 <div><p class="f-h">Treatments</p><ul>{treat}</ul></div>
 <div><p class="f-h">Information</p><ul>{info}</ul></div>
