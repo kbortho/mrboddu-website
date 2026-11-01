@@ -22,7 +22,7 @@ OTHER = [
 <li>Fellowships in primary and revision hip and knee replacement at Maisonneuve-Rosemont Hospital, Montreal, and King's College Hospital, London</li>
 <li>NHS consultant orthopaedic surgeon since 2015</li>
 <li>Consultant at King's College Hospital NHS Foundation Trust, London, before moving to Ipswich Hospital (East Suffolk and North Essex NHS Foundation Trust) in 2022</li>
-<li>More than 1,000 hip and knee replacements, with my UK operations recorded on the <a href="%NJR%">National Joint Registry</a></li>
+<li>More than 1,000 hip and knee replacements, with my operations recorded on the <a href="%NJR%">National Joint Registry</a></li>
 <li>Trained in Mako robotic-assisted hip and knee replacement</li>
 </ul>
 
