@@ -28,3 +28,8 @@ GOOGLE_REVIEWS = 23
 CLINIC_TIMES = "Monday, 8.30am to 12.30pm"
 REVIEWED = "1 November 2026"  # date Mr Boddu approved the clinical pages
 REVIEWED_ISO = "2026-11-01"
+# Google tag ID (Google Analytics "G-..." or Ads "AW-..."). Empty = no tag, no banner, cookie-free site.
+GOOGLE_ADS_ID = "G-3SSR5WV2NC"
+# Optional Google Ads conversion labels (need an AW- ID; with a G- ID clicks are sent as GA4 events) (the part after the "/" in send_to)
+ADS_LABEL_BOOK = ""   # click on "Book online"
+ADS_LABEL_CALL = ""   # click on a phone number

@@ -307,13 +307,13 @@ OTHER = [
 <p>This website is run by Mr Krishna Boddu, who is the data controller for it. The website has no forms and does not ask for your personal or medical details.</p>
 <ul>
 <li><strong>Hosting:</strong> our hosting provider, Netlify, records technical information such as IP addresses in server logs to keep the site secure. We do not use this information to identify you.</li>
-<li><strong>Visitor statistics:</strong> if we measure visits, we use a privacy-friendly service that does not use cookies or identify individual visitors.</li>
 <li><strong>Contacting us:</strong> if you call or email Daniela, we use your details only to arrange and provide your care.</li>
 </ul>
 <p>You have the right to ask what information we hold about you, and to have it corrected or deleted. Please contact Daniela on %SEC_PHONE% or at <a href="mailto:%SEC_EMAIL%">%SEC_EMAIL%</a>. If you are unhappy with how we handle your information, you can complain to the <a href="https://ico.org.uk/">Information Commissioner's Office</a>.</p>
 
-<h2>Cookies</h2>
-<p>This website does not use cookies. Links to other websites, such as Nuffield Health's booking page, Doctify and Top Doctors, are covered by those websites' own privacy and cookie policies.</p>
+<h2 id="cookies">Cookies</h2>
+%COOKIES%
+<p>Links to other websites, such as Nuffield Health's booking page, Doctify and Top Doctors, are covered by those websites' own privacy and cookie policies.</p>
 
 <h2>Accessibility</h2>
 <p>This website aims to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA. You should be able to zoom to 200% without losing content, navigate using a keyboard or screen reader, and read all text clearly. If you have difficulty using any part of the site, or need information in another format, please contact Daniela.</p>

@@ -32,6 +32,8 @@ TOKENS = {
     "ADDRESS_HTML": "<br>".join(C.ADDRESS_LINES),
     "INSURER_LIST": "".join(f"<li>{i}</li>" for i in C.INSURERS),
     "RESEARCHGATE": C.RESEARCHGATE,
+    "COOKIES": ("<p>This website uses cookies only if you agree. When you first visit, a banner asks whether you accept Google cookies. If you click Accept, Google Analytics and Google Ads set cookies that tell us how many people visit, which pages they read, whether a visit came from one of our Google adverts, and whether they then clicked to book or call. This helps us improve the website and see whether our adverts are useful. Google does not tell us who you are. If you click Reject, or ignore the banner, no cookies are set. You can change your choice at any time using the \"Cookie settings\" link at the bottom of every page. Google's use of this information is described in <a href=\"https://policies.google.com/technologies/partner-sites\">Google's policy on partner sites</a>.</p>"
+                if C.GOOGLE_ADS_ID else "<p>This website does not use cookies.</p>"),
 }
 
 def fill(s):
@@ -91,7 +93,7 @@ def footer():
 <div><p class="f-h">Information</p><ul>{info}</ul></div>
 </div>
 <div class="wrap f-small"><p>This website gives general information and does not replace a consultation. In an emergency call 999; for urgent medical advice call NHS 111.</p>
-<p>&copy; 2026 {C.NAME} · <a href="/privacy/">Privacy, cookies and accessibility</a></p></div>
+<p>&copy; 2026 {C.NAME} · <a href="/privacy/">Privacy, cookies and accessibility</a>{' · <a href="/privacy/#cookies" data-cookie-settings>Cookie settings</a>' if C.GOOGLE_ADS_ID else ""}</p></div>
 </footer>"""
 
 def cta():
@@ -100,6 +102,12 @@ def cta():
 <p>I see patients at {C.HOSPITAL}. You can book online, or contact my secretary, {C.SECRETARY}, who can also help with insurance and self-pay questions.</p>
 <div class="cta-row"><a class="btn btn-light" href="{C.BOOK_URL}">Book online at Nuffield Health</a><a class="btn btn-outline-light" href="tel:{tel(C.SEC_PHONE)}">Call Daniela on {C.SEC_PHONE}</a></div>
 </div></section>"""
+
+def consent_tag():
+    if not C.GOOGLE_ADS_ID:
+        return ""
+    a = lambda v: html.escape(v, quote=True)
+    return f'<script src="/consent.js" data-ads="{a(C.GOOGLE_ADS_ID)}" data-book="{a(C.ADS_LABEL_BOOK)}" data-call="{a(C.ADS_LABEL_CALL)}"></script>'
 
 def page_shell(title, description, slug, main, jsonld):
     robots = '<meta name="robots" content="noindex, nofollow">' if C.PREVIEW else ""
@@ -131,6 +139,7 @@ def page_shell(title, description, slug, main, jsonld):
 {main}
 </main>
 {footer()}
+{consent_tag()}
 </body>
 </html>
 """
@@ -259,6 +268,11 @@ def render_404():
 
 FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#12304d"/><text x="32" y="42" font-family="Georgia, serif" font-size="28" fill="#fff" text-anchor="middle">KB</text></svg>"""
 
+G = "https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://*.doubleclick.net https://www.google.com https://www.google.co.uk"
+CSP = ("default-src 'self'; img-src 'self' data:" + (" " + G if C.GOOGLE_ADS_ID else "") +
+       "; style-src 'self'; script-src 'self'" + (" https://www.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net" if C.GOOGLE_ADS_ID else "") +
+       ("; connect-src 'self' " + G + "; frame-src https://td.doubleclick.net https://www.googletagmanager.com" if C.GOOGLE_ADS_ID else "") +
+       "; frame-ancestors 'none'; base-uri 'self'; form-action 'none'")
 NETLIFY = """[build]
   publish = "site"
 
@@ -269,7 +283,7 @@ NETLIFY = """[build]
     X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
-    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'"
+    Content-Security-Policy = "{CSP}"
 
 [[headers]]
   for = "/assets/*"
@@ -290,10 +304,15 @@ def main():
         f.write(render_404())
     shutil.copy(os.path.join(HERE, "styles.css"), os.path.join(OUT, "styles.css"))
     shutil.copytree(os.path.join(HERE, "assets"), os.path.join(OUT, "assets"), dirs_exist_ok=True)
+    js = os.path.join(OUT, "consent.js")
+    if C.GOOGLE_ADS_ID:
+        shutil.copy(os.path.join(HERE, "consent.js"), js)
+    elif os.path.exists(js):
+        os.remove(js)
     with open(os.path.join(OUT, "favicon.svg"), "w") as f:
         f.write(FAVICON)
     with open(os.path.join(os.path.dirname(OUT), "netlify.toml"), "w") as f:
-        f.write(NETLIFY)  # repo root: Netlify publishes the site/ folder
+        f.write(NETLIFY.replace("{CSP}", CSP))  # repo root: Netlify publishes the site/ folder
     urls = [url("")] + [url(p["slug"]) for p in ALL]
     sm = "".join(f"<url><loc>{u}</loc><lastmod>{LASTMOD}</lastmod></url>" for u in urls)
     with open(os.path.join(OUT, "sitemap.xml"), "w") as f:

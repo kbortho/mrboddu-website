@@ -165,3 +165,9 @@ details[open] summary { margin-bottom: .5rem; }
 @media print {
   .site-header { position: static; }
 }
+
+/* Cookie consent banner (only when the Google Ads tag is switched on) */
+.consent { position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 50; max-width: 640px; margin: 0 auto; background: var(--white); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 8px 30px rgba(0,0,0,.18); padding: 1rem 1.2rem; font-size: 1rem; }
+.consent p { margin: 0 0 .8rem; }
+.consent-btns { display: flex; gap: .6rem; flex-wrap: wrap; }
+.consent-btns .btn { padding: .6rem 1.4rem; cursor: pointer; font: inherit; font-weight: 600; }
