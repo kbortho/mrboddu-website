@@ -103,7 +103,7 @@ OTHER = [
 "nav": "Fees and insurance",
 "group": "practice",
 "title": "Fees and Insurance | Mr Krishna Boddu, Ipswich",
-"description": "Consultation fees, recognised insurers (Bupa, AXA Health, Aviva, Vitality, WPA, Allianz, Healix, Aetna) and self-pay surgery packages at Nuffield Health Ipswich.",
+"description": "Consultation fees, recognised insurers (Bupa, AXA Health, Aviva, Vitality, WPA, Allianz, Healix) and self-pay surgery packages at Nuffield Health Ipswich.",
 "h1": "Fees and insurance",
 "lead": "My fees are below. If you are paying for yourself, Nuffield Health Ipswich gives you a fixed-price package for surgery after your consultation, so you know the cost before you decide.",
 "body": """
