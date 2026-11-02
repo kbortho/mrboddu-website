@@ -19,7 +19,7 @@ PHIN = "https://phin.org.uk/profiles/consultants/mr-krishna-boddu--185866"
 BUPA = "https://www.finder.bupa.co.uk/Consultant/view/299151/mr_krishna_boddu"
 NJR = "https://surgeonprofile.njrcentre.org.uk/SurgeonProfile?gmccode=5206961"
 MAPS = "https://www.google.com/maps/search/?api=1&query=Nuffield+Health+Ipswich+Hospital+Foxhall+Road+IP4+5SW"
-INSURERS = ["Bupa", "AXA Health", "Aviva", "Vitality", "WPA", "Allianz", "Aetna"]
+INSURERS = ["Bupa", "AXA Health", "Aviva", "Vitality", "WPA", "Allianz", "Healix", "Aetna"]
 RATING_NOTE = "as of November 2026"
 LINKEDIN = "https://www.linkedin.com/in/bodduk"
 RESEARCHGATE = "https://www.researchgate.net/profile/Krishna-Boddu"

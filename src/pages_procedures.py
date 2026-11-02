@@ -19,7 +19,7 @@ NJR_ROBOTIC = '<a href="https://doi.org/10.1136/bmj-2026-100691">Mohammad HR et 
 
 COSTS = """
 <h2>Costs and insurance</h2>
-<p>I am recognised by Bupa, AXA Health, Aviva, Vitality, WPA, Allianz and Aetna. Please check your policy and ask your insurer for a pre-authorisation number before your first appointment. If you are paying for yourself, Nuffield Health Ipswich will give you a fixed-price package after your consultation. See <a href="/fees-insurance/">fees and insurance</a>.</p>
+<p>I am recognised by Bupa, AXA Health, Aviva, Vitality, WPA, Allianz, Healix and Aetna. Please check your policy and ask your insurer for a pre-authorisation number before your first appointment. If you are paying for yourself, Nuffield Health Ipswich will give you a fixed-price package after your consultation. See <a href="/fees-insurance/">fees and insurance</a>.</p>
 """
 
 REVISION_WHERE = """
@@ -29,7 +29,7 @@ REVISION_WHERE = """
 
 REVISION_COSTS = """
 <h2>Costs and insurance</h2>
-<p>I am recognised by Bupa, AXA Health, Aviva, Vitality, WPA, Allianz and Aetna. Please check that your policy covers your treatment and the hospital where it will take place, and ask your insurer for a pre-authorisation number before your first appointment. If you are paying for yourself, you will be given a quote for your surgery once we have agreed your treatment plan and where it will take place. See <a href="/fees-insurance/">fees and insurance</a>.</p>
+<p>I am recognised by Bupa, AXA Health, Aviva, Vitality, WPA, Allianz, Healix and Aetna. Please check that your policy covers your treatment and the hospital where it will take place, and ask your insurer for a pre-authorisation number before your first appointment. If you are paying for yourself, you will be given a quote for your surgery once we have agreed your treatment plan and where it will take place. See <a href="/fees-insurance/">fees and insurance</a>.</p>
 """
 
 PROCEDURES = [
