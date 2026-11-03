@@ -78,14 +78,14 @@ GUIDES = [
 
 <h2>Tips for a good recovery</h2>
 <ul>
-<li><strong>Exercises:</strong> little and often is better than a long session once a day.</li>
+<li><strong>Exercises:</strong> little and often is better than a long session once a day. See the <a href="/knee-replacement-exercises/">knee exercises, with diagrams</a>.</li>
 <li><strong>Stairs:</strong> go up with your good leg first and down with your operated leg first.</li>
 <li><strong>Pain:</strong> some discomfort during exercises is expected, but tell us if pain is getting worse rather than better.</li>
 <li><strong>Before surgery:</strong> getting fitter, strengthening your thigh muscles and preparing your home all help. See <a href="/your-operation/">your operation</a>.</li>
 </ul>
 """ + WARNING_SIGNS,
 "sources": [NICE_157, NHS_KNEE_REC],
-"related": ["knee-replacement", "partial-vs-total-knee-replacement", "your-operation", "how-long-do-hip-and-knee-replacements-last"],
+"related": ["knee-replacement-exercises", "knee-replacement", "life-after-a-joint-replacement", "your-operation"],
 },
 {
 "slug": "hip-replacement-recovery",
@@ -145,7 +145,7 @@ GUIDES = [
 </ul>
 """ + WARNING_SIGNS,
 "sources": [NICE_157, KORFITSEN, NHS_HIP_REC],
-"related": ["hip-replacement", "your-operation", "how-long-do-hip-and-knee-replacements-last", "when-to-have-a-hip-or-knee-replacement"],
+"related": ["hip-replacement", "life-after-a-joint-replacement", "your-operation", "how-long-do-hip-and-knee-replacements-last"],
 },
 {
 "slug": "partial-vs-total-knee-replacement",
@@ -239,7 +239,7 @@ GUIDES = [
 <p>New or worsening pain, swelling, a feeling of instability, or clicking and grinding can be signs of wear or loosening. If you notice these, see <a href="/problem-joint-replacement/">painful or worn joint replacements</a>. Not every problem needs further surgery, and when it does, I perform <a href="/revision-hip-replacement/">revision hip</a> and <a href="/revision-knee-replacement/">revision knee</a> replacement.</p>
 """,
 "sources": [EVANS_HIP, EVANS_KNEE, NJR_REPORTS, GILL_ZUK],
-"related": ["hip-replacement", "knee-replacement", "partial-vs-total-knee-replacement", "problem-joint-replacement"],
+"related": ["why-do-joint-replacements-fail", "am-i-too-young-for-a-joint-replacement", "partial-vs-total-knee-replacement", "problem-joint-replacement"],
 },
 {
 "slug": "when-to-have-a-hip-or-knee-replacement",
@@ -276,7 +276,7 @@ GUIDES = [
 <p>At your consultation, I will examine your joint, review X-rays and ask how arthritis affects your daily life. I will explain the likely benefits and risks of surgery for you. Most people have much less pain after a joint replacement, but some still have pain or are not fully satisfied, and I will help you weigh this up. If surgery is not the right step yet, I will tell you. There is no pressure to decide on the day. See <a href="/hip-knee-clinic/">my hip and knee clinic</a>.</p>
 """,
 "sources": [NICE_226, NICE_157, BESWICK],
-"related": ["hip-knee-clinic", "hip-arthritis", "knee-arthritis", "second-opinion"],
+"related": ["am-i-too-young-for-a-joint-replacement", "steroid-injections-for-hip-and-knee-arthritis", "hip-pain-or-back-pain", "hip-knee-clinic"],
 },
 {
 "slug": "private-hip-and-knee-replacement-cost",

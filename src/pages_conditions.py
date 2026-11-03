@@ -24,7 +24,7 @@ CONDITIONS = [
 </ul>
 
 <h2>Diagnosis</h2>
-<p>Hip arthritis is usually diagnosed from your symptoms and an examination, and an X-ray shows how severe it is. An MRI scan is rarely needed. Pain around the hip can also come from the back or from the tendons on the side of the hip, and I will check for these.</p>
+<p>Hip arthritis is usually diagnosed from your symptoms and an examination, and an X-ray shows how severe it is. An MRI scan is rarely needed. Pain around the hip can also come from the back or from the tendons on the side of the hip, and I will check for these. See <a href="/hip-pain-or-back-pain/">hip pain or back pain?</a></p>
 
 <h2>Treatment without surgery</h2>
 <ul>
@@ -68,7 +68,7 @@ CONDITIONS = [
 <li><strong>Exercise and physiotherapy</strong> to strengthen the thigh muscles</li>
 <li><strong>Weight loss</strong> if you are overweight</li>
 <li><strong>Anti-inflammatory gels</strong> rubbed onto the knee, and painkillers where needed</li>
-<li><strong>A steroid injection</strong> for short-term relief</li>
+<li><strong>A steroid injection</strong> for short-term relief. See <a href="/steroid-injections-for-hip-and-knee-arthritis/">steroid injections</a>.</li>
 </ul>
 <p>In line with national guidance, I do not recommend keyhole washouts or hyaluronic acid injections for knee arthritis, because good evidence shows they do not help most people.</p>
 
@@ -146,7 +146,7 @@ CONDITIONS = [
 <p>Depending on what we find, the answer may be reassurance and monitoring, physiotherapy, treatment for pain coming from somewhere else such as the back, or <a href="/revision-hip-replacement/">revision hip</a> or <a href="/revision-knee-replacement/">revision knee</a> surgery.</p>
 """,
 "sources": [NJR_SITE, NICE_157],
-"related": ["revision-hip-replacement", "revision-knee-replacement", "how-long-do-hip-and-knee-replacements-last", "second-opinion", "hip-knee-clinic"],
+"related": ["why-do-joint-replacements-fail", "revision-hip-replacement", "revision-knee-replacement", "how-long-do-hip-and-knee-replacements-last", "second-opinion"],
 },
 {
 "slug": "second-opinion",
