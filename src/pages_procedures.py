@@ -15,6 +15,7 @@ WILSON = '<a href="https://doi.org/10.1136/bmj.l352">Wilson HA et al. Patient re
 RACER_KNEE = '<a href="https://doi.org/10.1016/S0140-6736(26)00986-4">Parsons H et al. Robotic-arm-assisted versus conventional total knee replacement (RACER-Knee): a pragmatic, multicentre, participant-masked and assessor-masked, superiority, randomised controlled trial. Lancet 2026.</a>'
 RASKAL = '<a href="https://doi.org/10.1302/0301-620X.108B.BJJ-2025-1472.R2">MacDessi SJ et al. Robotic-assisted surgery and functional alignment in total knee arthroplasty: the RASKAL registry-nested 2 &times; 2 factorial randomized trial. Bone Joint J 2026;108-B:622&ndash;33.</a>'
 GILL_ZUK = "Gill JR, Nicolai P. Clinical results and 12-year survivorship of the Physica ZUK unicompartmental knee replacement. Knee 2019;26:750&ndash;8."
+AOANJRR_2026 = '<a href="https://registry.aoa.org.au/annual-reports-2026">Australian Orthopaedic Association National Joint Replacement Registry. Hip, Knee and Shoulder Arthroplasty Annual Report 2026: Tables KT74 and KT75 (Triathlon CR, robotically assisted vs traditional instrumentation).</a>'
 NJR_ROBOTIC = '<a href="https://doi.org/10.1136/bmj-2026-100691">Mohammad HR et al. Early national comparison of robotic versus conventional knee replacements for arthritis using National Joint Registry data: target trial emulation study. BMJ 2026;394:e100691.</a>'
 
 COSTS = """
@@ -322,6 +323,7 @@ PROCEDURES = [
 <li><strong>RACER-Knee</strong>, a UK trial of 339 patients in 10 hospitals, compared Mako robotic-assisted with conventional total knee replacement. The robotic operations were more precise, but at one year there was no significant difference in patients' outcomes, and early recovery and pain were similar (Lancet, 2026).</li>
 <li><strong>RASKAL</strong>, an Australian trial of 334 patients, compared robotic-assisted with computer-navigated total knee replacement and found no significant difference in outcomes at one or two years (Bone &amp; Joint Journal, 2026).</li>
 <li><strong>A National Joint Registry study</strong> of almost 700,000 knee replacements, including more than 22,000 robotic operations, found no significant difference in the risk of revision (further surgery) in the first few years between robotic and conventional total or partial knee replacements (BMJ, 2026).</li>
+<li><strong>The Australian joint registry</strong> found that, of more than 67,000 Triathlon total knee replacements (the implant used with the Mako robot) performed since 2016, 1.9 in 100 robotic-assisted knees had needed revision by 5 years, compared with 2.4 in 100 done with traditional instruments. This small difference was statistically significant after the first 18 months, once patient and surgeon factors were taken into account (AOANJRR Annual Report, 2026).</li>
 </ul>
 <p>So when robotic assistance is used routinely, these studies found no significant difference in outcomes at one year, and standard hip and knee replacements remain excellent operations. There may, however, be a case for robotic assistance in more complex surgery, where placing the components accurately is technically challenging.</p>
 
@@ -330,7 +332,7 @@ PROCEDURES = [
 
 <p class="small">Mako is a trademark of Stryker Corporation.</p>
 """ + COSTS,
-"sources": ["Domb BG et al. Comparison of robotic-assisted and conventional acetabular cup placement in THA: a matched-pair controlled study. Clin Orthop Relat Res 2014;472:329&ndash;36.", "Kayani B et al. Robotic-arm assisted total knee arthroplasty is associated with improved early functional recovery and reduced short-term inpatient length of stay compared with conventional jig-based total knee arthroplasty. Bone Joint J 2018;100-B:930&ndash;7.", RACER_KNEE, RASKAL, NJR_ROBOTIC, NICE_157],
+"sources": ["Domb BG et al. Comparison of robotic-assisted and conventional acetabular cup placement in THA: a matched-pair controlled study. Clin Orthop Relat Res 2014;472:329&ndash;36.", "Kayani B et al. Robotic-arm assisted total knee arthroplasty is associated with improved early functional recovery and reduced short-term inpatient length of stay compared with conventional jig-based total knee arthroplasty. Bone Joint J 2018;100-B:930&ndash;7.", RACER_KNEE, RASKAL, NJR_ROBOTIC, AOANJRR_2026, NICE_157],
 "related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "fees-insurance"],
 },
 ]
