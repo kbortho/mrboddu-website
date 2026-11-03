@@ -133,7 +133,7 @@ OTHER = [
 <h2>Paying for yourself</h2>
 <p>Nuffield Health Ipswich offers fixed-price packages for surgery, which usually include the hospital stay, the surgeon's and anaesthetist's fees and follow-up care; your quote will set out exactly what is included. Finance options are also available through Nuffield Health. See <a href="%NUFFIELD_HOSPITAL%">Nuffield Health Ipswich Hospital</a>.</p>
 """,
-"related": ["hip-knee-clinic", "contact", "knee-replacement", "hip-replacement"],
+"related": ["private-hip-and-knee-replacement-cost", "hip-knee-clinic", "contact", "knee-replacement", "hip-replacement"],
 },
 {
 "slug": "outcomes-reviews",
@@ -193,7 +193,7 @@ OTHER = [
 <table>
 <thead><tr><th scope="col">When</th><th scope="col">What to expect</th></tr></thead>
 <tbody>
-<tr><td>First 2 weeks</td><td>Walking with crutches, doing your exercises several times a day, wound check by your practice nurse</td></tr>
+<tr><td>First 2 weeks</td><td>Walking with crutches, doing your exercises several times a day, wound check by a nurse at the hospital, and removal of clips after a knee replacement</td></tr>
 <tr><td>About 6 weeks</td><td>Follow-up with me; many people walk without crutches and can start driving</td></tr>
 <tr><td>About 3 months</td><td>Most daily activities and many hobbies; heavier work may be possible</td></tr>
 <tr><td>Up to 1 year</td><td>Continued improvement, especially after a knee replacement</td></tr>
@@ -206,9 +206,9 @@ OTHER = [
 <li>A wound that becomes red, hot or swollen, or leaks fluid</li>
 <li>A fever or feeling unwell</li>
 <li>Pain or swelling in your calf</li>
-<li>Chest pain or breathlessness: call 999</li>
+<li>Chest pain or breathlessness</li>
 </ul>
-<p>Call the hospital on %HOSPITAL_PHONE%, or NHS 111.</p>
+<p>In an emergency, call 999.</p>
 </div>
 
 <h2>Common questions</h2>
@@ -218,7 +218,7 @@ OTHER = [
 <details><summary>Will my joint replacement set off airport scanners?</summary><p>It may. You do not need a card or letter; tell the security staff that you have a joint replacement.</p></details>
 """,
 "sources": ['<a href="https://www.nice.org.uk/guidance/ng157">NICE guideline NG157: Joint replacement (primary): hip, knee and shoulder (2020)</a>'],
-"related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "contact"],
+"related": ["hip-replacement-recovery", "knee-replacement-recovery", "hip-replacement", "knee-replacement", "contact"],
 },
 {
 "slug": "gps-physiotherapists",

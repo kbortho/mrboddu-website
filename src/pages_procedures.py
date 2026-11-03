@@ -71,7 +71,7 @@ PROCEDURES = [
 <li>Office work is often possible after 4 to 6 weeks; heavier work may take around 3 months.</li>
 <li>Improvement continues for up to a year.</li>
 </ul>
-<p>Read more about <a href="/your-operation/">preparing for and recovering from your operation</a>.</p>
+<p>See the <a href="/hip-replacement-recovery/">week-by-week hip replacement recovery guide</a>, and read more about <a href="/your-operation/">preparing for and recovering from your operation</a>.</p>
 
 <h2>How long does a hip replacement last?</h2>
 <p>I use one of the best-performing implant combinations in the UK National Joint Registry, with one of the longest track records. Registry figures show that 95 in 100 of these hip replacements last more than 15 years after surgery, and many last longer. However, individual factors, such as your age and activity level, can affect this significantly.</p>
@@ -85,7 +85,7 @@ PROCEDURES = [
 <p>Already had a hip replacement that is causing problems? See <a href="/revision-hip-replacement/">revision hip replacement</a>.</p>
 """,
 "sources": [NICE_157, NICE_226, NJR_REPORTS],
-"related": ["hip-arthritis", "robotic-hip-and-knee-replacement", "revision-hip-replacement", "your-operation"],
+"related": ["hip-arthritis", "hip-replacement-recovery", "how-long-do-hip-and-knee-replacements-last", "robotic-hip-and-knee-replacement", "revision-hip-replacement"],
 },
 {
 "slug": "revision-hip-replacement",
@@ -164,7 +164,7 @@ PROCEDURES = [
 <li>Most people can drive after about 6 weeks, once they can safely make an emergency stop.</li>
 <li>The knee continues to improve for up to a year.</li>
 </ul>
-<p>Read more about <a href="/your-operation/">preparing for and recovering from your operation</a>.</p>
+<p>See the <a href="/knee-replacement-recovery/">week-by-week knee replacement recovery guide</a>, and read more about <a href="/your-operation/">preparing for and recovering from your operation</a>.</p>
 
 <h2>What results can you expect?</h2>
 <p>Most people have much less pain and can do more after a knee replacement. Around 1 in 5 people still have some pain or are not fully satisfied, so I will help you weigh this up before you decide.</p>
@@ -179,7 +179,7 @@ PROCEDURES = [
 <p>Exercise and physiotherapy, weight loss where appropriate, anti-inflammatory gels and painkillers, and steroid injections for short-term relief can all help. See <a href="/knee-arthritis/">knee arthritis</a>.</p>
 """ + COSTS,
 "sources": [NICE_157, NICE_226, NJR_REPORTS, BESWICK],
-"related": ["partial-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "your-operation"],
+"related": ["partial-knee-replacement", "knee-replacement-recovery", "partial-vs-total-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis"],
 },
 {
 "slug": "partial-knee-replacement",
@@ -206,6 +206,7 @@ PROCEDURES = [
 <li><strong>Advantages:</strong> recovery is often quicker, the knee often feels more natural, and serious complications in the first months are less common.</li>
 <li><strong>Trade-off:</strong> partial replacements are more likely to need further surgery later. If needed, a partial replacement can usually be converted to a total one.</li>
 </ul>
+<p>See <a href="/partial-vs-total-knee-replacement/">partial or total knee replacement compared side by side</a>.</p>
 
 <h2>How long does a partial knee replacement last?</h2>
 <p>For most partial knee replacements, I use the ZUK implant, one of the best-performing partial knees in the UK National Joint Registry, with one of the longest track records. Registry figures show that 91 in 100 of these partial knee replacements last more than 15 years after surgery, and many last longer. This compares with 95 in 100 for the total knee replacements I use. However, individual factors, such as your age and activity level, can affect this significantly.</p>
@@ -217,7 +218,7 @@ PROCEDURES = [
 <p>Risks are similar to those of a total knee replacement, including infection, blood clots, stiffness and ongoing pain. Arthritis can also progress in the rest of the knee, which may lead to a total knee replacement in the future.</p>
 """ + COSTS,
 "sources": [NICE_157, TOPKAT, WILSON, LIDDLE, NJR_REPORTS, GILL_ZUK],
-"related": ["knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
+"related": ["knee-replacement", "partial-vs-total-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
 },
 {
 "slug": "revision-knee-replacement",

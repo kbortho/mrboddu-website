@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" role="img" aria-labelledby="kt kd">
+<title id="kt">Line diagram comparing a total and a partial knee replacement</title>
+<desc id="kd">Front view of a right knee. In the total knee replacement, metal covers the whole end of the thigh bone and the whole top of the shin bone, with a plastic insert between them. In the partial knee replacement, only the inner side of the knee is replaced and the rest of the knee is kept.</desc>
+<style>
+.b{fill:none;stroke:#12304d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.m{fill:none;stroke:#0f6e6a;stroke-width:9;stroke-linecap:round}
+.mf{fill:#0f6e6a}
+.p{fill:#d9dee4;stroke:#12304d;stroke-width:1.5}
+.t{font:600 17px system-ui,-apple-system,Segoe UI,Arial,sans-serif;fill:#12304d}
+.s{font:14px system-ui,-apple-system,Segoe UI,Arial,sans-serif;fill:#4a5866}
+</style>
+<defs>
+<g id="bones">
+<path class="b" d="M105,20 L105,120 C105,145 70,150 70,180 C70,205 85,215 105,215 C120,215 125,200 130,198 C135,200 140,215 155,215 C175,215 190,205 190,180 C190,150 155,145 155,120 L155,20"/>
+<path class="b" d="M70,250 L68,236 L192,236 L190,250 C186,262 160,268 155,285 L155,330 M70,250 C74,262 100,268 105,285 L105,330"/>
+<path class="b" d="M50,262 Q58,252 67,262 L63,330 M50,262 L54,330"/>
+</g>
+</defs>
+<g transform="translate(10,0)">
+<use href="#bones"/>
+<rect class="p" x="74" y="219" width="112" height="14" rx="3"/>
+<path class="m" d="M74,184 C74,205 87,212 105,212 C120,212 125,200 130,197 C135,200 140,212 155,212 C173,212 186,205 186,184"/>
+<rect class="mf" x="68" y="236" width="124" height="8" rx="2"/>
+<rect class="mf" x="122" y="244" width="16" height="30" rx="3"/>
+<text class="t" x="130" y="362" text-anchor="middle">Total knee replacement</text>
+<text class="s" x="130" y="384" text-anchor="middle">The whole joint surface is replaced</text>
+</g>
+<g transform="translate(290,0)">
+<use href="#bones"/>
+<rect class="p" x="137" y="219" width="50" height="14" rx="3"/>
+<path class="m" d="M140,206 C145,212 150,212 155,212 C173,212 186,205 186,186"/>
+<rect class="mf" x="134" y="236" width="58" height="8" rx="2"/>
+<text class="s" x="100" y="231" text-anchor="middle">natural</text>
+<text class="t" x="130" y="362" text-anchor="middle">Partial knee replacement</text>
+<text class="s" x="130" y="384" text-anchor="middle">Only the worn inner side is replaced</text>
+</g>
+<g transform="translate(150,428)">
+<rect class="mf" x="0" y="-11" width="22" height="10" rx="2"/><text class="s" x="30" y="0">Metal</text>
+<rect class="p" x="110" y="-11" width="22" height="10" rx="2"/><text class="s" x="140" y="0">Plastic insert</text>
+</g>
+</svg>
