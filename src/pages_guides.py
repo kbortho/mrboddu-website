@@ -13,14 +13,15 @@ WARNING_SIGNS = """
 <li>A wound that becomes red, hot or swollen, or leaks fluid</li>
 <li>A fever or feeling unwell</li>
 <li>Pain or swelling in your calf</li>
-<li>Chest pain or breathlessness: call 999</li>
+<li>Chest pain or breathlessness</li>
 </ul>
-<p>Call NHS 111, or 999 in an emergency.</p>
+<p>In an emergency, call 999.</p>
 </div>
 """
 
 NHS_KNEE_REC = '<a href="https://www.nhs.uk/conditions/knee-replacement/recovery/">NHS: Knee replacement recovery</a>'
 NHS_HIP_REC = '<a href="https://www.nhs.uk/conditions/hip-replacement/recovery/">NHS: Hip replacement recovery</a>'
+KORFITSEN = '<a href="https://doi.org/10.2340/17453674.2023.11958">Korfitsen CB et al. Hip precautions after posterior-approach total hip arthroplasty among patients with primary hip osteoarthritis do not influence early recovery: a systematic review and meta-analysis of randomized and non-randomized studies with 8,835 patients. Acta Orthop 2023;94:141&ndash;51.</a>'
 NUFFIELD_PRICES = '<a href="%NUFFIELD_HOSPITAL%">Nuffield Health Ipswich Hospital: treatments and prices</a>'
 
 GUIDES = [
@@ -110,7 +111,7 @@ GUIDES = [
 <li>Walk little and often around the house, using your crutches.</li>
 <li>Do your exercises several times a day to strengthen the muscles around the hip.</li>
 <li>Take your painkillers regularly so that you can walk and exercise comfortably.</li>
-<li>I will tell you whether you need to take any particular precautions with how you bend or sit. Many people do not need strict restrictions.</li>
+<li>I do not routinely ask patients to follow "hip precautions", the traditional restrictions on bending, crossing the legs and sitting in low chairs. Research has found that these restrictions make little or no difference to the risk of dislocation, and moving freely helps an accelerated recovery. If your operation needs any particular precautions, I will explain them to you.</li>
 <li>Your wound will be checked at about 2 weeks, usually by your practice nurse.</li>
 </ul>
 
@@ -143,7 +144,7 @@ GUIDES = [
 <li><strong>Before surgery:</strong> getting fitter, stopping smoking and preparing your home all help. See <a href="/your-operation/">your operation</a>.</li>
 </ul>
 """ + WARNING_SIGNS,
-"sources": [NICE_157, NHS_HIP_REC],
+"sources": [NICE_157, KORFITSEN, NHS_HIP_REC],
 "related": ["hip-replacement", "your-operation", "how-long-do-hip-and-knee-replacements-last", "when-to-have-a-hip-or-knee-replacement"],
 },
 {
@@ -160,6 +161,8 @@ GUIDES = [
 "body": """
 <h2>The difference</h2>
 <p>A <a href="/knee-replacement/">total knee replacement</a> resurfaces the whole joint. A <a href="/partial-knee-replacement/">partial knee replacement</a> replaces only the worn part, most often the inner (medial) side, and keeps the healthy rest of the knee and its ligaments.</p>
+
+<figure class="diagram"><img src="/assets/knee-total-vs-partial.svg" width="560" height="440" alt="Line diagram of a knee from the front. In a total knee replacement, metal covers the whole end of the thigh bone and the top of the shin bone, with a plastic insert between them. In a partial knee replacement, only the worn inner side is replaced and the rest of the knee is kept." loading="lazy"><figcaption>A total knee replacement resurfaces the whole joint. A partial knee replacement resurfaces only the worn side.</figcaption></figure>
 
 <h2>Side by side</h2>
 <table>
@@ -184,7 +187,7 @@ GUIDES = [
 <p>National guidance (NICE) recommends that people with arthritis in the inner part of the knee are offered the choice of either operation.</p>
 
 <h2>How I help you decide</h2>
-<p>I will examine your knee and review standing X-rays, and sometimes further X-rays or an MRI scan, to see whether a partial knee replacement is possible for you. Where both are suitable, we will weigh up the quicker recovery of a partial knee against the slightly higher chance of further surgery, in the light of your age, activity and preferences. Where suitable, either operation can be done with <a href="/robotic-hip-and-knee-replacement/">Mako robotic assistance</a>.</p>
+<p>I will examine your knee and review standing X-rays, and sometimes further X-rays, to see whether a partial knee replacement is possible for you. Where both are suitable, we will weigh up the quicker recovery of a partial knee against the slightly higher chance of further surgery, in the light of your age, activity and preferences. Either operation can be done with <a href="/robotic-hip-and-knee-replacement/">Mako robotic assistance</a>, but I use it only where it is appropriate for you.</p>
 """,
 "sources": [NICE_157, TOPKAT, WILSON, LIDDLE, NJR_REPORTS, GILL_ZUK],
 "related": ["partial-knee-replacement", "knee-replacement", "knee-arthritis", "knee-replacement-recovery"],
@@ -226,7 +229,8 @@ GUIDES = [
 <ul>
 <li><strong>Age:</strong> younger people are more active and live longer with their joint, so they are more likely to need further surgery at some point.</li>
 <li><strong>Activity:</strong> walking, swimming, cycling and golf are encouraged. High-impact sports such as running put more strain on the joint.</li>
-<li><strong>Weight:</strong> a healthy weight reduces the load on the joint.</li>
+<li><strong>Weight:</strong> being overweight increases the load on the joint replacement, so keeping to a healthy weight helps it last.</li>
+<li><strong>Bone strength:</strong> bones can weaken with age, for example from osteoporosis. A fall can then cause a fracture around the joint replacement, which sometimes needs revision surgery. Treating osteoporosis and reducing the risk of falls both help.</li>
 <li><strong>Infection:</strong> uncommon, but it can affect a joint replacement at any time, so get any infection elsewhere in the body treated promptly.</li>
 <li><strong>The implant and how it is positioned:</strong> this is why I use implants with proven long-term results.</li>
 </ul>
