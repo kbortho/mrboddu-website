@@ -15,7 +15,7 @@ WARNING_SIGNS = """
 <li>Pain or swelling in your calf</li>
 <li>Chest pain or breathlessness: call 999</li>
 </ul>
-<p>Call the hospital on %HOSPITAL_PHONE%, or NHS 111.</p>
+<p>Call NHS 111, or 999 in an emergency.</p>
 </div>
 """
 
