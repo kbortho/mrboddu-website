@@ -133,7 +133,7 @@ OTHER = [
 <h2>Paying for yourself</h2>
 <p>Nuffield Health Ipswich offers fixed-price packages for surgery, which usually include the hospital stay, the surgeon's and anaesthetist's fees and follow-up care; your quote will set out exactly what is included. Finance options are also available through Nuffield Health. See <a href="%NUFFIELD_HOSPITAL%">Nuffield Health Ipswich Hospital</a>.</p>
 """,
-"related": ["hip-knee-clinic", "contact", "knee-replacement", "hip-replacement"],
+"related": ["private-hip-and-knee-replacement-cost", "hip-knee-clinic", "contact", "knee-replacement", "hip-replacement"],
 },
 {
 "slug": "outcomes-reviews",
@@ -218,7 +218,7 @@ OTHER = [
 <details><summary>Will my joint replacement set off airport scanners?</summary><p>It may. You do not need a card or letter; tell the security staff that you have a joint replacement.</p></details>
 """,
 "sources": ['<a href="https://www.nice.org.uk/guidance/ng157">NICE guideline NG157: Joint replacement (primary): hip, knee and shoulder (2020)</a>'],
-"related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "contact"],
+"related": ["hip-replacement-recovery", "knee-replacement-recovery", "hip-replacement", "knee-replacement", "contact"],
 },
 {
 "slug": "gps-physiotherapists",

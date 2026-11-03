@@ -36,10 +36,10 @@ CONDITIONS = [
 </ul>
 
 <h2>When to consider surgery</h2>
-<p>A <a href="/hip-replacement/">hip replacement</a> is worth considering when pain and stiffness have a real effect on your daily life despite these treatments. You do not need to wait until the pain is unbearable, and there is no single X-ray appearance that decides it. We will make the decision together.</p>
+<p>A <a href="/hip-replacement/">hip replacement</a> is worth considering when pain and stiffness have a real effect on your daily life despite these treatments. You do not need to wait until the pain is unbearable, and there is no single X-ray appearance that decides it. We will make the decision together. See <a href="/when-to-have-a-hip-or-knee-replacement/">when is it time for a hip or knee replacement?</a></p>
 """,
 "sources": [NICE_226, NICE_157, NHS_OA, VA],
-"related": ["hip-replacement", "hip-knee-clinic", "your-operation", "fees-insurance"],
+"related": ["hip-replacement", "when-to-have-a-hip-or-knee-replacement", "hip-knee-clinic", "your-operation", "fees-insurance"],
 },
 {
 "slug": "knee-arthritis",
@@ -76,7 +76,7 @@ CONDITIONS = [
 <p>A <a href="/knee-replacement/">knee replacement</a> is worth considering when knee pain has a real effect on your daily life despite these treatments. Depending on the pattern of wear, the options are a partial or a total knee replacement, sometimes with <a href="/robotic-hip-and-knee-replacement/">robotic assistance</a>.</p>
 """,
 "sources": [NICE_226, NICE_157, BMJ_RR, NHS_OA],
-"related": ["knee-replacement", "partial-knee-replacement", "robotic-hip-and-knee-replacement", "hip-knee-clinic"],
+"related": ["knee-replacement", "partial-knee-replacement", "partial-vs-total-knee-replacement", "when-to-have-a-hip-or-knee-replacement", "hip-knee-clinic"],
 },
 {
 "slug": "meniscal-tear",
@@ -146,7 +146,7 @@ CONDITIONS = [
 <p>Depending on what we find, the answer may be reassurance and monitoring, physiotherapy, treatment for pain coming from somewhere else such as the back, or <a href="/revision-hip-replacement/">revision hip</a> or <a href="/revision-knee-replacement/">revision knee</a> surgery.</p>
 """,
 "sources": [NJR_SITE, NICE_157],
-"related": ["revision-hip-replacement", "revision-knee-replacement", "second-opinion", "hip-knee-clinic"],
+"related": ["revision-hip-replacement", "revision-knee-replacement", "how-long-do-hip-and-knee-replacements-last", "second-opinion", "hip-knee-clinic"],
 },
 {
 "slug": "second-opinion",

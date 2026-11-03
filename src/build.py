@@ -11,10 +11,11 @@ import site_config as C
 from pages_procedures import PROCEDURES
 from pages_conditions import CONDITIONS
 from pages_other import OTHER
+from pages_guides import GUIDES
 
 OUT = os.path.join(os.path.dirname(HERE), "site")
 LASTMOD = "2026-11-01"
-ALL = PROCEDURES + CONDITIONS + OTHER
+ALL = PROCEDURES + CONDITIONS + GUIDES + OTHER
 BY_SLUG = {p["slug"]: p for p in ALL}
 
 def tel(n):
@@ -85,6 +86,7 @@ def footer():
     treat = "".join(f'<li><a href="/{p["slug"]}/">{p["nav"]}</a></li>' for p in PROCEDURES)
     info = "".join(f'<li><a href="/{s}/">{BY_SLUG[s]["nav"]}</a></li>' for s in
                    ["hip-knee-clinic", "fees-insurance", "outcomes-reviews", "your-operation", "gps-physiotherapists", "about", "contact"])
+    info = '<li><a href="/#guides">Patient guides</a></li>' + info
     return f"""<footer class="site-footer"><div class="wrap footer-grid">
 <div><p class="f-name">{C.NAME}</p><p>MBBS, MS (Orth), MRCSEd, AFRCSI, FRCS (Tr &amp; Orth)<br>Consultant Orthopaedic Surgeon<br>GMC {C.GMC}</p>
 <p class="f-links"><a href="{C.DOCTIFY}">Doctify</a> · <a href="{C.TOPDOCTORS}">Top Doctors</a> · <a href="{C.GOOGLE_PROFILE}">Google</a> · <a href="{C.NJR}">NJR</a> · <a href="{C.PHIN}">PHIN</a> · <a href="{C.LINKEDIN}">LinkedIn</a> · <a href="{C.RESEARCHGATE}">ResearchGate</a></p></div>
@@ -150,7 +152,7 @@ def crumbs_ld(p):
         {"@type": "ListItem", "position": 2, "name": p["nav"], "item": url(p["slug"])}]}
 
 def render_page(p):
-    clinical = p["group"] in ("treatments", "conditions")
+    clinical = p["group"] in ("treatments", "conditions", "guides")
     parts = [f"""<div class="page-head"><div class="wrap narrow">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">{p["nav"]}</span></nav>
 <h1>{p["h1"]}</h1>
@@ -164,7 +166,7 @@ def render_page(p):
         parts.append(f'<aside class="glance" aria-label="At a glance"><p class="glance-h">At a glance</p><dl>{rows}</dl></aside>')
     parts.append(fill(p["body"]))
     if clinical:
-        reviewed = C.REVIEWED
+        reviewed, reviewed_iso = p.get("reviewed", (C.REVIEWED, C.REVIEWED_ISO))
         parts.append(fill(f'<p class="reviewed">Written and reviewed by {C.NAME} FRCS (Tr &amp; Orth), consultant orthopaedic surgeon, GMC {C.GMC}. Last reviewed: {reviewed}.</p>'))
     if p.get("sources"):
         items = "".join(f"<li>{s}</li>" for s in p["sources"])
@@ -180,7 +182,7 @@ def render_page(p):
         t, name = p["about"]
         mwp = {"@context": "https://schema.org", "@type": "MedicalWebPage", "name": p["h1"], "url": url(p["slug"]),
                "about": {"@type": t, "name": name}, "author": {"@id": PHYSICIAN_ID}, "reviewedBy": {"@id": PHYSICIAN_ID},
-               "inLanguage": "en-GB", "lastReviewed": C.REVIEWED_ISO}
+               "inLanguage": "en-GB", "lastReviewed": reviewed_iso}
         jsonld.append(mwp)
     return page_shell(p["title"], p["description"], p["slug"], "\n".join(parts), jsonld)
 
@@ -190,6 +192,7 @@ def card(p):
 def render_home():
     treat = "".join(card(p) for p in PROCEDURES)
     cond = "".join(card(p) for p in CONDITIONS + [BY_SLUG["hip-knee-clinic"]])
+    guides = "".join(card(p) for p in GUIDES)
     insurers = "".join(f"<li>{i}</li>" for i in C.INSURERS)
     main = f"""<section class="hero"><div class="wrap hero-grid">
 <div class="hero-text">
@@ -221,7 +224,12 @@ def render_home():
 <div class="cards">{cond}</div>
 </div></section>
 
-<section class="section"><div class="wrap">
+<section class="section" id="guides"><div class="wrap">
+<h2>Patient guides</h2>
+<div class="cards">{guides}</div>
+</div></section>
+
+<section class="section alt"><div class="wrap">
 <h2>What you can expect</h2>
 <div class="points">
 <div><h3>Honest, evidence-based advice</h3><p>I recommend surgery only when the likely benefits clearly outweigh the risks for you, and I explain both in plain language.</p></div>
@@ -231,7 +239,7 @@ def render_home():
 </div>
 </div></section>
 
-<section class="section alt"><div class="wrap">
+<section class="section"><div class="wrap">
 <h2>What patients say</h2>
 <div class="ratings">
 <a class="rating" href="{C.DOCTIFY}"><span class="score">4.96<small>/5</small></span><span>from 124 reviews on Doctify</span></a>
@@ -241,7 +249,7 @@ def render_home():
 <p class="small">Ratings {C.RATING_NOTE}, collected and published independently by Doctify, Top Doctors and PHIN. You can also <a href="{C.GOOGLE_PROFILE}">read my {C.GOOGLE_REVIEWS} reviews on Google</a>.</p>
 </div></section>
 
-<section class="section"><div class="wrap two-col">
+<section class="section alt"><div class="wrap two-col">
 <div>
 <h2>Fees and insurance</h2>
 <p>New consultations for self-paying patients are &pound;200, and follow-ups &pound;100. For surgery, Nuffield Health Ipswich gives you a fixed-price package after your consultation.</p>
@@ -313,8 +321,8 @@ def main():
         f.write(FAVICON)
     with open(os.path.join(os.path.dirname(OUT), "netlify.toml"), "w") as f:
         f.write(NETLIFY.replace("{CSP}", CSP))  # repo root: Netlify publishes the site/ folder
-    urls = [url("")] + [url(p["slug"]) for p in ALL]
-    sm = "".join(f"<url><loc>{u}</loc><lastmod>{LASTMOD}</lastmod></url>" for u in urls)
+    urls = [(url(""), LASTMOD)] + [(url(p["slug"]), p.get("reviewed", (None, LASTMOD))[1]) for p in ALL]
+    sm = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in urls)
     with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
         f.write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>\n')
     with open(os.path.join(OUT, "robots.txt"), "w") as f:
