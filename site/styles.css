@@ -174,3 +174,7 @@ details[open] summary { margin-bottom: .5rem; }
 .consent p { margin: 0 0 .8rem; }
 .consent-btns { display: flex; gap: .6rem; flex-wrap: wrap; }
 .consent-btns .btn { padding: .6rem 1.4rem; cursor: pointer; font: inherit; font-weight: 600; }
+
+/* Common questions */
+.faq { margin-top: 2.2rem; }
+.faq h3 { margin-top: 1.2rem; }

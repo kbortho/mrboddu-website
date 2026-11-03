@@ -8,6 +8,7 @@ import html, json, os, re, shutil, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import site_config as C
+from faqs import FAQS
 from pages_procedures import PROCEDURES
 from pages_conditions import CONDITIONS
 from pages_other import OTHER
@@ -168,6 +169,10 @@ def render_page(p):
     if clinical:
         reviewed, reviewed_iso = p.get("reviewed", (C.REVIEWED, C.REVIEWED_ISO))
         parts.append(fill(f'<p class="reviewed">Written and reviewed by {C.NAME} FRCS (Tr &amp; Orth), consultant orthopaedic surgeon, GMC {C.GMC}. Last reviewed: {reviewed}.</p>'))
+    faq = FAQS.get(p["slug"])
+    if faq:
+        qa = "".join(f'<h3>{q}</h3><p>{fill(a)}</p>' for q, a in faq)
+        parts.append(f'<section class="faq" id="questions"><h2>Common questions</h2>{qa}</section>')
     if p.get("sources"):
         items = "".join(f"<li>{s}</li>" for s in p["sources"])
         parts.append(fill(f'<section class="sources"><h2>Sources</h2><ul>{items}</ul></section>'))
@@ -184,6 +189,10 @@ def render_page(p):
                "about": {"@type": t, "name": name}, "author": {"@id": PHYSICIAN_ID}, "reviewedBy": {"@id": PHYSICIAN_ID},
                "inLanguage": "en-GB", "lastReviewed": reviewed_iso}
         jsonld.append(mwp)
+    if faq:
+        jsonld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", fill(a))}}
+            for q, a in faq]})
     return page_shell(p["title"], p["description"], p["slug"], "\n".join(parts), jsonld)
 
 def card(p):

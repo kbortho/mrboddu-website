@@ -1,0 +1,72 @@
+# Common questions for the main procedure pages. Shown on the page and as FAQPage schema.
+# Facts must match practice-facts and the page itself (stays, survival figures, revision venue).
+
+COST = ("How much does it cost privately?",
+        'If you are insured, your policy usually covers the consultation, tests and surgery: please check with your insurer and get a pre-authorisation number. If you are paying for yourself, a new consultation with me is £200, and Nuffield Health Ipswich will give you a fixed-price package for the operation once we have agreed your treatment. See <a href="/private-hip-and-knee-replacement-cost/">what a private hip or knee replacement costs</a>.')
+
+FAQS = {
+"hip-replacement": [
+  ("How long will I be in hospital after a hip replacement?",
+   "Usually 1 to 2 nights. Most people walk with a frame or crutches on the day of surgery or the next day."),
+  ("How long does recovery take?",
+   'Most people drive again after about 6 weeks and are back to most everyday activities within 3 months. Full recovery can take up to 12 months. See <a href="/hip-replacement-recovery/">recovery after a hip replacement</a>.'),
+  ("How long does a hip replacement last?",
+   'For the implants I use, National Joint Registry figures show that 95 in 100 last more than 15 years, and many last longer. See <a href="/how-long-do-hip-and-knee-replacements-last/">how long replacements last</a>.'),
+  COST,
+  ("Do I need a robotic hip replacement?",
+   'Usually not. I am trained in Mako robotic-assisted surgery, but recent trials and registry studies have not shown better results for routine use. It may help in some complex cases. See <a href="/robotic-hip-and-knee-replacement/">robotic-assisted surgery</a>.'),
+],
+"knee-replacement": [
+  ("How long will I be in hospital after a knee replacement?",
+   "Usually 1 to 2 nights. Most people walk with a frame or crutches on the day of surgery or the next day."),
+  ("How long does recovery take?",
+   'Most people drive again after about 6 weeks. The knee keeps improving for up to 12 months. See <a href="/knee-replacement-recovery/">recovery after a knee replacement</a>.'),
+  ("How long does a knee replacement last?",
+   'For the implants I use, National Joint Registry figures show that 95 in 100 last more than 15 years, and many last longer. See <a href="/how-long-do-hip-and-knee-replacements-last/">how long replacements last</a>.'),
+  ("Could I have a partial knee replacement instead?",
+   'Possibly, if arthritis affects only one part of your knee and the ligaments are healthy. I will check this with X-rays at your consultation. See <a href="/partial-vs-total-knee-replacement/">partial or total knee replacement</a>.'),
+  COST,
+],
+"partial-knee-replacement": [
+  ("How long will I be in hospital after a partial knee replacement?",
+   "Usually 0 to 1 nights. Some people go home on the day of surgery."),
+  ("How long does recovery take?",
+   "Recovery is usually quicker than after a total knee replacement. Many people drive again after 4 to 6 weeks."),
+  ("How long does a partial knee replacement last?",
+   "For the partial knees I use, National Joint Registry figures show that 91 in 100 last more than 15 years, compared with 95 in 100 for the total knee replacements I use."),
+  ("Am I suitable for a partial knee replacement?",
+   'It suits people whose arthritis is in one part of the knee, with healthy ligaments. I will check this with X-rays at your consultation. See <a href="/partial-vs-total-knee-replacement/">partial or total knee replacement</a>.'),
+  COST,
+],
+"revision-hip-replacement": [
+  ("Where will my revision surgery take place?",
+   "Your first consultation is at Nuffield Health Ipswich. I carry out most revision operations at the Essex and Suffolk Elective Orthopaedic Centre, Colchester Hospital, for insured and self-paying patients, because some patients need high-dependency care afterwards. Less complex revisions can be done at Nuffield Health Ipswich."),
+  ("Why might a hip replacement need revising?",
+   "The most common reasons are loosening, wear, infection, repeated dislocation, a fracture around the implant, or pain with a cause that can be corrected. Tests help find the cause before deciding on surgery."),
+  ("How long will I be in hospital?",
+   "Usually 3 to 5 nights, depending on the operation."),
+  ("How long does recovery take?",
+   "Recovery is slower than after a first hip replacement, often 3 to 12 months."),
+],
+"revision-knee-replacement": [
+  ("Where will my revision surgery take place?",
+   "Your first consultation is at Nuffield Health Ipswich. I carry out most revision operations at the Essex and Suffolk Elective Orthopaedic Centre, Colchester Hospital, for insured and self-paying patients, because some patients need high-dependency care afterwards. Less complex revisions can be done at Nuffield Health Ipswich."),
+  ("Why might a knee replacement need revising?",
+   "The most common reasons are loosening, instability, infection, wear, severe stiffness, a fracture around the implant, or arthritis progressing after a partial knee replacement. Tests help find the cause before deciding on surgery."),
+  ("How long will I be in hospital?",
+   "Usually 3 to 5 nights, depending on the operation."),
+  ("How long does recovery take?",
+   "Recovery is slower than after a first knee replacement, often 6 to 12 months."),
+],
+"knee-arthroscopy-meniscal-surgery": [
+  ("Will I need to stay in hospital?",
+   "Usually not. Knee arthroscopy is normally a day case, so you go home the same day."),
+  ("How long does recovery take?",
+   "After trimming a tear, most people return to desk work within 1 to 2 weeks. After a meniscal repair, you will usually wear a brace for about 6 weeks, and return to sport after 4 to 6 months."),
+  ("Can keyhole surgery help knee arthritis?",
+   "No. Keyhole surgery does not treat arthritis, and national guidance advises against it for arthritis alone. Physiotherapy is usually the first treatment for tears that come on gradually in middle age."),
+  ("Can a torn meniscus be repaired?",
+   "Some can. Repairs heal best in younger patients and in tears near the outer edge of the meniscus. Where a tear cannot be repaired, I trim the torn part and keep as much healthy meniscus as possible."),
+  COST,
+],
+}
