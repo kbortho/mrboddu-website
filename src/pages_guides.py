@@ -50,7 +50,7 @@ GUIDES = [
 <li>Take your painkillers regularly, especially before exercises, so that you can do them properly.</li>
 <li>Swelling and bruising are normal. Rest with your leg raised and use a cold pack wrapped in a towel for 15 to 20 minutes at a time.</li>
 <li>Walk short distances around the house, and a little further each day.</li>
-<li>Your wound will be checked at about 2 weeks, usually by your practice nurse.</li>
+<li>At about 2 weeks, your wound will be checked and your clips removed, usually by a nurse at the hospital.</li>
 </ul>
 
 <h2>Weeks 2 to 6</h2>
@@ -112,7 +112,7 @@ GUIDES = [
 <li>Do your exercises several times a day to strengthen the muscles around the hip.</li>
 <li>Take your painkillers regularly so that you can walk and exercise comfortably.</li>
 <li>I do not routinely ask patients to follow "hip precautions", the traditional restrictions on bending, crossing the legs and sitting in low chairs. Research has found that these restrictions make little or no difference to the risk of dislocation, and moving freely helps an accelerated recovery. If your operation needs any particular precautions, I will explain them to you.</li>
-<li>Your wound will be checked at about 2 weeks, usually by your practice nurse.</li>
+<li>Your wound will be checked at about 2 weeks, usually by a nurse at the hospital.</li>
 </ul>
 
 <h2>Weeks 2 to 6</h2>
