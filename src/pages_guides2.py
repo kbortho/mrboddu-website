@@ -1,7 +1,7 @@
 # Patient guides, second batch (drafted 3 November 2026), plus the north Essex page.
-from pages_procedures import NICE_157, NICE_226, NJR_REPORTS, REVISION_WHERE
+from pages_procedures import NICE_157, NICE_226, NJR_REPORTS
 
-REVIEWED2 = ("3 November 2026", "2026-11-03")
+REVIEWED2 = ("4 November 2026", "2026-11-04")
 
 NHS_KNEE_EX = '<a href="https://www.nhs.uk/conditions/knee-replacement/recovery/">NHS: Knee replacement recovery</a>'
 VA_EX = '<a href="https://www.versusarthritis.org/about-arthritis/exercising-with-arthritis/exercises-for-healthy-joints/knee-pain-exercises/">Versus Arthritis: Exercises for knee pain</a>'
@@ -182,7 +182,7 @@ GUIDES2 = [
 <p>In line with national guidance, I do not recommend hyaluronic acid injections for knee arthritis, because good evidence shows they do not help most people.</p>
 
 <h2>Cost</h2>
-<p>If you are paying for yourself, my fee for an injection is &pound;100, plus hospital fees charged separately by Nuffield Health Ipswich. If you are insured, please check that your policy covers injections. See <a href="/fees-insurance/">fees and insurance</a>.</p>
+<p>If you are paying for yourself, my fee for an injection given in clinic is &pound;100, in addition to the consultation fee. Hospital fees are charged separately by Nuffield Health Ipswich. If you are insured, please check that your policy covers injections. See <a href="/fees-insurance/">fees and insurance</a>.</p>
 """,
 "sources": [NICE_226],
 "related": ["knee-arthritis", "hip-arthritis", "hip-knee-clinic", "fees-insurance"],
@@ -200,6 +200,7 @@ GUIDES2 = [
 "reviewed": REVIEWED2,
 "body": """
 <h2>Sport and exercise</h2>
+<p>What you can do after your operation depends partly on your health before it, including your muscle strength, balance and general fitness. The advice below assumes these are normal for your age. I will tailor it to you.</p>
 <table>
 <thead><tr><th scope="col">Activity</th><th scope="col">Usual advice</th></tr></thead>
 <tbody>
@@ -286,40 +287,3 @@ GUIDES2 = [
 },
 ]
 
-LOCAL = [
-{
-"slug": "hip-and-knee-surgeon-colchester-north-essex",
-"nav": "Patients from Colchester and north Essex",
-"group": "practice",
-"card": "Consultations in Ipswich, and revision surgery at Colchester Hospital.",
-"title": "Hip and Knee Surgeon for Colchester and North Essex | Mr Krishna Boddu",
-"description": "Private hip and knee replacement for patients from Colchester and north Essex. Consultations at Nuffield Health Ipswich, and revision surgery at the Essex and Suffolk Elective Orthopaedic Centre, Colchester.",
-"h1": "Hip and knee surgery for patients from Colchester and north Essex",
-"lead": "I see many patients from Colchester, Manningtree, Harwich, Clacton, Frinton and the Dedham Vale. My private clinic is at Nuffield Health Ipswich Hospital, a short drive up the A12, and I carry out most revision surgery at Colchester Hospital.",
-"body": """
-<h2>Where you will be seen</h2>
-<ul>
-<li><strong>Consultations:</strong> at %HOSPITAL%, %ADDRESS_INLINE%. My clinic runs on %CLINIC_TIMES%. <a href="%MAPS%">Get directions</a></li>
-<li><strong>Hip and knee replacement:</strong> at Nuffield Health Ipswich Hospital.</li>
-</ul>
-""" + REVISION_WHERE + """
-<h2>What I treat</h2>
-<ul>
-<li><a href="/hip-replacement/">Hip replacement</a> and <a href="/knee-replacement/">knee replacement</a>, including <a href="/robotic-hip-and-knee-replacement/">robotic-assisted surgery</a> where appropriate</li>
-<li><a href="/partial-knee-replacement/">Partial knee replacement</a></li>
-<li><a href="/revision-hip-replacement/">Revision hip</a> and <a href="/revision-knee-replacement/">revision knee replacement</a></li>
-<li><a href="/knee-arthroscopy-meniscal-surgery/">Knee arthroscopy and meniscal surgery</a></li>
-<li><a href="/second-opinion/">Second opinions</a></li>
-</ul>
-
-<h2>Insurance and self-pay</h2>
-<p>I am recognised by:</p>
-<ul class="insurers">%INSURER_LIST%</ul>
-<p>If you are paying for yourself, a new consultation is &pound;200. See <a href="/private-hip-and-knee-replacement-cost/">what a private hip or knee replacement costs</a>.</p>
-
-<h2>Booking</h2>
-<p>You can book online, or contact my secretary, %SECRETARY%, on <a href="tel:%SEC_PHONE_TEL%">%SEC_PHONE%</a>. A letter from your GP is helpful but not essential if you are paying for yourself.</p>
-""",
-"related": ["hip-knee-clinic", "revision-hip-replacement", "revision-knee-replacement", "contact"],
-},
-]

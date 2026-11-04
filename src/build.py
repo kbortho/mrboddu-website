@@ -13,12 +13,12 @@ from pages_procedures import PROCEDURES
 from pages_conditions import CONDITIONS
 from pages_other import OTHER
 from pages_guides import GUIDES
-from pages_guides2 import GUIDES2, LOCAL
+from pages_guides2 import GUIDES2
 GUIDES = GUIDES + GUIDES2
 
 OUT = os.path.join(os.path.dirname(HERE), "site")
 LASTMOD = "2026-11-01"
-ALL = PROCEDURES + CONDITIONS + GUIDES + OTHER + LOCAL
+ALL = PROCEDURES + CONDITIONS + GUIDES + OTHER
 BY_SLUG = {p["slug"]: p for p in ALL}
 
 def tel(n):
@@ -88,7 +88,7 @@ def header():
 def footer():
     treat = "".join(f'<li><a href="/{p["slug"]}/">{p["nav"]}</a></li>' for p in PROCEDURES)
     info = "".join(f'<li><a href="/{s}/">{BY_SLUG[s]["nav"]}</a></li>' for s in
-                   ["hip-knee-clinic", "fees-insurance", "outcomes-reviews", "your-operation", "gps-physiotherapists", "hip-and-knee-surgeon-colchester-north-essex", "about", "contact"])
+                   ["hip-knee-clinic", "fees-insurance", "outcomes-reviews", "your-operation", "gps-physiotherapists", "about", "contact"])
     info = '<li><a href="/#guides">Patient guides</a></li>' + info
     return f"""<footer class="site-footer"><div class="wrap footer-grid">
 <div><p class="f-name">{C.NAME}</p><p>MBBS, MS (Orth), MRCSEd, AFRCSI, FRCS (Tr &amp; Orth)<br>Consultant Orthopaedic Surgeon<br>GMC {C.GMC}</p>
