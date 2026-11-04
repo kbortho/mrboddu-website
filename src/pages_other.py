@@ -113,7 +113,7 @@ OTHER = [
 <tbody>
 <tr><td>New consultation</td><td>&pound;200</td></tr>
 <tr><td>Follow-up consultation</td><td>&pound;100</td></tr>
-<tr><td>Injections</td><td>&pound;100, plus hospital fees charged separately by Nuffield Health Ipswich</td></tr>
+<tr><td>Injections given in clinic</td><td>&pound;100, in addition to the consultation fee, plus hospital fees charged separately by Nuffield Health Ipswich</td></tr>
 <tr><td>X-rays and scans</td><td>Charged separately by Nuffield Health Ipswich</td></tr>
 <tr><td>Surgery</td><td>A fixed-price package from Nuffield Health Ipswich, quoted after your consultation</td></tr>
 </tbody>

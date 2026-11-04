@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" role="img" aria-labelledby="et ed">
+<title id="et">Four knee exercises</title>
+<desc id="ed">Line drawings of four exercises: a straight leg raise lying on a bed, a heel slide lying on a bed, a seated knee bend on a chair, and knee straightening with the heel resting on a rolled towel.</desc>
+<style>
+.f{fill:none;stroke:#12304d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.h{fill:#fff;stroke:#12304d;stroke-width:4}
+.bed{fill:none;stroke:#9aa7b4;stroke-width:3;stroke-linecap:round}
+.a{fill:none;stroke:#0f6e6a;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.t{font:600 16px system-ui,-apple-system,Segoe UI,Arial,sans-serif;fill:#12304d}
+.box{fill:none;stroke:#d9dee4;stroke-width:1.5}
+</style>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f6e6a"/></marker></defs>
+
+<g transform="translate(10,10)">
+<rect class="box" x="0" y="0" width="260" height="215" rx="10"/>
+<line class="bed" x1="15" y1="152" x2="245" y2="152"/>
+<circle class="h" cx="38" cy="134" r="11"/>
+<path class="f" d="M50,140 L120,142 M62,142 L100,147 M120,142 L162,108 L198,146 M120,142 L228,104"/>
+<path class="a" d="M236,135 Q246,118 236,100" marker-end="url(#ar)"/>
+<text class="t" x="130" y="195" text-anchor="middle">1. Straight leg raise</text>
+</g>
+
+<g transform="translate(290,10)">
+<rect class="box" x="0" y="0" width="260" height="215" rx="10"/>
+<line class="bed" x1="15" y1="152" x2="245" y2="152"/>
+<circle class="h" cx="38" cy="134" r="11"/>
+<path class="f" d="M50,140 L120,142 M62,142 L100,147 M120,142 L228,144 M120,142 L160,104 L192,144"/>
+<path class="a" d="M226,164 L196,164" marker-end="url(#ar)"/>
+<text class="t" x="130" y="195" text-anchor="middle">2. Heel slide</text>
+</g>
+
+<g transform="translate(10,240)">
+<rect class="box" x="0" y="0" width="260" height="215" rx="10"/>
+<line class="bed" x1="15" y1="170" x2="245" y2="170"/>
+<path class="bed" d="M88,118 L150,118 M90,118 L90,58 M95,118 L95,170 M146,118 L146,170"/>
+<circle class="h" cx="106" cy="38" r="11"/>
+<path class="f" d="M106,50 L110,114 M108,70 L130,98 M110,114 L168,116 L142,166"/>
+<path class="a" d="M184,160 L156,160" marker-end="url(#ar)"/>
+<text class="t" x="130" y="200" text-anchor="middle">3. Seated knee bend</text>
+</g>
+
+<g transform="translate(290,240)">
+<rect class="box" x="0" y="0" width="260" height="215" rx="10"/>
+<line class="bed" x1="15" y1="152" x2="245" y2="152"/>
+<circle class="bed" cx="214" cy="144" r="8" style="fill:#d9dee4"/>
+<circle class="h" cx="52" cy="64" r="11"/>
+<path class="f" d="M58,76 L80,142 M66,96 L136,130 M80,142 L220,134"/>
+<path class="a" d="M150,104 L150,126" marker-end="url(#ar)"/>
+<text class="t" x="130" y="195" text-anchor="middle">4. Knee straightening</text>
+</g>
+</svg>
