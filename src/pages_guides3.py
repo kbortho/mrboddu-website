@@ -73,7 +73,7 @@ GUIDES3 = [
 <h2>How weight affects surgery</h2>
 <ul>
 <li><strong>The benefits are still large.</strong> People who are overweight usually get a big improvement in pain and function after a joint replacement.</li>
-<li><strong>Some risks are higher.</strong> A review of studies found higher rates of wound problems and infection after knee replacement in people who are obese, and a higher chance of further surgery.</li>
+<li><strong>Some risks are higher.</strong> Studies have found higher rates of wound problems and deep infection after joint replacement in people who are obese, and a higher chance of further surgery.</li>
 <li><strong>The anaesthetic</strong> can be more complex, and the anaesthetist will assess this before your operation.</li>
 </ul>
 <p>As a guide, a body mass index (BMI) under 35 is generally considered desirable before a joint replacement, because the risks of surgery rise above this. If your BMI is higher, we will talk about whether losing some weight first would make your operation safer.</p>
@@ -198,7 +198,7 @@ GUIDES3 = [
 <h2>Comfortable positions</h2>
 <ul>
 <li><strong>After a knee replacement:</strong> lie on your back with your leg straight. If you use a pillow, put it under your calf or heel, not under the knee, so the knee does not stiffen in a bent position. Lying on your side with a pillow between your knees is fine once it is comfortable.</li>
-<li><strong>After a hip replacement:</strong> many people find lying on their back most comfortable at first. Avoid lying on your operated side for the first 2 weeks, until the wound has healed. After that, lying on your side with a pillow between your knees is usually fine once it is comfortable.</li>
+<li><strong>After a hip replacement:</strong> many people find lying on their back most comfortable at first. Lying on your side with a pillow between your knees is usually fine once it is comfortable. However, avoid lying on your operated side for the first 2 weeks, until the wound has healed.</li>
 </ul>
 
 <h2>Tips that help</h2>
