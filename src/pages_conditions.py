@@ -114,7 +114,7 @@ CONDITIONS = [
 
 """,
 "sources": [NICE_226, BMJ_RR, FIDELITY],
-"related": ["knee-arthroscopy-meniscal-surgery", "knee-arthritis", "hip-knee-clinic", "fees-insurance"],
+"related": ["knee-arthritis-or-meniscal-tear", "knee-arthroscopy-meniscal-surgery", "knee-arthritis", "hip-knee-clinic", "fees-insurance"],
 },
 {
 "slug": "problem-joint-replacement",

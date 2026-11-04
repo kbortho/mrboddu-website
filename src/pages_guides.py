@@ -85,7 +85,7 @@ GUIDES = [
 </ul>
 """ + WARNING_SIGNS,
 "sources": [NICE_157, NHS_KNEE_REC],
-"related": ["knee-replacement-exercises", "knee-replacement", "life-after-a-joint-replacement", "your-operation"],
+"related": ["knee-replacement-exercises", "pain-after-knee-replacement", "swelling-after-knee-replacement", "sleeping-after-hip-or-knee-replacement", "clicking-or-numbness-after-knee-replacement"],
 },
 {
 "slug": "hip-replacement-recovery",
@@ -145,7 +145,7 @@ GUIDES = [
 </ul>
 """ + WARNING_SIGNS,
 "sources": [NICE_157, KORFITSEN, NHS_HIP_REC],
-"related": ["hip-replacement", "life-after-a-joint-replacement", "your-operation", "how-long-do-hip-and-knee-replacements-last"],
+"related": ["hip-replacement", "sleeping-after-hip-or-knee-replacement", "blood-clots-after-joint-replacement", "life-after-a-joint-replacement", "your-operation"],
 },
 {
 "slug": "partial-vs-total-knee-replacement",
