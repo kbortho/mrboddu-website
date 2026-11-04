@@ -14,7 +14,8 @@ from pages_conditions import CONDITIONS
 from pages_other import OTHER
 from pages_guides import GUIDES
 from pages_guides2 import GUIDES2
-GUIDES = GUIDES + GUIDES2
+from pages_guides3 import GUIDES3
+GUIDES = GUIDES + GUIDES2 + GUIDES3
 
 OUT = os.path.join(os.path.dirname(HERE), "site")
 LASTMOD = "2026-11-01"
