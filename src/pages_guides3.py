@@ -12,6 +12,7 @@ MESSIER = '<a href="https://doi.org/10.1002/art.21187">Messier SP et al. Weight 
 KERKHOFFS = '<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3489068/">Kerkhoffs GM et al. The influence of obesity on the complication rate and outcome of total knee arthroplasty: a meta-analysis and systematic literature review. J Bone Joint Surg Am 2012;94:1839&ndash;44.</a>'
 ALIPOURIAN = '<a href="https://doi.org/10.1186/s13018-021-02493-4">Alipourian A et al. Improvement of sleep quality 6 months after total knee arthroplasty: a systematic review and meta-analysis. J Orthop Surg Res 2021;16:342.</a>'
 SUBRAMANIAN = '<a href="https://www.actaorthopaedica.be/archive/volume-75/issue-5/original-studies/cutaneous-sensory-loss-following-primary-total-knee-arthroplasty-a-two-years-follow-up-study/">Subramanian S et al. Cutaneous sensory loss following primary total knee arthroplasty: a two years follow-up study. Acta Orthop Belg 2009;75(5).</a>'
+CRISTAL = '<a href="https://doi.org/10.1001/jama.2022.13416">CRISTAL Study Group (Sidhu VS et al). Effect of aspirin vs enoxaparin on symptomatic venous thromboembolism in patients undergoing hip or knee arthroplasty: the CRISTAL randomized trial. JAMA 2022;328:719&ndash;27.</a>'
 HOLM = '<a href="https://doi.org/10.1016/j.apmr.2010.07.229">Holm B et al. Loss of knee-extension strength is related to knee swelling after total knee arthroplasty. Arch Phys Med Rehabil 2010;91:1770&ndash;6.</a>'
 
 GUIDES3 = [
@@ -75,6 +76,7 @@ GUIDES3 = [
 <li><strong>Some risks are higher.</strong> A review of studies found higher rates of wound problems and infection after knee replacement in people who are obese, and a higher chance of further surgery.</li>
 <li><strong>The anaesthetic</strong> can be more complex, and the anaesthetist will assess this before your operation.</li>
 </ul>
+<p>As a guide, a body mass index (BMI) under 35 is generally considered desirable before a joint replacement, because the risks of surgery rise above this. If your BMI is higher, we will talk about whether losing some weight first would make your operation safer.</p>
 
 <h2>How losing weight helps</h2>
 <ul>
@@ -105,7 +107,7 @@ GUIDES3 = [
 <h2>In hospital</h2>
 <ul>
 <li>Most people have a spinal anaesthetic, which numbs the legs for several hours after the operation.</li>
-<li>Local anaesthetic is usually injected around the knee during the operation, in line with national guidance, to ease pain for the first day.</li>
+<li>I usually inject local anaesthetic around the knee during the operation, in line with national guidance, to ease pain for the first day.</li>
 <li>You will be given regular painkillers by mouth, so that you can walk and do your exercises.</li>
 </ul>
 
@@ -113,6 +115,7 @@ GUIDES3 = [
 <ul>
 <li>Pain is usually worst in the first 1 to 2 weeks, and improves steadily over the next 6 to 12 weeks.</li>
 <li>Take your painkillers regularly at first, rather than waiting for pain to build. Taking them about 30 minutes before exercise helps.</li>
+<li>If you are given opioid painkillers, such as codeine, tramadol or morphine, it is essential to take a laxative with them, because they commonly cause constipation.</li>
 <li>Reduce your stronger painkillers as the pain eases. Most people need only simple painkillers after a few weeks.</li>
 <li>A cold pack wrapped in a towel, for 15 to 20 minutes at a time, and resting with your leg raised can ease pain and swelling.</li>
 <li>Aching at night is common for a few weeks. See <a href="/sleeping-after-hip-or-knee-replacement/">sleeping after a joint replacement</a>.</li>
@@ -195,7 +198,7 @@ GUIDES3 = [
 <h2>Comfortable positions</h2>
 <ul>
 <li><strong>After a knee replacement:</strong> lie on your back with your leg straight. If you use a pillow, put it under your calf or heel, not under the knee, so the knee does not stiffen in a bent position. Lying on your side with a pillow between your knees is fine once it is comfortable.</li>
-<li><strong>After a hip replacement:</strong> many people find lying on their back most comfortable at first. Lying on your side with a pillow between your knees is usually fine once it is comfortable. I will tell you if your operation needs any particular precautions.</li>
+<li><strong>After a hip replacement:</strong> many people find lying on their back most comfortable at first. Avoid lying on your operated side for the first 2 weeks, until the wound has healed. After that, lying on your side with a pillow between your knees is usually fine once it is comfortable.</li>
 </ul>
 
 <h2>Tips that help</h2>
@@ -260,11 +263,10 @@ GUIDES3 = [
 <p>Your prevention plan follows national guidance (NICE) and is tailored to you after your pre-operative assessment.</p>
 <ul>
 <li><strong>Getting moving early:</strong> walking on the day of surgery or the next day is one of the best ways to prevent clots.</li>
-<li><strong>Blood-thinning medicine:</strong> most people take a tablet or injection after surgery, usually for about 2 weeks after a knee replacement and about 4 to 5 weeks after a hip replacement.</li>
-<li><strong>Stockings or foot pumps</strong> may be used while you are in hospital.</li>
+<li><strong>Blood-thinning medicine:</strong> based on the best available evidence, most people have 2 weeks of injections after a knee replacement. After a hip replacement, most people have 10 days of injections followed by 28 days of tablets. Individual factors are also taken into account, so your own plan may differ.</li>
 <li><strong>Drinking plenty</strong> and doing your ankle and leg exercises.</li>
 </ul>
-<p>Please complete the full course of blood-thinning medicine, even when you feel well.</p>
+<p>A large Australian trial (CRISTAL) of more than 9,000 patients found fewer symptomatic blood clots with injections than with aspirin alone after hip and knee replacement. Please complete the full course of blood-thinning medicine, even when you feel well.</p>
 
 <h2>Who is at higher risk?</h2>
 <p>The risk is higher if you have had a clot before, have a family history of clots, take hormone medicines such as some contraceptive pills or HRT, have cancer, or are less mobile. Tell us at your pre-operative assessment if any of these apply.</p>
@@ -277,7 +279,7 @@ GUIDES3 = [
 <h2>Travel</h2>
 <p>Long journeys increase the risk of clots. For long-haul flights, it is usually best to wait about 3 months after surgery. See <a href="/life-after-a-joint-replacement/">life after a joint replacement</a>.</p>
 """,
-"sources": [NICE_89, NICE_157, NHS_DVT],
+"sources": [NICE_89, CRISTAL, NICE_157, NHS_DVT],
 "related": ["your-operation", "knee-replacement-recovery", "hip-replacement-recovery", "swelling-after-knee-replacement"],
 },
 ]
