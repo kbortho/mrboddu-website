@@ -126,6 +126,7 @@ def page_shell(title, description, slug, main, jsonld):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(description)}">
 <link rel="canonical" href="{url(slug)}">
+<meta name="msvalidate.01" content="C601E889E0E15D8A85ACE487C4F1D5C2">
 {robots}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_GB">
