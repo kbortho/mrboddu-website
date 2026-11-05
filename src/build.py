@@ -277,7 +277,7 @@ def render_home():
 </div>
 </div></section>
 {cta()}"""
-    return page_shell("Mr Krishna Boddu | Hip and Knee Surgeon in Ipswich, Suffolk",
+    return page_shell("Mr Krishna Boddu | Orthopaedic Hip and Knee Surgeon, Ipswich, Suffolk",
                       "Private hip and knee replacement, including robotic-assisted and partial knee replacement, and meniscal surgery at Nuffield Health Ipswich with consultant orthopaedic surgeon Mr Krishna Boddu.",
                       "", main, [PHYSICIAN])
 
