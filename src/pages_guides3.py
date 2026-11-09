@@ -2,6 +2,9 @@
 from pages_procedures import NICE_157, NICE_226, BESWICK, BMJ_RR, FIDELITY
 
 REVIEWED3 = ("4 November 2026", "2026-11-04")
+REVIEWED5 = ("8 November 2026", "2026-11-08")
+PROSPECT_TKA = '<a href="https://pubmed.ncbi.nlm.nih.gov/35852550/">Lavand&rsquo;homme PM, Kehlet H, Rawal N, Joshi GP; PROSPECT Working Group of the European Society of Regional Anaesthesia and Pain Therapy. Pain management after total knee arthroplasty: PROcedure SPEcific Postoperative Pain ManagemenT recommendations. Eur J Anaesthesiol 2022;39:743&ndash;57.</a>'
+ADIE_CRYO = '<a href="https://doi.org/10.1002/14651858.CD007911.pub2">Adie S et al. Cryotherapy following total knee replacement. Cochrane Database Syst Rev 2012;(9):CD007911.</a>'
 
 NICE_89 = '<a href="https://www.nice.org.uk/guidance/ng89">NICE guideline NG89: Venous thromboembolism in over 16s: reducing the risk of hospital-acquired deep vein thrombosis or pulmonary embolism (2018, updated 2019)</a>'
 NHS_DVT = '<a href="https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/">NHS: Deep vein thrombosis (DVT)</a>'
@@ -94,42 +97,72 @@ GUIDES3 = [
 },
 {
 "slug": "pain-after-knee-replacement",
-"nav": "Pain after knee replacement",
+"nav": "Pain relief after knee replacement",
 "group": "guides",
-"card": "How painful it is, how pain is controlled, and how long it lasts.",
-"title": "How Painful Is a Knee Replacement? Pain Relief and Recovery | Mr Krishna Boddu",
-"description": "How painful is a knee replacement, how pain is controlled in hospital and at home, how long it lasts, and when to seek advice. Consultant knee surgeon Mr Krishna Boddu, Ipswich.",
-"h1": "How painful is a knee replacement?",
-"lead": "A knee replacement is a big operation, and some pain afterwards is expected. Modern pain relief keeps most people comfortable enough to walk and exercise from the first day. Here is what to expect.",
+"card": "How painful it is, which painkillers help, how to cut them down, and when to seek advice.",
+"title": "Pain Relief After Knee Replacement: What Helps and How Long It Lasts | Mr Krishna Boddu",
+"description": "Pain relief after a knee replacement: what to expect, how painkillers work best, ice and elevation, cutting down safely, and when to seek advice. Consultant knee surgeon Mr Krishna Boddu, Ipswich.",
+"h1": "Pain relief after a knee replacement",
+"lead": "A knee replacement is a big operation, and some pain afterwards is expected. Good pain relief matters, because it lets you walk, sleep and do your exercises, and those are what make the new knee work well. This guide explains what to expect and what helps.",
 "about": ("MedicalProcedure", "Total knee replacement"),
-"reviewed": REVIEWED3,
+"reviewed": REVIEWED5,
 "body": """
+<h2>How much pain to expect</h2>
+<ul>
+<li>Pain is usually worst in the first 1 to 2 weeks.</li>
+<li>It eases steadily over the next 6 to 12 weeks.</li>
+<li>Aching and stiffness, especially at night and after exercise, are common for a few months.</li>
+<li>The knee keeps improving for up to a year.</li>
+</ul>
+
 <h2>In hospital</h2>
 <ul>
 <li>Most people have a spinal anaesthetic, which numbs the legs for several hours after the operation.</li>
-<li>I usually inject local anaesthetic around the knee during the operation, in line with national guidance, to ease pain for the first day.</li>
-<li>You will be given regular painkillers by mouth, so that you can walk and do your exercises.</li>
+<li>I usually inject long-acting local anaesthetic around the knee during the operation, as national guidance recommends. This eases pain for the first day, when it would otherwise be at its worst.</li>
+<li>You will be given regular painkillers by mouth from the start, so that you can get up and walk on the day of surgery or the next morning.</li>
 </ul>
 
-<h2>At home</h2>
+<h2>Your painkillers at home</h2>
+<p>You will go home with painkillers and written instructions. Pain relief works best as a combination of medicines, each working in a different way, as international expert guidance for knee replacement recommends:</p>
 <ul>
-<li>Pain is usually worst in the first 1 to 2 weeks, and improves steadily over the next 6 to 12 weeks.</li>
-<li>Take your painkillers regularly at first, rather than waiting for pain to build. Taking them about 30 minutes before exercise helps.</li>
-<li>If you are given opioid painkillers, such as codeine, tramadol or morphine, it is essential to take a laxative with them, because they commonly cause constipation.</li>
-<li>Reduce your stronger painkillers as the pain eases. Most people need only simple painkillers after a few weeks.</li>
-<li>A cold pack wrapped in a towel, for 15 to 20 minutes at a time, and resting with your leg raised can ease pain and swelling.</li>
-<li>Aching at night is common for a few weeks. See <a href="/sleeping-after-hip-or-knee-replacement/">sleeping after a joint replacement</a>.</li>
+<li><strong>Paracetamol</strong>, taken regularly, is the base of pain relief.</li>
+<li><strong>An anti-inflammatory</strong>, such as ibuprofen or naproxen, is not given routinely, but it helps some people for a short time. Anti-inflammatories are not suitable for everyone, for example people with stomach ulcers, kidney problems or some heart conditions, so I will only prescribe one if it is safe for you.</li>
+<li><strong>A stronger, opioid painkiller</strong>, such as codeine or morphine, for the first days or weeks if you need it. These can cause drowsiness, sickness and constipation. <strong>It is essential to take a laxative with them.</strong> Do not drive while taking them if they make you drowsy.</li>
+</ul>
+<p>Always follow the doses on your discharge letter and the medicine labels, and do not take extra painkillers bought from a pharmacy without checking first, because many contain paracetamol or an anti-inflammatory already.</p>
+
+<h2>Tips that make painkillers work better</h2>
+<ul>
+<li><strong>Take them regularly at first,</strong> rather than waiting until the pain builds up. Pain is easier to keep down than to bring down.</li>
+<li><strong>Take them 30 to 60 minutes before your exercises,</strong> so that you can do them properly.</li>
+<li><strong>Take them before bed</strong> if night-time aching keeps you awake. See <a href="/sleeping-after-hip-or-knee-replacement/">sleeping after a joint replacement</a>.</li>
 </ul>
 
-<h2>Longer term</h2>
-<p>Most people have much less pain than before their operation. Around 1 in 5 people still have some pain or are not fully satisfied a year after a knee replacement, so I will help you weigh this up before you decide. The knee keeps improving for up to a year.</p>
+<h2>Help without tablets</h2>
+<ul>
+<li><strong>Cold packs:</strong> a cold pack or bag of frozen peas wrapped in a towel, for 15 to 20 minutes at a time, several times a day. Research shows a small benefit for pain in the first days. Never put ice directly on the skin, and keep the wound dressing dry.</li>
+<li><strong>Raise your leg:</strong> resting with your leg up, heel on a pillow and knee straight, eases swelling and the aching that comes with it. See <a href="/swelling-after-knee-replacement/">swelling after a knee replacement</a>.</li>
+<li><strong>Keep moving, little and often:</strong> short, regular walks and your <a href="/knee-replacement-exercises/">exercises</a> ease stiffness. Doing too much in one go usually makes the knee sore and swollen the next day, so build up gradually.</li>
+</ul>
+
+<h2>Cutting down your painkillers</h2>
+<p>As the pain eases, usually over the first 1 to 6 weeks, reduce your painkillers step by step:</p>
+<ol>
+<li>Stop the stronger, opioid painkiller first. Taking it only before exercise or at night for a few days can help.</li>
+<li>Then stop the anti-inflammatory, if you were taking one.</li>
+<li>Carry on with paracetamol for as long as you need it.</li>
+</ol>
+<p>Opioid painkillers are meant for the short term. If you still need them after a few weeks, please let us know, so that we can check your knee and help you reduce them safely.</p>
+
+<h2>Longer-term pain</h2>
+<p>Most people have much less pain than before their operation. Around 1 in 5 people still have some pain a year after a knee replacement. If your pain is not improving as expected, I will examine you and look for a cause that can be treated. See <a href="/problem-joint-replacement/">painful or worn joint replacements</a>.</p>
 
 <div class="callout warn">
 <p><strong>Get medical advice straight away</strong> if pain is getting worse rather than better, or comes with a red, hot or leaking wound, a fever, or pain and swelling in your calf. In an emergency, call 999.</p>
 </div>
 """,
-"sources": [NICE_157, BESWICK, NHS_KNEE_REC],
-"related": ["knee-replacement-recovery", "swelling-after-knee-replacement", "knee-replacement-exercises", "knee-replacement"],
+"sources": [NICE_157, PROSPECT_TKA, ADIE_CRYO, BESWICK, NHS_KNEE_REC],
+"related": ["knee-replacement-recovery", "swelling-after-knee-replacement", "knee-replacement-exercises", "sleeping-after-hip-or-knee-replacement"],
 },
 {
 "slug": "swelling-after-knee-replacement",
