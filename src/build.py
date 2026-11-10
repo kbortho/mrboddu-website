@@ -16,7 +16,8 @@ from pages_guides import GUIDES
 from pages_guides2 import GUIDES2
 from pages_guides3 import GUIDES3
 from pages_guides4 import GUIDES4
-GUIDES = GUIDES + GUIDES2 + GUIDES3 + GUIDES4
+from pages_guides5 import GUIDES5
+GUIDES = GUIDES + GUIDES2 + GUIDES3 + GUIDES4 + GUIDES5
 
 OUT = os.path.join(os.path.dirname(HERE), "site")
 LASTMOD = "2026-11-09"
