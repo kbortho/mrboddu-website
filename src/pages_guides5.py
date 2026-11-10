@@ -8,6 +8,7 @@ ZIJLSTRA_17 = '<a href="https://doi.org/10.1080/17453674.2017.1317515">Zijlstra 
 MJAALAND_17 = '<a href="https://doi.org/10.2106/JBJS.16.00494">Mjaaland KE et al. Implant survival after minimally invasive anterior or anterolateral vs. conventional posterior or direct lateral approach: an analysis of 21,860 total hip arthroplasties from the Norwegian Arthroplasty Register (2008 to 2013). J Bone Joint Surg Am 2017;99:840&ndash;7.</a>'
 MENEGHINI_17 = '<a href="https://doi.org/10.2106/JBJS.16.00060">Meneghini RM, Elston AS, Chen AF, Kheir MM, Fehring TK, Springer BD. Direct anterior approach: risk factor for early femoral failure of cementless total hip arthroplasty. J Bone Joint Surg Am 2017;99:99&ndash;105.</a>'
 GOULDING_10 = '<a href="https://doi.org/10.1007/s11999-010-1406-5">Goulding K, Beaul&eacute; PE, Kim PR, Fazekas A. Incidence of lateral femoral cutaneous nerve neuropraxia after anterior approach hip arthroplasty. Clin Orthop Relat Res 2010;468:2397&ndash;404.</a>'
+AOANJRR_26 = '<a href="https://registry.aoa.org.au/annual-reports-2026">Australian Orthopaedic Association National Joint Replacement Registry. Hip, Knee and Shoulder Arthroplasty Annual Report 2026: Primary total hip replacement by surgical approach (Tables HT87&ndash;HT92). Adelaide: AOA, 2026.</a>'
 BERSTOCK_15 = '<a href="https://doi.org/10.1308/003588414X13946184904008">Berstock JR, Blom AW, Beswick AD. A systematic review and meta-analysis of complications following the posterior and lateral surgical approaches to total hip arthroplasty. Ann R Coll Surg Engl 2015;97:11&ndash;6.</a>'
 
 GUIDES5 = [
@@ -57,6 +58,7 @@ GUIDES5 = [
 <li><strong>Numbness on the front of the thigh:</strong> a skin nerve (the lateral cutaneous nerve of the thigh) runs close to the incision. In one study, about 8 in 10 people reported some numbness or tingling on the front of the thigh a year later. It is usually mild and does not affect how the hip works, but it can be permanent.</li>
 <li><strong>Fracture around the implant:</strong> the anterior approach gives a narrower view of the thigh bone, and studies have found a slightly higher risk of an early fracture or loosening around the stem. In a study of early failures from three US centres, half of the early stem failures were after the anterior approach.</li>
 </ul>
+<p>The latest report of the Australian national joint registry, which has compared more than 360,000 hip replacements since 2015, confirms this pattern. The anterior approach has a higher rate of revision for loosening and for early fracture, but a lower rate of revision for infection and dislocation.</p>
 
 <h3>Anterolateral approach: a small risk of abductor weakness</h3>
 <p>The abductor muscles on the outer side of the hip hold the pelvis level when you walk. Because approaches from the side work close to these muscles, there is a small risk that they are weaker afterwards, which can cause a limp. Careful handling and repair of the muscles keeps this risk low, and in most people any weakness improves with exercises over the first few months.</p>
@@ -72,7 +74,7 @@ GUIDES5 = [
 <h2>Talking it through</h2>
 <p>At your consultation I will explain how I would perform your operation, the risks that apply to you and what to expect during recovery. You are always welcome to ask about other approaches.</p>
 """,
-"sources": [WANG_18, CHENG_17, ZIJLSTRA_17, MJAALAND_17, MENEGHINI_17, GOULDING_10, BERSTOCK_15],
+"sources": [WANG_18, CHENG_17, ZIJLSTRA_17, MJAALAND_17, MENEGHINI_17, AOANJRR_26, GOULDING_10, BERSTOCK_15],
 "related": ["hip-replacement", "hip-replacement-recovery", "robotic-hip-and-knee-replacement", "how-long-do-hip-and-knee-replacements-last"],
 },
 ]
