@@ -3,7 +3,8 @@
 REVIEWED6 = ("10 November 2026", "2026-11-10")
 
 WANG_18 = '<a href="https://doi.org/10.1186/s13018-018-0929-4">Wang Z et al. A systematic review and meta-analysis of direct anterior approach versus posterior approach in total hip arthroplasty. J Orthop Surg Res 2018;13:229.</a>'
-CHENG_17 = '<a href="https://doi.org/10.1016/j.arth.2016.08.027">Cheng TE, Wallis JA, Taylor NF et al. A prospective randomized clinical trial in total hip arthroplasty: comparing early results between the direct anterior approach and the posterior approach. J Arthroplasty 2017;32:883&ndash;90.</a>'
+LIU_25 = '<a href="https://doi.org/10.1186/s13018-025-06227-8">Liu R et al. Comparative efficacy of direct anterior approach versus conventional surgical approaches in total hip arthroplasty: a systematic review and meta-analysis of randomized clinical trials. J Orthop Surg Res 2025;20:837.</a>'
+NASSAR_25 = '<a href="https://doi.org/10.52965/001c.137665">Nassar JE et al. Direct anterior approach and posterior approach for total hip arthroplasty: a systematic umbrella review of meta-analyses of randomized controlled trials. Orthop Rev 2025;17:137665.</a>'
 ZIJLSTRA_17 = '<a href="https://doi.org/10.1080/17453674.2017.1317515">Zijlstra WP, De Hartog B, Van Steenbergen LN, Scheurs BW, Nelissen RGHH. Effect of femoral head size and surgical approach on risk of revision for dislocation after total hip arthroplasty. Acta Orthop 2017;88:395&ndash;401.</a>'
 MJAALAND_17 = '<a href="https://doi.org/10.2106/JBJS.16.00494">Mjaaland KE et al. Implant survival after minimally invasive anterior or anterolateral vs. conventional posterior or direct lateral approach: an analysis of 21,860 total hip arthroplasties from the Norwegian Arthroplasty Register (2008 to 2013). J Bone Joint Surg Am 2017;99:840&ndash;7.</a>'
 MENEGHINI_17 = '<a href="https://doi.org/10.2106/JBJS.16.00060">Meneghini RM, Elston AS, Chen AF, Kheir MM, Fehring TK, Springer BD. Direct anterior approach: risk factor for early femoral failure of cementless total hip arthroplasty. J Bone Joint Surg Am 2017;99:99&ndash;105.</a>'
@@ -43,7 +44,8 @@ GUIDES5 = [
 <p>The anterior approach is often promoted as giving a faster recovery. Some trials do show slightly better scores in the first few weeks, but the difference does not last.</p>
 <ul>
 <li>A review of 9 randomised trials (754 hip replacements) comparing the anterior and posterior approaches found slightly better hip scores with the anterior approach at 2 and 6 weeks, but <strong>no difference at 12 weeks or at one year</strong>.</li>
-<li>An Australian randomised trial of 72 patients found no difference in overall hip scores, walking speed or quality of life over the first 12 weeks.</li>
+<li>A 2025 review of 17 randomised trials (1,575 patients) compared the anterior approach with the posterior and lateral approaches. Hip function was slightly better with the anterior approach at one month, but there was <strong>no difference at three months or at one year</strong>.</li>
+<li>A 2025 &ldquo;umbrella&rdquo; review, which pooled the findings of 11 earlier reviews of randomised trials, reached the same conclusion: any early advantage of the anterior approach had gone by three months.</li>
 </ul>
 <p>In other words, whichever approach is used, most people are in the same place by about three months.</p>
 
@@ -74,7 +76,7 @@ GUIDES5 = [
 <h2>Talking it through</h2>
 <p>At your consultation I will explain how I would perform your operation, the risks that apply to you and what to expect during recovery. You are always welcome to ask about other approaches.</p>
 """,
-"sources": [WANG_18, CHENG_17, ZIJLSTRA_17, MJAALAND_17, MENEGHINI_17, AOANJRR_26, GOULDING_10, BERSTOCK_15],
+"sources": [NASSAR_25, LIU_25, WANG_18, ZIJLSTRA_17, MJAALAND_17, MENEGHINI_17, AOANJRR_26, GOULDING_10, BERSTOCK_15],
 "related": ["hip-replacement", "hip-replacement-recovery", "robotic-hip-and-knee-replacement", "how-long-do-hip-and-knee-replacements-last"],
 },
 ]
