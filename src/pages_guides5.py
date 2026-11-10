@@ -59,7 +59,7 @@ GUIDES5 = [
 </ul>
 
 <h3>Anterolateral approach: a small risk of abductor weakness</h3>
-<p>The abductor muscles on the outer side of the hip hold the pelvis level when you walk. Because approaches from the side work close to these muscles, there is a small risk that they are weaker afterwards, which can cause a limp. A review comparing posterior and lateral approaches found a limp of this kind was more common after the lateral approach, though overall function was no different. Careful handling and repair of the muscles keeps this risk low, and in most people any weakness improves with exercises over the first few months.</p>
+<p>The abductor muscles on the outer side of the hip hold the pelvis level when you walk. Because approaches from the side work close to these muscles, there is a small risk that they are weaker afterwards, which can cause a limp. Careful handling and repair of the muscles keeps this risk low, and in most people any weakness improves with exercises over the first few months.</p>
 
 <h2>The approach I use</h2>
 <p>I use a <strong>small-incision anterolateral approach</strong>. It gives me a good view of both the socket and the thigh bone, which helps me position the implants accurately, and it has a low risk of dislocation. In the last 10 years, none of my patients has had a dislocation after a hip replacement. This does not mean a dislocation can never happen, but it reflects a careful technique.</p>
