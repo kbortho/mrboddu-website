@@ -21,13 +21,13 @@ GUIDES5 = [
 "title": "Anterior, Posterior or Anterolateral Hip Replacement? | Mr Krishna Boddu, Ipswich",
 "description": "Is the anterior approach better for a hip replacement? What the research shows about the anterior, posterior and anterolateral approaches, their risks, and the approach I use. Mr Krishna Boddu, Ipswich, Suffolk.",
 "h1": "Which approach is best for a hip replacement?",
-"lead": "The &ldquo;approach&rdquo; is the route the surgeon takes through the muscles to reach the hip joint. You may have read that one approach is better than the others. The research does not show this. By about 12 weeks after surgery, people do equally well whichever approach is used. Each approach has its own small risks, and the surgeon&rsquo;s experience with an approach matters more than the approach itself.",
+"lead": "The &ldquo;approach&rdquo; is the route the surgeon takes through the muscles to reach the hip joint. You may have read that one approach is better than the others. The research does not show this. By about three months after surgery, people do equally well whichever approach is used. Each approach has its own small risks, and the surgeon&rsquo;s experience with an approach matters more than the approach itself.",
 "about": ("MedicalProcedure", "Total hip replacement surgical approach"),
 "reviewed": REVIEWED6,
 "body": """
 <h2>The short answer</h2>
 <ul>
-<li><strong>No approach is superior.</strong> Trials comparing them find that, by about 12 weeks after surgery, function, pain and walking are the same.</li>
+<li><strong>No approach is superior.</strong> Trials comparing them find that, by about three months after surgery, function, pain and walking are the same.</li>
 <li>Each approach carries a slightly different pattern of small risks.</li>
 <li>I use a <strong>small-incision anterolateral approach</strong>, which reaches the hip from the front and side.</li>
 </ul>
@@ -43,7 +43,7 @@ GUIDES5 = [
 <h2>What the research shows about recovery</h2>
 <p>The anterior approach is often promoted as giving a faster recovery. Some trials do show slightly better scores in the first few weeks, but the difference does not last.</p>
 <ul>
-<li>A review of 9 randomised trials (754 hip replacements) comparing the anterior and posterior approaches found slightly better hip scores with the anterior approach at 2 and 6 weeks, but <strong>no difference at 12 weeks or at one year</strong>.</li>
+<li>A review of 9 randomised trials (754 hip replacements) comparing the anterior and posterior approaches found slightly better hip scores with the anterior approach at 2 and 6 weeks, but <strong>no difference at three months or at one year</strong>.</li>
 <li>A 2025 review of 17 randomised trials (1,575 patients) compared the anterior approach with the posterior and lateral approaches. Hip function was slightly better with the anterior approach at one month, but there was <strong>no difference at three months or at one year</strong>.</li>
 <li>A 2025 &ldquo;umbrella&rdquo; review, which pooled the findings of 11 earlier reviews of randomised trials, reached the same conclusion: any early advantage of the anterior approach had gone by three months.</li>
 </ul>
