@@ -14,15 +14,21 @@
     t.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(ID);
     document.head.appendChild(t);
   }
-  function track(label, name) {
-    if (!loaded) return;
-    if (label && ID.indexOf("AW-") === 0) gtag("event", "conversion", { send_to: ID + "/" + label });
-    else gtag("event", name);
+  function track(label, name, done) {
+    if (!loaded) return false;
+    var p = { transport_type: "beacon" };
+    if (done) { var called = false; p.event_callback = function () { if (!called) { called = true; done(); } }; setTimeout(p.event_callback, 600); }
+    if (label && ID.indexOf("AW-") === 0) { p.send_to = ID + "/" + label; gtag("event", "conversion", p); }
+    else gtag("event", name, p);
+    return true;
   }
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a"); if (!a) return;
     var h = a.getAttribute("href") || "";
-    if (h.indexOf("tel:") === 0) track(CALL, "phone_click");
+    if (h.indexOf("tel:") === 0) {
+      /* Phones switch to the dialler at once, which can stop the event being sent, so send it first, then dial. */
+      if (track(CALL, "phone_click", function () { window.location.href = h; })) e.preventDefault();
+    }
     else if (h.indexOf("nuffieldhealth.com/consultants/mr-krishna-boddu#book") > -1) track(BOOK, "book_online_click");
   });
   function clear() {
