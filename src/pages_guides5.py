@@ -36,7 +36,7 @@ GUIDES5 = [
 <ul>
 <li><strong>Posterior approach:</strong> the hip is reached from the back. It is the most widely used approach worldwide.</li>
 <li><strong>Anterior approach</strong> (often called the direct anterior approach): the hip is reached from the front, working between the muscles.</li>
-<li><strong>Anterolateral approach:</strong> the hip is reached from the front and side, through or between the muscles on the outer side of the hip.</li>
+<li><strong>Anterolateral approach:</strong> the hip is reached from the front and side, through a small part of the muscles on the outer side of the hip.</li>
 </ul>
 <p>All three can be done through a smaller incision, and all three can be combined with an accelerated recovery programme, so most people are up and walking on the day of surgery or the next morning.</p>
 
