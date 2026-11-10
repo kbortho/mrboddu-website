@@ -63,6 +63,7 @@ GUIDES5 = [
 
 <h2>The approach I use</h2>
 <p>I use a <strong>small-incision anterolateral approach</strong>. It gives me a good view of both the socket and the thigh bone, which helps me position the implants accurately, and it has a low risk of dislocation. In the last 10 years, none of my patients has had a dislocation after a hip replacement. This does not mean a dislocation can never happen, but it reflects a careful technique.</p>
+<p>My overall results are also good. The National Joint Registry records every hip replacement I perform. Its data for the last ten years show that my patients have needed fewer than a third of the revisions (repeat operations) expected, after allowing for their age and health. See <a href="/outcomes-reviews/#hip-results">my outcomes and patient reviews</a>.</p>
 <p>I do not routinely ask patients to follow the traditional &ldquo;hip precautions&rdquo; (restrictions on bending and sitting in low chairs). See <a href="/hip-replacement-recovery/">recovery after a hip replacement</a>.</p>
 
 <h2>What matters more than the approach</h2>
