@@ -10,6 +10,8 @@ TOPKAT = "Beard DJ et al. The clinical and cost-effectiveness of total versus pa
 LIDDLE = "Liddle AD et al. Adverse outcomes after total and unicompartmental knee replacement in 101,330 matched patients: a study of data from the National Joint Registry for England and Wales. Lancet 2014;384:1437&ndash;45."
 BMJ_RR = "Siemieniuk RAC et al. Arthroscopic surgery for degenerative knee arthritis and meniscal tears: a clinical practice guideline. BMJ 2017;357:j1982."
 FIDELITY = "Sihvonen R et al. Arthroscopic partial meniscectomy versus sham surgery for a degenerative meniscal tear. N Engl J Med 2013;369:2515&ndash;24."
+BODDU_HIP23 = '<a href="https://doi.org/10.1302/1358-992X.2023.11.039">Boddu K. Three-year and five-year revision rates of primary total hip arthroplasty are poor predictors of 15-year revision rates: a National Joint Registry analysis. Orthop Proc 2023;105-B(Supp 11):39.</a>'
+CHRASTEK_BODDU23 = '<a href="https://doi.org/10.1302/1358-992X.2023.13.085">Chrastek D, Boddu K. Long-term survival rates are similar with or without patellar resurfacing after total knee arthroplasty; however, higher revision rate without patellar resurfacing can be prosthesis-specific: a National Joint Registry analysis. Orthop Proc 2023;105-B(Supp 13):85.</a>'
 NJR_REPORTS = '<a href="https://reports.njrcentre.org.uk/">National Joint Registry annual reports: implant survival</a>'
 WILSON = '<a href="https://doi.org/10.1136/bmj.l352">Wilson HA et al. Patient relevant outcomes of unicompartmental versus total knee replacement: systematic review and meta-analysis. BMJ 2019;364:l352.</a>'
 RACER_KNEE = '<a href="https://doi.org/10.1016/S0140-6736(26)00986-4">Parsons H et al. Robotic-arm-assisted versus conventional total knee replacement (RACER-Knee): a pragmatic, multicentre, participant-masked and assessor-masked, superiority, randomised controlled trial. Lancet 2026.</a>'
@@ -75,7 +77,7 @@ PROCEDURES = [
 <p>See the <a href="/hip-replacement-recovery/">week-by-week hip replacement recovery guide</a>, and read more about <a href="/your-operation/">preparing for and recovering from your operation</a>.</p>
 
 <h2>How long does a hip replacement last?</h2>
-<p>I use one of the best-performing implant combinations in the UK National Joint Registry, with one of the longest track records. Registry figures show that 95 in 100 of these hip replacements last more than 15 years after surgery, and many last longer. However, individual factors, such as your age and activity level, can affect this significantly.</p>
+<p>I use one of the best-performing implant combinations in the UK National Joint Registry, with one of the longest track records. Registry figures show that 95 in 100 of these hip replacements last more than 15 years after surgery, and many last longer. However, individual factors, such as your age and activity level, can affect this significantly. I prefer implants with a long, proven track record because my own research, using National Joint Registry data, found that good results in the first 3 to 5 years are a poor guide to how an implant will perform at 15 years.</p>
 
 <h2>Risks</h2>
 <p>Hip replacement is a common and generally successful operation, but every operation carries risks. They include infection (about 1 in 100), blood clots in the leg or lungs, dislocation of the new joint, a difference in leg length, a fracture around the implant, nerve or blood vessel injury, and wear or loosening that may need further surgery in the future. I will explain how these apply to you and the steps we take to reduce them.</p>
@@ -85,7 +87,7 @@ PROCEDURES = [
 """ + COSTS + """
 <p>Already had a hip replacement that is causing problems? See <a href="/revision-hip-replacement/">revision hip replacement</a>.</p>
 """,
-"sources": [NICE_157, NICE_226, NJR_REPORTS],
+"sources": [NICE_157, NICE_226, NJR_REPORTS, BODDU_HIP23],
 "related": ["hip-arthritis", "hip-replacement-recovery", "how-long-do-hip-and-knee-replacements-last", "robotic-hip-and-knee-replacement", "revision-hip-replacement"],
 },
 {
@@ -146,7 +148,7 @@ PROCEDURES = [
 ],
 "body": """
 <h2>What is a knee replacement?</h2>
-<p>A total knee replacement resurfaces the worn ends of the thigh bone and shin bone with metal parts, with a smooth plastic insert between them. The back of the kneecap is rarely resurfaced.</p>
+<p>A total knee replacement resurfaces the worn ends of the thigh bone and shin bone with metal parts, with a smooth plastic insert between them. The back of the kneecap is rarely resurfaced. My own research, using National Joint Registry data, found that at 15 years knee replacements did equally well with or without resurfacing of the kneecap, although this can depend on the implant design.</p>
 
 <h2>Is it right for you?</h2>
 <p>A knee replacement is usually considered when arthritis pain limits walking, sleep or daily life, and non-surgical treatments have stopped helping. If arthritis affects only one part of your knee, a <a href="/partial-knee-replacement/">partial knee replacement</a> may be an option, and national guidance recommends that suitable patients are offered that choice.</p>
@@ -179,7 +181,7 @@ PROCEDURES = [
 <h2>Alternatives to surgery</h2>
 <p>Exercise and physiotherapy, weight loss where appropriate, anti-inflammatory gels and painkillers, and steroid injections for short-term relief can all help. See <a href="/knee-arthritis/">knee arthritis</a>.</p>
 """ + COSTS,
-"sources": [NICE_157, NICE_226, NJR_REPORTS, BESWICK],
+"sources": [NICE_157, NICE_226, NJR_REPORTS, BESWICK, CHRASTEK_BODDU23],
 "related": ["partial-knee-replacement", "knee-replacement-recovery", "partial-vs-total-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis"],
 },
 {
