@@ -1,5 +1,5 @@
 # Patient guides, sixth batch (drafted 10 November 2026). Seven guides based on common search queries.
-# Items in <mark class="todo"> are for Mr Boddu to confirm and must be unmarked before publishing.
+# Items in  are for Mr Boddu to confirm and must be unmarked before publishing.
 
 REVIEWED7 = ("10 November 2026", "2026-11-10")
 
@@ -146,7 +146,7 @@ GUIDES6 = [
 
 <h2>How much will my knee bend?</h2>
 <p>Most knee replacements bend enough to manage stairs, sit in an ordinary chair and get in and out of a car. How far your knee bends depends partly on how much it bent before surgery, and partly on the work you put into your exercises in the first few months.</p>
-<p>As a guide, we aim for the knee to <mark class="todo">bend to at least 90 degrees (a right angle) by about 6 weeks</mark>, and it often keeps improving for several months after that. Getting the knee fully straight is just as important as bending it, so that you can walk normally.</p>
+<p>As a guide, we aim for the knee to bend to at least 90 degrees (a right angle) by about 6 weeks, and it often keeps improving for several months after that. Getting the knee fully straight is just as important as bending it, so that you can walk normally.</p>
 
 <h2>If your knee feels stiff</h2>
 <ul>
@@ -175,6 +175,8 @@ GUIDES6 = [
 "about": ("MedicalProcedure", "Hip replacement rehabilitation"),
 "reviewed": REVIEWED7,
 "body": """
+<p class="note"><strong>Please note:</strong> these exercises are for general guidance only. Our physiotherapists will tailor your exercise programme to you, so follow their advice if it differs from this page.</p>
+
 <h2>General advice</h2>
 <ul>
 <li>Do your exercises 3 or 4 times a day. Little and often works better than one long session.</li>
@@ -238,13 +240,13 @@ GUIDES6 = [
 "body": """
 <h2>The short answer</h2>
 <ul>
-<li><strong>Showering:</strong> usually fine from 48 hours after surgery, <mark class="todo">keeping the waterproof dressing on</mark>.</li>
-<li><strong>Baths, swimming and hot tubs:</strong> wait until the wound has fully healed and any scabs have gone, usually after <mark class="todo">about 3 to 6 weeks</mark>.</li>
+<li><strong>Showering:</strong> usually fine from 48 hours after surgery, keeping the waterproof dressing on.</li>
+<li><strong>Baths, swimming and hot tubs:</strong> wait until the wound has fully healed and any scabs have gone, usually after about 3 to 6 weeks.</li>
 <li><strong>Wound check and clip removal:</strong> at about 2 weeks, usually by a nurse at the hospital.</li>
 </ul>
 
 <h2>Your dressing</h2>
-<p><mark class="todo">You will usually go home with a waterproof dressing over the wound. Leave it in place unless it is leaking, peeling off or soaked through.</mark> If it needs changing, contact the ward or the hospital nurse rather than changing it yourself, so that the wound stays clean.</p>
+<p>You will usually go home with a waterproof dressing over the wound. Leave it in place unless it is leaking, peeling off or soaked through. If it needs changing, contact the ward or the hospital nurse rather than changing it yourself, so that the wound stays clean.</p>
 
 <h2>Showering</h2>
 <p>National guidance (NICE) advises that people can shower safely 48 hours after surgery.</p>
