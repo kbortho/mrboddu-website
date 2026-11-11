@@ -178,3 +178,5 @@ details[open] summary { margin-bottom: .5rem; }
 /* Common questions */
 .faq { margin-top: 2.2rem; }
 .faq h3 { margin-top: 1.2rem; }
+.pubs li { margin-bottom: .9rem; }
+.pubs .pub { margin-bottom: .2rem; }
