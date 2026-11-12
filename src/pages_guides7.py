@@ -55,7 +55,7 @@ GUIDES7 = [
 <p>The ball and liner rub against each other with every step, so the materials matter. The main choices are a ceramic or metal ball, and a polyethylene (a very hard-wearing plastic) or ceramic liner.</p>
 <ul>
 <li><strong>Cross-linked polyethylene</strong> is a toughened polyethylene that wears much more slowly than older types. Long-term registry studies show that it greatly reduces the need for a revision (repeat operation) caused by wear.</li>
-<li><strong>Ceramic on cross-linked polyethylene</strong> is one of the most successful bearings. The UK National Joint Registry, which now includes about 1.8 million hip replacements, reports that ceramic-on-polyethylene hips have had consistently low revision rates for up to 21 years, however the implants are fixed. Its use in the UK continues to increase.</li>
+<li><strong>Ceramic on cross-linked polyethylene</strong> is one of the most successful bearings. The UK National Joint Registry, which now includes about 1.8 million hip replacements, reports that ceramic-on-polyethylene hips have had consistently low revision rates for up to 21 years, however the implants are fixed.</li>
 <li>I use a ceramic ball on a cross-linked polyethylene liner for most patients. Sometimes I choose a metal ball, for example in older patients, or when it suits the implant sizes needed for your hip. Both are well-proven combinations.</li>
 </ul>
 <p>Metal-on-metal hips, which caused problems in the past, are no longer used, and I do not use them.</p>
