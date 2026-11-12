@@ -3,9 +3,10 @@
 
 REVIEWED8 = ("12 November 2026", "2026-11-12")
 
-AOANJRR_26H = '<a href="https://registry.aoa.org.au/annual-reports-2026">Australian Orthopaedic Association National Joint Replacement Registry. Hip, Knee and Shoulder Arthroplasty Annual Report 2026: Executive summary (lifetime risk of revision by polyethylene type and fixation) and Primary total hip replacement by bearing surface (Table HT41). Adelaide: AOA, 2026.</a>'
 DESTEIGER_18 = '<a href="https://doi.org/10.2106/JBJS.17.01221">de Steiger R, Lorimer M, Graves SE. Cross-linked polyethylene for total hip arthroplasty markedly reduces revision surgery at 16 years. J Bone Joint Surg Am 2018;100:1281&ndash;8.</a>'
-MORLOCK_24 = '<a href="https://doi.org/10.1302/0301-620X.106B3.BJJ-2023-0820.R2">Morlock M, Perka C, Melsheimer O, Kirschbaum SM. Influence of the type of stem and its fixation on revision and immediate postoperative mortality in elective total hip arthroplasty. Bone Joint J 2024;106-B(3 Supple A):130&ndash;6.</a>'
+NJR_23 = '<a href="https://reports.njrcentre.org.uk/">National Joint Registry. 23rd Annual Report 2026: executive summary and hip replacement outcomes. NJR, 2026.</a>'
+NJR_22 = '<a href="https://www.ncbi.nlm.nih.gov/books/NBK618761/">National Joint Registry. 22nd Annual Report 2025: outcomes after joint replacement 2003 to 2024 (primary hip replacement by bearing surface and fixation).</a>'
+LAMB_25 = '<a href="https://doi.org/10.1371/journal.pmed.1004538">Lamb JN, Sayers A, Wilkinson JM, Pandit H, Whitehouse MR. The association between implant design, age, sex and the rate of major reoperation in patients undergoing primary total hip replacement: a retrospective study of UK National Joint Registry and Hospital Episodes Statistics data. PLoS Med 2025;22:e1004538.</a>'
 NJR_REPORTS7 = '<a href="https://reports.njrcentre.org.uk/">National Joint Registry for England, Wales, Northern Ireland, the Isle of Man and Guernsey: annual reports.</a>'
 from pages_procedures import BODDU_HIP23
 DESAI_13 = '<a href="https://doi.org/10.1007/s12178-013-9180-0">Desai AS, Dramis A, Board TN. Leg length discrepancy after total hip arthroplasty: a review of literature. Curr Rev Musculoskelet Med 2013;6:336&ndash;41.</a>'
@@ -52,8 +53,8 @@ GUIDES7 = [
 <h2>The bearing: ceramic on cross-linked polyethylene</h2>
 <p>The ball and liner rub against each other with every step, so the materials matter. The main choices are a ceramic or metal ball, and a polyethylene (a very hard-wearing plastic) or ceramic liner.</p>
 <ul>
-<li><strong>Cross-linked polyethylene</strong> is a toughened polyethylene that wears much more slowly than older types. In the Australian national registry, which followed more than 240,000 hip replacements, 6.2% of hips with cross-linked polyethylene needed a revision (repeat operation) by 16 years, compared with 11.7% with the older polyethylene.</li>
-<li><strong>Ceramic on cross-linked polyethylene</strong> is one of the most successful bearings. In the 2026 report of the Australian registry, it had a lower long-term revision rate than a metal ball on the same liner.</li>
+<li><strong>Cross-linked polyethylene</strong> is a toughened polyethylene that wears much more slowly than older types. Long-term registry studies show that it greatly reduces the need for a revision (repeat operation) caused by wear.</li>
+<li><strong>Ceramic on cross-linked polyethylene</strong> is one of the most successful bearings. The UK National Joint Registry, which now includes about 1.8 million hip replacements, reports that ceramic-on-polyethylene hips have had consistently low revision rates for up to 21 years, however the implants are fixed. Its use in the UK continues to increase.</li>
 <li>I use a ceramic ball on a cross-linked polyethylene liner for most patients. Sometimes I choose a metal ball, for example in older patients, or when it suits the implant sizes needed for your hip. Both are well-proven combinations.</li>
 </ul>
 <p>Metal-on-metal hips, which caused problems in the past, are no longer used, and I do not use them.</p>
@@ -70,7 +71,7 @@ GUIDES7 = [
 <li><strong>The stem:</strong> if your bone is strong, I use an uncemented titanium-alloy stem. If your bone is softer or thinner, which is more common with age and in women, I use a cemented stem.</li>
 </ul>
 <figure class="diagram"><img src="/assets/hip-implant-stems.jpg" width="773" height="560" alt="Two hip replacement stems: on the left, an uncemented stem with a rough coated upper surface; on the right, a smooth polished cemented stem with a ceramic ball." loading="lazy"><figcaption>Left: an uncemented stem made of titanium alloy, with a rough coating that the bone grows onto. Right: a polished cemented stem, shown with a ceramic ball.</figcaption></figure>
-<p>The evidence supports tailoring the choice in this way. Uncemented stems need strong bone to grip. In older patients, the large Australian and German national registries show a higher revision rate with uncemented stems, mainly because of fractures around the implant. In the German registry, cemented stems had the lowest revision rate in patients over 80, with no increase in early deaths. The Australian registry also found that a cemented stem with an uncemented cup (a &ldquo;hybrid&rdquo; hip) had the lowest lifetime risk of revision in many age groups.</p>
+<p>The UK evidence supports tailoring the choice in this way. In the latest National Joint Registry report, the 10-year revision rates of cemented, uncemented and hybrid hips (an uncemented cup with a cemented stem) now differ very little, so the choice can be made to suit you. Uncemented stems need strong bone to grip. A 2025 study of nearly 373,000 hip replacements in the UK National Joint Registry found that a fracture of the thigh bone around the stem was the most common reason for a further operation, and accounted for almost half of these operations in the oldest patients. In women aged 75 and over, cemented stems led to fewer further operations than uncemented stems.</p>
 
 <h2>Why I choose implants with a long track record</h2>
 <p>A new implant design can look good in its first few years and still perform less well later. My own research, using National Joint Registry data, found that results in the first 3 to 5 years are a poor guide to how a hip replacement will perform at 15 years. For this reason, I use implants with a long, proven record in the National Joint Registry. Registry figures show that 95 in 100 hip replacements using the implants I use last more than 15 years. See <a href="/how-long-do-hip-and-knee-replacements-last/">how long hip and knee replacements last</a>.</p>
@@ -81,7 +82,7 @@ GUIDES7 = [
 <h2>Talking it through</h2>
 <p>At your consultation, I will look at your X-rays and explain which implants I recommend for you, and why. You are always welcome to ask about the implants and their track record.</p>
 """,
-"sources": [NJR_REPORTS7, BODDU_HIP23, AOANJRR_26H, DESTEIGER_18, MORLOCK_24, NICE_157B],
+"sources": [NJR_23, NJR_22, LAMB_25, BODDU_HIP23, DESTEIGER_18, NICE_157B],
 "related": ["hip-replacement", "how-long-do-hip-and-knee-replacements-last", "anterior-or-posterior-approach-hip-replacement", "robotic-hip-and-knee-replacement"],
 },
 {
