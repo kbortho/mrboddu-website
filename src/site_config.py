@@ -24,7 +24,9 @@ RATING_NOTE = "as of November 2026"
 LINKEDIN = "https://www.linkedin.com/in/bodduk"
 RESEARCHGATE = "https://www.researchgate.net/profile/Krishna-Boddu"
 GOOGLE_PROFILE = "https://maps.google.com/?cid=11382432351318201432"
-GOOGLE_REVIEWS = 23
+GOOGLE_REVIEWS = 25
+GOOGLE_RATING = "5.0"
+GOOGLE_REVIEW_URL = "https://g.page/r/CVhUPLTqhfadEAI/review"
 CLINIC_TIMES = "Monday, 8.30am to 12.30pm"
 REVIEWED = "1 November 2026"  # date Mr Boddu approved the clinical pages
 REVIEWED_ISO = "2026-11-01"

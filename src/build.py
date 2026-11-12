@@ -36,7 +36,7 @@ TOKENS = {
     "HOSPITAL_PHONE_TEL": tel(C.HOSPITAL_PHONE), "SEC_PHONE": C.SEC_PHONE,
     "SEC_PHONE_TEL": tel(C.SEC_PHONE), "SEC_EMAIL": C.SEC_EMAIL, "SECRETARY": C.SECRETARY,
     "BOOK_URL": C.BOOK_URL, "NUFFIELD_HOSPITAL": C.NUFFIELD_HOSPITAL, "MAPS": C.MAPS,
-    "RATING_NOTE": C.RATING_NOTE, "GOOGLE_PROFILE": C.GOOGLE_PROFILE, "GOOGLE_REVIEWS": str(C.GOOGLE_REVIEWS), "CLINIC_TIMES": C.CLINIC_TIMES,
+    "RATING_NOTE": C.RATING_NOTE, "GOOGLE_PROFILE": C.GOOGLE_PROFILE, "GOOGLE_REVIEWS": str(C.GOOGLE_REVIEWS), "GOOGLE_RATING": C.GOOGLE_RATING, "GOOGLE_REVIEW_URL": C.GOOGLE_REVIEW_URL, "CLINIC_TIMES": C.CLINIC_TIMES,
     "ADDRESS_INLINE": ", ".join(C.ADDRESS_LINES),
     "ADDRESS_HTML": "<br>".join(C.ADDRESS_LINES),
     "INSURER_LIST": "".join(f"<li>{i}</li>" for i in C.INSURERS),
@@ -280,9 +280,10 @@ def render_home():
 <div class="ratings">
 <a class="rating" href="{C.DOCTIFY}"><span class="score">4.96<small>/5</small></span><span>from 124 reviews on Doctify</span></a>
 <a class="rating" href="{C.TOPDOCTORS}"><span class="score">5.0<small>/5</small></span><span>from 32 reviews on Top Doctors</span></a>
+<a class="rating" href="{C.GOOGLE_PROFILE}"><span class="score">{C.GOOGLE_RATING}<small>/5</small></span><span>from {C.GOOGLE_REVIEWS} reviews on Google</span></a>
 <a class="rating" href="{C.PHIN}"><span class="score">96%</span><span>of 76 patients surveyed by PHIN would recommend me</span></a>
 </div>
-<p class="small">Ratings {C.RATING_NOTE}, collected and published independently by Doctify, Top Doctors and PHIN. You can also <a href="{C.GOOGLE_PROFILE}">read my {C.GOOGLE_REVIEWS} reviews on Google</a>.</p>
+<p class="small">Ratings {C.RATING_NOTE}, collected and published independently by Doctify, Top Doctors, Google and PHIN. Seen me in clinic? You can <a href="{C.GOOGLE_REVIEW_URL}">share your experience on Google</a>.</p>
 </div></section>
 
 <section class="section alt"><div class="wrap two-col">

@@ -164,9 +164,12 @@ OTHER = [
 <div class="ratings">
 <a class="rating" href="%DOCTIFY%"><span class="score">4.96<small>/5</small></span><span>from 124 reviews on Doctify</span></a>
 <a class="rating" href="%TOPDOCTORS%"><span class="score">5.0<small>/5</small></span><span>from 32 reviews on Top Doctors</span></a>
-<a class="rating" href="%GOOGLE_PROFILE%"><span class="score">%GOOGLE_REVIEWS%</span><span>reviews on Google</span></a>
+<a class="rating" href="%GOOGLE_PROFILE%"><span class="score">%GOOGLE_RATING%<small>/5</small></span><span>from %GOOGLE_REVIEWS% reviews on Google</span></a>
 </div>
 <p class="small">Ratings %RATING_NOTE%. Reviews are collected and published independently by Doctify, Top Doctors and Google.</p>
+<h2>Share your experience</h2>
+<p>If you have seen me in clinic or had surgery with me, your feedback helps other people choose their care. Please be honest, whatever your experience, and do not include personal medical details.</p>
+<p><a class="btn" href="%GOOGLE_REVIEW_URL%">Leave a Google review</a></p>
 """,
 "related": ["about", "hip-replacement", "knee-replacement", "contact"],
 },
@@ -292,7 +295,7 @@ OTHER = [
 <h2>Where I see patients</h2>
 <figure class="wide"><img src="/assets/nuffield-ipswich-800.jpg" srcset="/assets/nuffield-ipswich-800.jpg 800w, /assets/nuffield-ipswich-1360.jpg 1360w" sizes="(max-width: 820px) 100vw, 760px" width="800" height="398" alt="Nuffield Health Ipswich Hospital entrance on Foxhall Road" loading="lazy"></figure>
 <p><strong>Clinic:</strong> %CLINIC_TIMES%</p>
-<p>%ADDRESS_HTML%<br>Nuffield Health Ipswich bookings: <a href="tel:%HOSPITAL_PHONE_TEL%">%HOSPITAL_PHONE%</a><br><a href="%MAPS%">Get directions</a></p>
+<p>%ADDRESS_HTML%<br>Nuffield Health Ipswich bookings: <a href="tel:%HOSPITAL_PHONE_TEL%">%HOSPITAL_PHONE%</a><br><a href="%GOOGLE_PROFILE%">Get directions on Google Maps</a></p>
 
 <h2>Before you book</h2>
 <ul>
