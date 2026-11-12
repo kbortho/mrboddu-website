@@ -109,7 +109,7 @@ GUIDES7 = [
 </ul>
 
 <h2>How I plan for equal leg lengths</h2>
-<p>Leg length is one of the things I plan most carefully. <mark class="todo">Before surgery, I measure your X-rays to plan the size and position of the implants. During the operation, I check the leg length and the stability of the new hip before I finish. My aim is to make the leg lengths as equal as possible while keeping the hip stable.</p>
+<p>Leg length is one of the things I plan most carefully. Before surgery, I measure your X-rays to plan the size and position of the implants. During the operation, I check the leg length and the stability of the new hip before I finish. My aim is to make the leg lengths as equal as possible while keeping the hip stable.</p>
 
 <h2>Why you may limp at first</h2>
 <p>The main cause of a limp after a hip replacement is weakness of the <strong>abductor muscles</strong> on the outer side of the hip, which hold the pelvis level when you walk. These muscles are often weak before surgery because of the arthritis, and they need time and exercise to recover after the operation.</p>
