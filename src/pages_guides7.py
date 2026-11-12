@@ -1,5 +1,5 @@
 # Patient guides, seventh batch (drafted 12 November 2026).
-# Items in <mark class="todo"> are for Mr Boddu to confirm and must be unmarked before publishing.
+# Items in  are for Mr Boddu to confirm and must be unmarked before publishing.
 
 REVIEWED8 = ("12 November 2026", "2026-11-12")
 
@@ -109,7 +109,7 @@ GUIDES7 = [
 </ul>
 
 <h2>How I plan for equal leg lengths</h2>
-<p>Leg length is one of the things I plan most carefully. <mark class="todo">Before surgery, I measure your X-rays to plan the size and position of the implants. During the operation, I check the leg length and the stability of the new hip before I finish.</mark> My aim is to make the leg lengths as equal as possible while keeping the hip stable.</p>
+<p>Leg length is one of the things I plan most carefully. <mark class="todo">Before surgery, I measure your X-rays to plan the size and position of the implants. During the operation, I check the leg length and the stability of the new hip before I finish. My aim is to make the leg lengths as equal as possible while keeping the hip stable.</p>
 
 <h2>Why you may limp at first</h2>
 <p>The main cause of a limp after a hip replacement is weakness of the <strong>abductor muscles</strong> on the outer side of the hip, which hold the pelvis level when you walk. These muscles are often weak before surgery because of the arthritis, and they need time and exercise to recover after the operation.</p>
@@ -150,7 +150,7 @@ GUIDES7 = [
 <ul>
 <li>I replace <strong>one hip at a time</strong>, in two separate operations.</li>
 <li>I usually replace the more painful hip first.</li>
-<li>Most people have the second hip replaced <mark class="todo">at least 3 months</mark> after the first, once they have recovered well.</li>
+<li>Most people have the second hip replaced at least 3 months after the first, once they have recovered well.</li>
 </ul>
 
 <h2>What the research shows</h2>
@@ -172,7 +172,7 @@ GUIDES7 = [
 <p>I usually replace the more painful or more damaged hip first. We will decide together, based on your symptoms, your examination and your X-rays.</p>
 
 <h2>How long between the two operations?</h2>
-<p>There is no fixed rule. I usually recommend waiting until you have recovered well from the first operation, <mark class="todo">which is usually at least 3 months</mark>. By then, most people are walking without sticks and have regained much of their strength. Some people prefer to wait longer, which is fine. If you had a complication after the first operation, such as a wound problem or a blood clot, we will discuss whether you need extra precautions for the second.</p>
+<p>There is no fixed rule. I usually recommend waiting until you have recovered well from the first operation, which is usually at least 3 months. By then, most people are walking without sticks and have regained much of their strength. Some people prefer to wait longer, which is fine. If you had a complication after the first operation, such as a wound problem or a blood clot, we will discuss whether you need extra precautions for the second.</p>
 
 <h2>Planning ahead</h2>
 <ul>
@@ -269,11 +269,11 @@ GUIDES7 = [
 <table>
 <thead><tr><th></th><th>Trimming (meniscal debridement)</th><th>Meniscal repair</th></tr></thead>
 <tbody>
-<tr><td>Crutches</td><td>A few days, if needed</td><td><mark class="todo">Usually about 4 to 6 weeks</mark></td></tr>
-<tr><td>Brace</td><td>Not needed</td><td><mark class="todo">Usually for about 6 weeks</mark></td></tr>
-<tr><td>Desk work</td><td>About 1 to 2 weeks</td><td><mark class="todo">About 2 to 4 weeks</mark></td></tr>
-<tr><td>Driving</td><td><mark class="todo">About 1 to 2 weeks</mark></td><td><mark class="todo">About 6 weeks, or once out of the brace</mark></td></tr>
-<tr><td>Sport</td><td><mark class="todo">About 4 to 6 weeks</mark></td><td>Usually 4 to 6 months</td></tr>
+<tr><td>Crutches</td><td>A few days, if needed</td><td>Usually about 4 to 6 weeks</td></tr>
+<tr><td>Brace</td><td>Not needed</td><td>Usually for about 6 weeks</td></tr>
+<tr><td>Desk work</td><td>About 1 to 2 weeks</td><td>About 2 to 4 weeks</td></tr>
+<tr><td>Driving</td><td>About 1 to 2 weeks</td><td>About 6 weeks, or once out of the brace</td></tr>
+<tr><td>Sport</td><td>About 4 to 6 weeks</td><td>Usually 4 to 6 months</td></tr>
 </tbody>
 </table>
 <p>Before surgery, I will tell you whether I expect to repair or trim the tear. Sometimes the final decision can only be made during the operation, once I can see the tear.</p>
@@ -296,8 +296,8 @@ GUIDES7 = [
 <h2>Recovery after a meniscal repair</h2>
 <p>A repaired meniscus needs time to heal, so the first few weeks are about protecting the repair.</p>
 <ul>
-<li><strong>Weight bearing:</strong> <mark class="todo">you will usually be able to put some or all of your weight on the leg with the brace locked straight, using crutches, for about 4 to 6 weeks</mark>. The exact plan depends on the type of tear and the repair.</li>
-<li><strong>Bending:</strong> <mark class="todo">bending is usually limited to 90 degrees for the first 4 to 6 weeks</mark>, to avoid stressing the repair.</li>
+<li><strong>Weight bearing:</strong> you will usually be able to put some or all of your weight on the leg with the brace locked straight, using crutches, for about 4 to 6 weeks. The exact plan depends on the type of tear and the repair.</li>
+<li><strong>Bending:</strong> bending is usually limited to 90 degrees for the first 4 to 6 weeks, to avoid stressing the repair.</li>
 <li><strong>Avoid:</strong> deep squatting, twisting and kneeling until I or your physiotherapist say it is safe, usually about 3 to 4 months.</li>
 <li><strong>Return to sport:</strong> usually 4 to 6 months, once your strength, balance and confidence have returned.</li>
 </ul>
