@@ -119,7 +119,26 @@ def consent_tag():
     a = lambda v: html.escape(v, quote=True)
     return f'<script src="/consent.js" data-ads="{a(C.GOOGLE_ADS_ID)}" data-book="{a(C.ADS_LABEL_BOOK)}" data-call="{a(C.ADS_LABEL_CALL)}"></script>'
 
+NUFF_RE = re.compile(r"Nuffield Health Ipswich(?: Hospital)?")
+def link_nuffield(main):
+    """Link the first mention of Nuffield Health Ipswich in body text to the hospital website (once per page)."""
+    if C.NUFFIELD_HOSPITAL in main:
+        return main
+    parts = re.split(r"(<[^>]+>)", main)
+    skip = 0
+    for i, part in enumerate(parts):
+        if part.startswith("<"):
+            m = re.match(r"<(/?)(a|h1|h2|h3|h4|script|th|title|button|figcaption)\b", part, re.I)
+            if m:
+                skip += -1 if m.group(1) else 1
+            continue
+        if skip <= 0 and NUFF_RE.search(part):
+            parts[i] = NUFF_RE.sub(lambda mm: f'<a href="{C.NUFFIELD_HOSPITAL}">{mm.group(0)}</a>', part, count=1)
+            return "".join(parts)
+    return main
+
 def page_shell(title, description, slug, main, jsonld):
+    main = link_nuffield(main)
     robots = '<meta name="robots" content="noindex, nofollow">' if C.PREVIEW else ""
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     return f"""<!DOCTYPE html>
