@@ -22,7 +22,7 @@ WARNING_SIGNS = """
 NHS_KNEE_REC = '<a href="https://www.nhs.uk/conditions/knee-replacement/recovery/">NHS: Knee replacement recovery</a>'
 NHS_HIP_REC = '<a href="https://www.nhs.uk/conditions/hip-replacement/recovery/">NHS: Hip replacement recovery</a>'
 KORFITSEN = '<a href="https://doi.org/10.2340/17453674.2023.11958">Korfitsen CB et al. Hip precautions after posterior-approach total hip arthroplasty among patients with primary hip osteoarthritis do not influence early recovery: a systematic review and meta-analysis of randomized and non-randomized studies with 8,835 patients. Acta Orthop 2023;94:141&ndash;51.</a>'
-NUFFIELD_PRICES = '<a href="%NUFFIELD_HOSPITAL%">Nuffield Health Ipswich Hospital: treatments and prices</a>'
+NUFFIELD_PRICES = '<a href="%NUFFIELD_PRICING%">Nuffield Health Ipswich Hospital: treatment prices</a>'
 
 GUIDES = [
 {
@@ -286,10 +286,15 @@ GUIDES = [
 "title": "Private Hip and Knee Replacement Cost in Ipswich | Mr Krishna Boddu",
 "description": "How much a private hip or knee replacement costs at Nuffield Health Ipswich, what a fixed-price package includes, consultation fees, insurance and finance options.",
 "h1": "How much does a private hip or knee replacement cost?",
-"lead": "If you are paying for yourself, you will know the full cost of your surgery before you decide. Here is how the costs work at Nuffield Health Ipswich Hospital, and what to do if you have health insurance.",
+"lead": "A consultation with me costs &pound;200. For surgery, Nuffield Health Ipswich's guide price is %PRICE_HIP% for a hip replacement and %PRICE_KNEE% for a knee replacement, and you will know your fixed, all-inclusive price before you decide. Here is how it works, including if you have health insurance.",
 "about": ("MedicalProcedure", "Joint replacement"),
 "reviewed": (REVIEWED_GUIDES, REVIEWED_GUIDES_ISO),
+"lastmod": "2026-11-14",
 "body": """
+<h2>Guide prices for surgery</h2>
+%GUIDE_PRICE_TABLE%
+<div class="cta-row"><a class="btn" href="%BOOK_URL%">Book online</a><a class="btn btn-outline" href="tel:%SEC_PHONE_TEL%">Ask Daniela about fees</a></div>
+
 <h2>The steps and what each costs</h2>
 <table>
 <thead><tr><th scope="col">Step</th><th scope="col">Cost if you are paying for yourself</th></tr></thead>
@@ -297,12 +302,12 @@ GUIDES = [
 <tr><td>New consultation with me</td><td>&pound;200</td></tr>
 <tr><td>X-rays or scans</td><td>Charged separately by Nuffield Health Ipswich</td></tr>
 <tr><td>Follow-up consultation, if needed before you decide</td><td>&pound;100</td></tr>
-<tr><td>Surgery</td><td>A fixed-price package from Nuffield Health Ipswich, quoted after your consultation</td></tr>
+<tr><td>Surgery</td><td>A fixed, all-inclusive price from Nuffield Health Ipswich, given after your consultation (guide prices above)</td></tr>
 </tbody>
 </table>
 
 <h2>Fixed-price surgery packages</h2>
-<p>Once we have agreed that surgery is right for you, Nuffield Health Ipswich will give you a fixed-price quote. Packages usually include the hospital stay, the surgeon's and anaesthetist's fees and follow-up care, and your quote will set out exactly what is included. Nuffield Health publishes guide prices for each operation at Ipswich on its website: see <a href="%NUFFIELD_HOSPITAL%">Nuffield Health Ipswich Hospital</a>. Your own quote depends on your operation and your health.</p>
+<p>Once we have agreed that surgery is right for you, Nuffield Health Ipswich will give you a fixed-price quote. Packages usually include the hospital stay, the surgeon's and anaesthetist's fees and follow-up care, and your quote will set out exactly what is included. Your own quote depends on your operation and your health.</p>
 <p>Nuffield Health also offers finance options, so that you can spread the cost.</p>
 
 <h2>If you have health insurance</h2>
