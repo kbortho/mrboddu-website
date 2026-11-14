@@ -286,7 +286,7 @@ GUIDES = [
 "title": "Private Hip and Knee Replacement Cost in Ipswich | Mr Krishna Boddu",
 "description": "How much a private hip or knee replacement costs at Nuffield Health Ipswich, what a fixed-price package includes, consultation fees, insurance and finance options.",
 "h1": "How much does a private hip or knee replacement cost?",
-"lead": "A consultation with me costs &pound;200. For surgery, Nuffield Health Ipswich's guide price is %PRICE_HIP% for a hip replacement and %PRICE_KNEE% for a knee replacement, and you will know your fixed, all-inclusive price before you decide. Here is how it works, including if you have health insurance.",
+"lead": "A consultation with me costs &pound;200. For surgery, Nuffield Health Ipswich's guide price is %PRICE_HIP% for a hip replacement and %PRICE_KNEE% for a knee replacement. Prices can change, so please check the current price with the hospital. You will know your fixed, all-inclusive price before you decide.",
 "about": ("MedicalProcedure", "Joint replacement"),
 "reviewed": (REVIEWED_GUIDES, REVIEWED_GUIDES_ISO),
 "lastmod": "2026-11-14",

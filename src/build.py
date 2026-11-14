@@ -35,10 +35,11 @@ def guide_price_table():
     rows = "".join(f"<tr><td>{op}</td><td>&pound;{price}</td></tr>" for _, op, price in C.GUIDE_PRICES)
     return (f'<table>\n<thead><tr><th scope="col">Operation</th><th scope="col">Guide price</th></tr></thead>\n'
             f"<tbody>{rows}</tbody>\n</table>\n"
-            f'<p class="small">Guide prices published by Nuffield Health Ipswich, checked {C.PRICES_CHECKED}. A guide price is an estimate. '
-            "After your consultation, Nuffield Health gives you a fixed, all-inclusive price, which can differ from the guide price "
-            "depending on the implant, medicines and your health. Scans and tests before surgery are charged separately. "
-            f'See <a href="{C.NUFFIELD_PRICING}">Nuffield Health Ipswich treatment prices</a>.</p>')
+            "<p><strong>Please check the current price with Nuffield Health Ipswich before you decide.</strong> "
+            f"These guide prices are published by the hospital and were checked on {C.PRICES_CHECKED}, but they can change. "
+            "A guide price is an estimate. After your consultation, the hospital gives you a fixed, all-inclusive price, which can differ "
+            "from the guide price depending on the implant, medicines and your health. Scans and tests before surgery are charged separately. "
+            f'<a href="{C.NUFFIELD_PRICING}">See Nuffield Health Ipswich\'s current prices</a>.</p>')
 
 TOKENS = {
     "NJR": C.NJR, "PHIN": C.PHIN, "DOCTIFY": C.DOCTIFY, "TOPDOCTORS": C.TOPDOCTORS,
@@ -380,7 +381,7 @@ def llms_txt():
 - Clinic: {C.CLINIC_TIMES}, at {C.HOSPITAL}
 - Secretary: {C.SECRETARY}, {C.SEC_PHONE}, {C.SEC_EMAIL}
 - Book online: {C.BOOK_URL}
-- Self-pay fees: new consultation £200, follow-up £100. Surgery is a fixed, all-inclusive package from Nuffield Health Ipswich, given after the consultation. Nuffield guide prices (checked {C.PRICES_CHECKED}): {prices}.
+- Self-pay fees: new consultation £200, follow-up £100. Surgery is a fixed, all-inclusive package from Nuffield Health Ipswich, given after the consultation. Nuffield guide prices, checked {C.PRICES_CHECKED}: {prices}. Prices can change: check the current price with Nuffield Health Ipswich ({C.NUFFIELD_PRICING}).
 - Insurance: recognised by {", ".join(C.INSURERS)}. Bupa fee-assured.
 - Revision surgery: mostly at the Essex and Suffolk Elective Orthopaedic Centre, Colchester Hospital (private patient service); first consultation at Nuffield Health Ipswich.
 - Experience: more than 1,000 hip and knee replacements; fellowships in primary and revision hip and knee replacement in Montreal and at King's College Hospital, London; joint replacements recorded on the National Joint Registry; 25 research publications.
