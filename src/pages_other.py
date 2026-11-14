@@ -100,6 +100,7 @@ OTHER = [
 },
 {
 "slug": "fees-insurance",
+"lastmod": "2026-11-14",
 "nav": "Fees and insurance",
 "group": "practice",
 "title": "Fees and Insurance | Mr Krishna Boddu, Ipswich",
@@ -115,7 +116,7 @@ OTHER = [
 <tr><td>Follow-up consultation</td><td>&pound;100</td></tr>
 <tr><td>Injections given in clinic</td><td>&pound;100, in addition to the consultation fee, plus hospital fees charged separately by Nuffield Health Ipswich</td></tr>
 <tr><td>X-rays and scans</td><td>Charged separately by Nuffield Health Ipswich</td></tr>
-<tr><td>Surgery</td><td>A fixed-price package from Nuffield Health Ipswich, quoted after your consultation</td></tr>
+<tr><td>Surgery</td><td>A fixed, all-inclusive price from Nuffield Health Ipswich, given after your consultation. See the <a href="#paying-for-yourself">guide prices below</a>.</td></tr>
 </tbody>
 </table>
 <p>Daniela handles my billing and can answer any questions about fees.</p>
@@ -130,13 +131,15 @@ OTHER = [
 <li>Call your insurer for a pre-authorisation number, and give it to Daniela when you book.</li>
 </ol>
 
-<h2>Paying for yourself</h2>
-<p>Nuffield Health Ipswich offers fixed-price packages for surgery, which usually include the hospital stay, the surgeon's and anaesthetist's fees and follow-up care; your quote will set out exactly what is included. Finance options are also available through Nuffield Health. See <a href="%NUFFIELD_HOSPITAL%">Nuffield Health Ipswich Hospital</a>.</p>
+<h2 id="paying-for-yourself">Paying for yourself</h2>
+<p>Nuffield Health Ipswich offers fixed-price packages for surgery, which usually include the hospital stay, the surgeon's and anaesthetist's fees and follow-up care; your quote will set out exactly what is included. Finance options are also available through Nuffield Health.</p>
+%GUIDE_PRICE_TABLE%
 """,
 "related": ["private-hip-and-knee-replacement-cost", "hip-knee-clinic", "contact", "knee-replacement", "hip-replacement"],
 },
 {
 "slug": "outcomes-reviews",
+"lastmod": "2026-11-12",
 "nav": "Outcomes and reviews",
 "group": "practice",
 "title": "Outcomes and Patient Reviews | Mr Krishna Boddu, Ipswich",
@@ -162,8 +165,8 @@ OTHER = [
 
 <h2>Patient reviews</h2>
 <div class="ratings">
-<a class="rating" href="%DOCTIFY%"><span class="score">4.96<small>/5</small></span><span>from 124 reviews on Doctify</span></a>
-<a class="rating" href="%TOPDOCTORS%"><span class="score">5.0<small>/5</small></span><span>from 32 reviews on Top Doctors</span></a>
+<a class="rating" href="%DOCTIFY%"><span class="score">%DOCTIFY_RATING%<small>/5</small></span><span>from %DOCTIFY_REVIEWS% reviews on Doctify</span></a>
+<a class="rating" href="%TOPDOCTORS%"><span class="score">%TOPDOCTORS_RATING%<small>/5</small></span><span>from %TOPDOCTORS_REVIEWS% reviews on Top Doctors</span></a>
 <a class="rating" href="%GOOGLE_PROFILE%"><span class="score">%GOOGLE_RATING%<small>/5</small></span><span>from %GOOGLE_REVIEWS% reviews on Google</span></a>
 </div>
 <p class="small">Ratings %RATING_NOTE%. Reviews are collected and published independently by Doctify, Top Doctors and Google.</p>
@@ -271,6 +274,7 @@ OTHER = [
 },
 {
 "slug": "contact",
+"lastmod": "2026-11-12",
 "nav": "Contact",
 "group": "practice",
 "title": "Book an Appointment | Mr Krishna Boddu, Nuffield Health Ipswich",

@@ -21,6 +21,20 @@ NJR = "https://surgeonprofile.njrcentre.org.uk/SurgeonProfile?gmccode=5206961"
 MAPS = "https://www.google.com/maps/search/?api=1&query=Nuffield+Health+Ipswich+Hospital+Foxhall+Road+IP4+5SW"
 INSURERS = ["Bupa", "AXA Health", "Aviva", "Vitality", "WPA", "Allianz", "Healix"]
 RATING_NOTE = "as of November 2026"
+# Review scores shown on the site: refresh monthly with the Google count below
+DOCTIFY_RATING = "4.96"
+DOCTIFY_REVIEWS = 124
+TOPDOCTORS_RATING = "5.0"
+TOPDOCTORS_REVIEWS = 32
+# Nuffield Health Ipswich self-pay guide prices (from NUFFIELD_PRICING). Recheck monthly.
+NUFFIELD_PRICING = "https://www.nuffieldhealth.com/hospitals/ipswich/pricing"
+GUIDE_PRICES = [  # (token suffix, operation, price in pounds)
+    ("HIP", "Hip replacement", "18,503"),
+    ("KNEE", "Knee replacement", "19,266"),
+    ("PKR", "Partial (unicompartmental) knee replacement", "17,882"),
+    ("SCOPE", "Knee arthroscopy (keyhole surgery)", "5,125"),
+]
+PRICES_CHECKED = "14 November 2026"
 LINKEDIN = "https://www.linkedin.com/in/bodduk"
 RESEARCHGATE = "https://www.researchgate.net/profile/Krishna-Boddu"
 GOOGLE_PROFILE = "https://maps.google.com/?cid=11382432351318201432"
