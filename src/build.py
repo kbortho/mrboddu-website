@@ -23,6 +23,7 @@ GUIDES = GUIDES + GUIDES2 + GUIDES3 + GUIDES4 + GUIDES5 + GUIDES6 + GUIDES7
 
 OUT = os.path.join(os.path.dirname(HERE), "site")
 LASTMOD = "2026-11-09"
+HOME_LASTMOD = "2026-11-12"  # Google rating added to the homepage
 ALL = PROCEDURES + CONDITIONS + GUIDES + OTHER
 BY_SLUG = {p["slug"]: p for p in ALL}
 
@@ -30,8 +31,22 @@ def tel(n):
     d = re.sub(r"\D", "", n)
     return "+44" + d[1:] if d.startswith("0") else d
 
+def guide_price_table():
+    rows = "".join(f"<tr><td>{op}</td><td>&pound;{price}</td></tr>" for _, op, price in C.GUIDE_PRICES)
+    return (f'<table>\n<thead><tr><th scope="col">Operation</th><th scope="col">Guide price</th></tr></thead>\n'
+            f"<tbody>{rows}</tbody>\n</table>\n"
+            f'<p class="small">Guide prices published by Nuffield Health Ipswich, checked {C.PRICES_CHECKED}. A guide price is an estimate. '
+            "After your consultation, Nuffield Health gives you a fixed, all-inclusive price, which can differ from the guide price "
+            "depending on the implant, medicines and your health. Scans and tests before surgery are charged separately. "
+            f'See <a href="{C.NUFFIELD_PRICING}">Nuffield Health Ipswich treatment prices</a>.</p>')
+
 TOKENS = {
     "NJR": C.NJR, "PHIN": C.PHIN, "DOCTIFY": C.DOCTIFY, "TOPDOCTORS": C.TOPDOCTORS,
+    "DOCTIFY_RATING": C.DOCTIFY_RATING, "DOCTIFY_REVIEWS": str(C.DOCTIFY_REVIEWS),
+    "TOPDOCTORS_RATING": C.TOPDOCTORS_RATING, "TOPDOCTORS_REVIEWS": str(C.TOPDOCTORS_REVIEWS),
+    "NUFFIELD_PRICING": C.NUFFIELD_PRICING, "PRICES_CHECKED": C.PRICES_CHECKED,
+    "GUIDE_PRICE_TABLE": guide_price_table(),
+    **{f"PRICE_{k}": f"&pound;{price}" for k, _, price in C.GUIDE_PRICES},
     "GMC": C.GMC, "HOSPITAL": C.HOSPITAL, "HOSPITAL_PHONE": C.HOSPITAL_PHONE,
     "HOSPITAL_PHONE_TEL": tel(C.HOSPITAL_PHONE), "SEC_PHONE": C.SEC_PHONE,
     "SEC_PHONE_TEL": tel(C.SEC_PHONE), "SEC_EMAIL": C.SEC_EMAIL, "SECRETARY": C.SECRETARY,
@@ -179,12 +194,25 @@ def crumbs_ld(p):
         {"@type": "ListItem", "position": 1, "name": "Home", "item": url("")},
         {"@type": "ListItem", "position": 2, "name": p["nav"], "item": url(p["slug"])}]}
 
+PROOF_PAGES = {"second-opinion", "hip-knee-clinic"}  # besides every treatment page
+
+def proof():
+    """What someone choosing a surgeon looks for, on the first screen: reviews, experience, fee, insurance, next step."""
+    return f"""<ul class="proof">
+<li><strong>{C.DOCTIFY_RATING} out of 5</strong><span>from {C.DOCTIFY_REVIEWS} reviews on Doctify</span></li>
+<li><strong>More than 1,000</strong><span>hip and knee replacements</span></li>
+<li><strong>&pound;200 consultation</strong><span>if you pay for yourself</span></li>
+<li><strong>{", ".join(i.replace(" Health", "") for i in C.INSURERS[:4])}</strong><span>and other insurers</span></li>
+</ul>
+<div class="cta-row"><a class="btn" href="{C.BOOK_URL}">Book online</a><a class="btn btn-outline" href="tel:{tel(C.SEC_PHONE)}">Call Daniela</a></div>"""
+
 def render_page(p):
     clinical = p["group"] in ("treatments", "conditions", "guides")
+    show_proof = p["group"] == "treatments" or p["slug"] in PROOF_PAGES
     parts = [f"""<div class="page-head"><div class="wrap narrow">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">{p["nav"]}</span></nav>
 <h1>{p["h1"]}</h1>
-<p class="lead">{fill(p["lead"])}</p>
+<p class="lead">{fill(p["lead"])}</p>{chr(10) + proof() if show_proof else ""}
 </div></div>
 <div class="wrap narrow content">"""]
     if p.get("photo"):
@@ -238,7 +266,7 @@ def render_home():
 <div class="cta-row"><a class="btn" href="{C.BOOK_URL}">Book online</a><a class="btn btn-outline" href="/contact/">Contact my secretary</a></div>
 <ul class="trust">
 <li><strong>More than 1,000</strong><span>hip and knee replacements, with outcomes <a href="/outcomes-reviews/#hip-results">better than expected on the National Joint Registry</a></span></li>
-<li><strong>4.96 out of 5</strong><span>from 124 reviews on Doctify</span></li>
+<li><strong>{C.DOCTIFY_RATING} out of 5</strong><span>from {C.DOCTIFY_REVIEWS} reviews on Doctify</span></li>
 <li><strong>FRCS (Tr &amp; Orth)</strong><span>fellowship-trained in hip and knee replacement</span></li>
 <li><strong>NHS consultant</strong><span>at Ipswich Hospital</span></li>
 </ul>
@@ -278,8 +306,8 @@ def render_home():
 <section class="section"><div class="wrap">
 <h2>What patients say</h2>
 <div class="ratings">
-<a class="rating" href="{C.DOCTIFY}"><span class="score">4.96<small>/5</small></span><span>from 124 reviews on Doctify</span></a>
-<a class="rating" href="{C.TOPDOCTORS}"><span class="score">5.0<small>/5</small></span><span>from 32 reviews on Top Doctors</span></a>
+<a class="rating" href="{C.DOCTIFY}"><span class="score">{C.DOCTIFY_RATING}<small>/5</small></span><span>from {C.DOCTIFY_REVIEWS} reviews on Doctify</span></a>
+<a class="rating" href="{C.TOPDOCTORS}"><span class="score">{C.TOPDOCTORS_RATING}<small>/5</small></span><span>from {C.TOPDOCTORS_REVIEWS} reviews on Top Doctors</span></a>
 <a class="rating" href="{C.GOOGLE_PROFILE}"><span class="score">{C.GOOGLE_RATING}<small>/5</small></span><span>from {C.GOOGLE_REVIEWS} reviews on Google</span></a>
 <a class="rating" href="{C.PHIN}"><span class="score">96%</span><span>of 76 patients surveyed by PHIN would recommend me</span></a>
 </div>
@@ -336,6 +364,46 @@ NETLIFY = """[build]
     Cache-Control = "public, max-age=31536000, immutable"
 """
 
+def plain(s):
+    return html.unescape(re.sub(r"<[^>]+>", "", fill(s))).strip()
+
+def llms_txt():
+    """Plain-text summary of the practice for AI assistants (llmstxt.org format)."""
+    line = lambda p: f"- [{plain(p['nav'])}]({url(p['slug'])}): {plain(p.get('card') or p['description'])}"
+    practice = [BY_SLUG[s] for s in ["hip-knee-clinic", "fees-insurance", "outcomes-reviews", "your-operation",
+                                     "about", "research", "gps-physiotherapists", "contact"] if s in BY_SLUG]
+    prices = "; ".join(f"{op} £{price}" for _, op, price in C.GUIDE_PRICES)
+    return f"""# {C.NAME}, Consultant Hip and Knee Surgeon, Ipswich
+
+> Consultant orthopaedic surgeon (FRCS Tr & Orth, GMC {C.GMC}) specialising in hip and knee replacement, partial and robotic-assisted (Mako) knee replacement, revision hip and knee replacement, and knee arthroscopy and meniscal surgery. Private clinic at {C.HOSPITAL}, Foxhall Road, Ipswich IP4 5SW, for patients from Ipswich, Suffolk and north Essex. NHS consultant at Ipswich Hospital.
+
+- Clinic: {C.CLINIC_TIMES}, at {C.HOSPITAL}
+- Secretary: {C.SECRETARY}, {C.SEC_PHONE}, {C.SEC_EMAIL}
+- Book online: {C.BOOK_URL}
+- Self-pay fees: new consultation £200, follow-up £100. Surgery is a fixed, all-inclusive package from Nuffield Health Ipswich, given after the consultation. Nuffield guide prices (checked {C.PRICES_CHECKED}): {prices}.
+- Insurance: recognised by {", ".join(C.INSURERS)}. Bupa fee-assured.
+- Revision surgery: mostly at the Essex and Suffolk Elective Orthopaedic Centre, Colchester Hospital (private patient service); first consultation at Nuffield Health Ipswich.
+- Experience: more than 1,000 hip and knee replacements; fellowships in primary and revision hip and knee replacement in Montreal and at King's College Hospital, London; joint replacements recorded on the National Joint Registry; 25 research publications.
+- Reviews ({C.RATING_NOTE}): {C.DOCTIFY_RATING}/5 from {C.DOCTIFY_REVIEWS} reviews on Doctify, {C.TOPDOCTORS_RATING}/5 from {C.TOPDOCTORS_REVIEWS} on Top Doctors, {C.GOOGLE_RATING}/5 from {C.GOOGLE_REVIEWS} on Google.
+- Profiles: Doctify {C.DOCTIFY} ; Top Doctors {C.TOPDOCTORS} ; PHIN {C.PHIN} ; National Joint Registry {C.NJR} ; Nuffield Health {C.NUFFIELD_PROFILE} ; Google {C.GOOGLE_PROFILE}
+
+## Treatments
+
+{chr(10).join(line(p) for p in PROCEDURES)}
+
+## Conditions
+
+{chr(10).join(line(p) for p in CONDITIONS)}
+
+## Practice information
+
+{chr(10).join(line(p) for p in practice)}
+
+## Patient guides
+
+{chr(10).join(line(p) for p in GUIDES)}
+"""
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     for p in ALL:
@@ -358,12 +426,15 @@ def main():
         f.write(FAVICON)
     with open(os.path.join(os.path.dirname(OUT), "netlify.toml"), "w") as f:
         f.write(NETLIFY.replace("{CSP}", CSP))  # repo root: Netlify publishes the site/ folder
-    urls = [(url(""), LASTMOD)] + [(url(p["slug"]), p.get("reviewed", (None, LASTMOD))[1]) for p in ALL]
+    lastmod = lambda p: max(d for d in (p.get("lastmod"), p.get("reviewed", (None, LASTMOD))[1]) if d)
+    urls = [(url(""), HOME_LASTMOD)] + [(url(p["slug"]), lastmod(p)) for p in ALL]
     sm = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in urls)
     with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
         f.write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>\n')
     with open(os.path.join(OUT, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nSitemap: {C.BASE_URL}/sitemap.xml\n")
+    with open(os.path.join(OUT, "llms.txt"), "w") as f:
+        f.write(llms_txt())
     print(f"Built {len(urls)} pages into {OUT}")
 
 if __name__ == "__main__":
