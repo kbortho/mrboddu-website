@@ -2,7 +2,7 @@
 PREVIEW = False  # True adds noindex and a preview banner (for drafts only)
 BASE_URL = "https://www.mrboddu.co.uk"
 NAME = "Mr Krishna Boddu"
-POSTNOMINALS = "MBBS, MS (Orth), FRCS (Tr & Orth)"
+POSTNOMINALS = "MBBS, MS (Orth), MRCSEd, AFRCSI, FRCS (Tr & Orth), EBOT"
 GMC = "5206961"
 HOSPITAL = "Nuffield Health Ipswich Hospital"
 ADDRESS_LINES = ["Nuffield Health Ipswich Hospital", "Foxhall Road", "Ipswich", "IP4 5SW"]
@@ -36,12 +36,13 @@ GUIDE_PRICES = [  # (token suffix, operation, price in pounds)
 ]
 PRICES_CHECKED = "14 November 2026"
 LINKEDIN = "https://www.linkedin.com/in/bodduk"
+ORCID = "https://orcid.org/0000-0003-2553-8301"
 RESEARCHGATE = "https://www.researchgate.net/profile/Krishna-Boddu"
 GOOGLE_PROFILE = "https://maps.google.com/?cid=11382432351318201432"
 GOOGLE_REVIEWS = 25
 GOOGLE_RATING = "5.0"
 GOOGLE_REVIEW_URL = "https://g.page/r/CVhUPLTqhfadEAI/review"
-CLINIC_TIMES = "Monday, 8.30am to 12.30pm"
+CLINIC_TIMES = "Monday, 8.30am to 12.30pm, and some Friday mornings"
 REVIEWED = "1 November 2026"  # date Mr Boddu approved the clinical pages
 REVIEWED_ISO = "2026-11-01"
 # Google tag ID (Google Analytics "G-..." or Ads "AW-..."). Empty = no tag, no banner, cookie-free site.
