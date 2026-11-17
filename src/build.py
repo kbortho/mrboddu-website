@@ -195,17 +195,20 @@ def crumbs_ld(p):
         {"@type": "ListItem", "position": 1, "name": "Home", "item": url("")},
         {"@type": "ListItem", "position": 2, "name": p["nav"], "item": url(p["slug"])}]}
 
-PROOF_PAGES = {"second-opinion", "hip-knee-clinic"}  # besides every treatment page
+PROOF_PAGES = {"second-opinion", "hip-knee-clinic", "private-hip-and-knee-replacement-cost"}
+BUTTONS_FIRST = {"private-hip-and-knee-replacement-cost"}  # besides every treatment page
 
-def proof():
+def proof(buttons_first=False):
     """What someone choosing a surgeon looks for, on the first screen: reviews, experience, fee, insurance, next step."""
-    return f"""<ul class="proof">
+    buttons = f'<div class="cta-row"><a class="btn" href="{C.BOOK_URL}">Book online</a><a class="btn btn-outline" href="tel:{tel(C.SEC_PHONE)}">Call Daniela</a></div>'
+    tiles = f"""<ul class="proof">
 <li><strong>{C.DOCTIFY_RATING} out of 5</strong><span>from {C.DOCTIFY_REVIEWS} reviews on Doctify</span></li>
 <li><strong>More than 1,000</strong><span>hip and knee replacements</span></li>
 <li><strong>&pound;200 consultation</strong><span>if you pay for yourself</span></li>
 <li><strong>{", ".join(i.replace(" Health", "") for i in C.INSURERS[:4])}</strong><span>and other insurers</span></li>
-</ul>
-<div class="cta-row"><a class="btn" href="{C.BOOK_URL}">Book online</a><a class="btn btn-outline" href="tel:{tel(C.SEC_PHONE)}">Call Daniela</a></div>"""
+</ul>"""
+    # On the cost page (a common Google Ads landing page) the buttons go straight under the prices, above the fold on phones.
+    return buttons + "\n" + tiles if buttons_first else tiles + "\n" + buttons
 
 def render_page(p):
     clinical = p["group"] in ("treatments", "conditions", "guides")
@@ -213,7 +216,7 @@ def render_page(p):
     parts = [f"""<div class="page-head"><div class="wrap narrow">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">{p["nav"]}</span></nav>
 <h1>{p["h1"]}</h1>
-<p class="lead">{fill(p["lead"])}</p>{chr(10) + proof() if show_proof else ""}
+<p class="lead">{fill(p["lead"])}</p>{chr(10) + proof(p["slug"] in BUTTONS_FIRST) if show_proof else ""}
 </div></div>
 <div class="wrap narrow content">"""]
     if p.get("photo"):
