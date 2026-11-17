@@ -50,3 +50,5 @@ GOOGLE_ADS_ID = "G-3SSR5WV2NC"
 # Optional Google Ads conversion labels (need an AW- ID; with a G- ID clicks are sent as GA4 events) (the part after the "/" in send_to)
 ADS_LABEL_BOOK = ""   # click on "Book online"
 ADS_LABEL_CALL = ""   # click on a phone number
+# Microsoft Advertising UET tag ID. Loads only after cookie Accept, like the Google tag. Empty = off.
+MS_UET_ID = "97293943"

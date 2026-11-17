@@ -57,7 +57,7 @@ TOKENS = {
     "ADDRESS_HTML": "<br>".join(C.ADDRESS_LINES),
     "INSURER_LIST": "".join(f"<li>{i}</li>" for i in C.INSURERS),
     "RESEARCHGATE": C.RESEARCHGATE, "ORCID": C.ORCID,
-    "COOKIES": ("<p>This website uses cookies only if you agree. When you first visit, a banner asks whether you accept Google cookies. If you click Accept, Google Analytics and Google Ads set cookies that tell us how many people visit, which pages they read, whether a visit came from one of our Google adverts, and whether they then clicked to book or call. This helps us improve the website and see whether our adverts are useful. Google does not tell us who you are. If you click Reject, or ignore the banner, no cookies are set. You can change your choice at any time using the \"Cookie settings\" link at the bottom of every page. Google's use of this information is described in <a href=\"https://policies.google.com/technologies/partner-sites\">Google's policy on partner sites</a>.</p>"
+    "COOKIES": ("<p>This website uses cookies only if you agree. When you first visit, a banner asks whether you accept Google" + (" and Microsoft" if C.MS_UET_ID else "") + " cookies. If you click Accept, Google Analytics and Google Ads" + (", and Microsoft Advertising," if C.MS_UET_ID else "") + " set cookies that tell us how many people visit, which pages they read, whether a visit came from one of our adverts, and whether they then clicked to book or call. This helps us improve the website and see whether our adverts are useful. " + ("Neither Google nor Microsoft tells us who you are." if C.MS_UET_ID else "Google does not tell us who you are.") + " If you click Reject, or ignore the banner, no cookies are set. You can change your choice at any time using the \"Cookie settings\" link at the bottom of every page. Google's use of this information is described in <a href=\"https://policies.google.com/technologies/partner-sites\">Google's policy on partner sites</a>" + ("; Microsoft's is described in the <a href=\"https://privacy.microsoft.com/privacystatement\">Microsoft Privacy Statement</a>" if C.MS_UET_ID else "") + ".</p>"
                 if C.GOOGLE_ADS_ID else "<p>This website does not use cookies.</p>"),
 }
 
@@ -133,7 +133,7 @@ def consent_tag():
     if not C.GOOGLE_ADS_ID:
         return ""
     a = lambda v: html.escape(v, quote=True)
-    return f'<script src="/consent.js" data-ads="{a(C.GOOGLE_ADS_ID)}" data-book="{a(C.ADS_LABEL_BOOK)}" data-call="{a(C.ADS_LABEL_CALL)}"></script>'
+    return f'<script src="/consent.js" data-ads="{a(C.GOOGLE_ADS_ID)}" data-book="{a(C.ADS_LABEL_BOOK)}" data-call="{a(C.ADS_LABEL_CALL)}" data-uet="{a(C.MS_UET_ID)}"></script>'
 
 NUFF_RE = re.compile(r"Nuffield Health Ipswich(?: Hospital)?")
 def link_nuffield(main):
@@ -342,10 +342,11 @@ def render_404():
 
 FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#12304d"/><text x="32" y="42" font-family="Georgia, serif" font-size="28" fill="#fff" text-anchor="middle">KB</text></svg>"""
 
+MS = " https://bat.bing.com https://bat.bing.net https://*.bing.com" if C.MS_UET_ID else ""
 G = "https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://*.doubleclick.net https://www.google.com https://www.google.co.uk"
-CSP = ("default-src 'self'; img-src 'self' data:" + (" " + G if C.GOOGLE_ADS_ID else "") +
-       "; style-src 'self'; script-src 'self'" + (" https://www.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net" if C.GOOGLE_ADS_ID else "") +
-       ("; connect-src 'self' " + G + "; frame-src https://td.doubleclick.net https://www.googletagmanager.com" if C.GOOGLE_ADS_ID else "") +
+CSP = ("default-src 'self'; img-src 'self' data:" + (" " + G + MS if C.GOOGLE_ADS_ID else "") +
+       "; style-src 'self'; script-src 'self'" + (" https://www.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net" + MS if C.GOOGLE_ADS_ID else "") +
+       ("; connect-src 'self' " + G + MS + "; frame-src https://td.doubleclick.net https://www.googletagmanager.com" if C.GOOGLE_ADS_ID else "") +
        "; frame-ancestors 'none'; base-uri 'self'; form-action 'none'")
 NETLIFY = """[build]
   publish = "site"
