@@ -72,6 +72,7 @@ GUIDES2 = [
 "reviewed": REVIEWED2,
 "body": """
 <h2>Where you feel the pain</h2>
+<figure class="diagram"><img src="/assets/hip-or-back-pain.svg" width="560" height="520" alt="Front and back views of a body. Pain from the hip joint is usually felt in the groin and front of the thigh, sometimes down to the knee. Pain from the lower back is usually felt in the lower back and buttock, sometimes spreading down the back of the leg below the knee. Pain from the tendons is felt on the outside of the hip." loading="lazy"><figcaption>Where the pain is felt gives important clues. Teal: the hip joint. Purple: the lower back. Yellow: the tendons on the side of the hip.</figcaption></figure>
 <table>
 <thead><tr><th scope="col">Likely cause</th><th scope="col">Typical features</th></tr></thead>
 <tbody>
