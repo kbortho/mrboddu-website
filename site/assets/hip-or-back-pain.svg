@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-labelledby="pt pd">
+<title id="pt">Where hip pain and back pain are usually felt</title>
+<desc id="pd">Front and back views of a body. Pain from the hip joint is usually felt in the groin and front of the thigh, sometimes down to the knee. Pain from the lower back is usually felt in the lower back and buttock, sometimes spreading down the back of the leg below the knee. Pain from the tendons is felt on the outside of the hip.</desc>
+<style>
+.b{fill:none;stroke:#12304d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.bw{fill:#fff;stroke:#12304d;stroke-width:3;stroke-linejoin:round}
+.m{fill:none;stroke:#0f6e6a;stroke-width:9;stroke-linecap:round}
+.mf{fill:#0f6e6a}
+.p{fill:#d9dee4;stroke:#12304d;stroke-width:1.5}
+.f{fill:none;stroke:#12304d;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.h{fill:#fff;stroke:#12304d;stroke-width:4}
+.bed{fill:none;stroke:#9aa7b4;stroke-width:3;stroke-linecap:round}
+.pil{fill:#eef1f4;stroke:#9aa7b4;stroke-width:2}
+.a{fill:none;stroke:#0f6e6a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.t{font:600 17px system-ui,-apple-system,Segoe UI,Arial,sans-serif;fill:#12304d}
+.s{font:14px system-ui,-apple-system,Segoe UI,Arial,sans-serif;fill:#4a5866}
+.box{fill:none;stroke:#d9dee4;stroke-width:1.5}
+</style>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f6e6a"/></marker></defs>
+<defs>
+<g id="body">
+<path d="M-38,104 L-50,214 M38,104 L50,214" stroke="#12304d" stroke-width="20" stroke-linecap="round" fill="none"/>
+<path d="M-38,104 L-50,214 M38,104 L50,214" stroke="#fff" stroke-width="15" stroke-linecap="round" fill="none"/>
+<path d="M-20,210 L-24,400 M20,210 L24,400" stroke="#12304d" stroke-width="36" stroke-linecap="round" fill="none"/>
+<path d="M-20,210 L-24,400 M20,210 L24,400" stroke="#fff" stroke-width="31" stroke-linecap="round" fill="none"/>
+<path class="bw" d="M-40,82 Q0,72 40,82 Q46,100 40,140 Q36,170 42,212 Q0,226 -42,212 Q-36,170 -40,140 Q-46,100 -40,82 Z"/>
+<rect class="bw" x="-8" y="58" width="16" height="20" rx="4"/>
+<circle class="bw" cx="0" cy="40" r="22"/>
+</g>
+</defs>
+<g transform="translate(150,10)">
+<use href="#body"/>
+<path d="M-18,212 L-22,300" stroke="#0f6e6a" stroke-width="24" stroke-linecap="round" opacity=".6"/>
+<circle cx="-23" cy="316" r="9" fill="#0f6e6a" opacity=".35"/>
+<ellipse cx="-42" cy="204" rx="8" ry="14" fill="#e0a800" opacity=".85"/>
+<text class="t" x="0" y="440" text-anchor="middle">Front</text>
+</g>
+<g transform="translate(410,10)">
+<use href="#body"/>
+<ellipse cx="0" cy="182" rx="30" ry="12" fill="#7d4f9e" opacity=".55"/>
+<ellipse cx="18" cy="210" rx="18" ry="14" fill="#7d4f9e" opacity=".55"/>
+<path d="M21,236 L24,380" stroke="#7d4f9e" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 10" opacity=".8"/>
+<ellipse cx="42" cy="204" rx="8" ry="14" fill="#e0a800" opacity=".85"/>
+<text class="t" x="0" y="440" text-anchor="middle">Back</text>
+</g>
+<g transform="translate(30,474)">
+<rect x="0" y="-12" width="18" height="12" rx="2" fill="#0f6e6a" opacity=".6"/><text class="s" x="26" y="0">Hip joint: groin, front of thigh</text>
+<rect x="250" y="-12" width="18" height="12" rx="2" fill="#7d4f9e" opacity=".6"/><text class="s" x="276" y="0">Lower back: buttock, back of leg</text>
+<rect x="0" y="14" width="18" height="12" rx="2" fill="#e0a800" opacity=".85"/><text class="s" x="26" y="26">Tendons: outside of the hip</text>
+</g>
+</svg>
