@@ -56,6 +56,7 @@ PROCEDURES = [
 "body": """
 <h2>What is a hip replacement?</h2>
 <p>In a total hip replacement, the worn ball at the top of the thigh bone and the worn socket in the pelvis are replaced with artificial parts, usually made of metal and ceramic. The new joint is designed to move smoothly and without pain.</p>
+<figure class="diagram photo"><img src="/assets/hip-replacement-implant.jpg" width="720" height="720" alt="An assembled total hip replacement implant: a metal cup with a plastic liner, joined by a ball to a metal stem." loading="lazy"><figcaption>An example of a total hip replacement: a cup and liner for the socket, joined by a ball to a stem in the thigh bone. The implant is chosen to suit each patient.</figcaption></figure>
 
 <h2>Who might it help?</h2>
 <p>Surgery is worth considering when hip pain or stiffness has a real effect on your daily life, such as walking, sleeping, working or caring for others, and exercise, weight management and painkillers are no longer enough. Age, weight or other health conditions do not on their own rule you out, but they affect the balance of benefits and risks, which we will discuss together.</p>
@@ -88,7 +89,7 @@ PROCEDURES = [
 <p>Already had a hip replacement that is causing problems? See <a href="/revision-hip-replacement/">revision hip replacement</a>.</p>
 """,
 "sources": [NICE_157, NICE_226, NJR_REPORTS, BODDU_HIP23],
-"related": ["hip-arthritis", "hip-replacement-recovery", "how-long-do-hip-and-knee-replacements-last", "robotic-hip-and-knee-replacement", "revision-hip-replacement"],
+"related": ["which-hip-replacement-implant", "anterior-or-posterior-approach-hip-replacement", "preparing-for-hip-or-knee-replacement", "hip-replacement-recovery", "hip-replacement-exercises", "leg-length-and-limp-after-hip-replacement", "both-hips-need-replacing", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "hip-arthritis", "robotic-hip-and-knee-replacement", "revision-hip-replacement"],
 },
 {
 "slug": "revision-hip-replacement",
@@ -127,7 +128,7 @@ PROCEDURES = [
 <p>Recovery is usually slower than after a first hip replacement, and you may need to limit the weight you put on the leg for a time. The risks are similar to those of a first hip replacement but higher, particularly infection, dislocation and the need for further surgery. Results are generally good but less predictable, and I will give you a realistic picture for your own situation.</p>
 """ + REVISION_WHERE + REVISION_COSTS,
 "sources": [NJR_SITE, NICE_157],
-"related": ["problem-joint-replacement", "hip-replacement", "second-opinion", "fees-insurance"],
+"related": ["why-do-joint-replacements-fail", "problem-joint-replacement", "how-long-do-hip-and-knee-replacements-last", "hip-replacement", "second-opinion", "fees-insurance"],
 },
 {
 "slug": "knee-replacement",
@@ -149,6 +150,7 @@ PROCEDURES = [
 "body": """
 <h2>What is a knee replacement?</h2>
 <p>A total knee replacement resurfaces the worn ends of the thigh bone and shin bone with metal parts, with a smooth plastic insert between them. The back of the kneecap is rarely resurfaced. My own research, using National Joint Registry data, found that at 15 years knee replacements did equally well with or without resurfacing of the kneecap, although this can depend on the implant design.</p>
+<figure class="diagram photo"><img src="/assets/knee-replacement-implant.jpg" width="420" height="420" alt="A total knee replacement implant: a curved metal part for the thigh bone, a plastic insert and a metal tray for the shin bone." loading="lazy"><figcaption>An example of a total knee replacement: metal parts for the thigh bone and shin bone, with a plastic insert between them.</figcaption></figure>
 
 <h2>Is it right for you?</h2>
 <p>A knee replacement is usually considered when arthritis pain limits walking, sleep or daily life, and non-surgical treatments have stopped helping. If arthritis affects only one part of your knee, a <a href="/partial-knee-replacement/">partial knee replacement</a> may be an option, and national guidance recommends that suitable patients are offered that choice.</p>
@@ -182,7 +184,7 @@ PROCEDURES = [
 <p>Exercise and physiotherapy, weight loss where appropriate, anti-inflammatory gels and painkillers, and steroid injections for short-term relief can all help. See <a href="/knee-arthritis/">knee arthritis</a>.</p>
 """ + COSTS,
 "sources": [NICE_157, NICE_226, NJR_REPORTS, BESWICK, CHRASTEK_BODDU23],
-"related": ["partial-knee-replacement", "knee-replacement-recovery", "partial-vs-total-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis"],
+"related": ["partial-knee-replacement", "partial-vs-total-knee-replacement", "preparing-for-hip-or-knee-replacement", "knee-replacement-recovery", "knee-replacement-exercises", "pain-after-knee-replacement", "swelling-after-knee-replacement", "kneeling-and-bending-after-knee-replacement", "both-knees-replaced-at-the-same-time", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "robotic-hip-and-knee-replacement", "knee-arthritis"],
 },
 {
 "slug": "partial-knee-replacement",
@@ -202,6 +204,7 @@ PROCEDURES = [
 "body": """
 <h2>Who is suitable?</h2>
 <p>A partial knee replacement can be a good option when arthritis is limited to one compartment of the knee, most often the inner (medial) side, the knee ligaments are healthy and the knee bends and straightens well. I assess this with an examination and standing X-rays, and sometimes further X-rays or an MRI scan.</p>
+<figure class="diagram photo"><img src="/assets/partial-knee-implant.jpg" width="720" height="720" alt="A partial knee replacement implant: a small curved metal part, a plastic insert and a metal tray that replace one side of the knee only." loading="lazy"><figcaption>An example of a partial knee replacement, which resurfaces only the worn side of the knee.</figcaption></figure>
 
 <h2>Partial or total knee replacement?</h2>
 <p>National guidance recommends that people with arthritis in the inner part of the knee are offered the choice of a partial or a total knee replacement. A large UK trial (TOPKAT) found that patients did as well after a partial as after a total knee replacement at five years. A review of studies published in the BMJ found lower risks of complications, such as blood clots, heart attack, stroke and deep infection, after a partial than after a total knee replacement.</p>
@@ -221,7 +224,7 @@ PROCEDURES = [
 <p>Risks are similar to those of a total knee replacement, including infection, blood clots, stiffness and ongoing pain. Arthritis can also progress in the rest of the knee, which may lead to a total knee replacement in the future.</p>
 """ + COSTS,
 "sources": [NICE_157, TOPKAT, WILSON, LIDDLE, NJR_REPORTS, GILL_ZUK],
-"related": ["knee-replacement", "partial-vs-total-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
+"related": ["partial-vs-total-knee-replacement", "knee-replacement", "preparing-for-hip-or-knee-replacement", "knee-replacement-recovery", "knee-replacement-exercises", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
 },
 {
 "slug": "revision-knee-replacement",
@@ -258,7 +261,7 @@ PROCEDURES = [
 <p>Revision surgery is more complex than a first knee replacement. It often uses implants designed for revision, which give extra stability and fixation. Recovery is slower, and the risks, particularly infection, stiffness and further surgery, are higher. Results are generally good when there is a clear cause to correct.</p>
 """ + REVISION_WHERE + REVISION_COSTS,
 "sources": [NJR_SITE, NICE_157],
-"related": ["problem-joint-replacement", "knee-replacement", "second-opinion", "fees-insurance"],
+"related": ["why-do-joint-replacements-fail", "problem-joint-replacement", "pain-after-knee-replacement", "how-long-do-hip-and-knee-replacements-last", "knee-replacement", "second-opinion", "fees-insurance"],
 },
 {
 "slug": "knee-arthroscopy-meniscal-surgery",
@@ -298,7 +301,7 @@ PROCEDURES = [
 
 """ + COSTS,
 "sources": [NICE_226, BMJ_RR, FIDELITY],
-"related": ["meniscal-tear", "knee-arthritis", "hip-knee-clinic", "fees-insurance"],
+"related": ["recovery-after-knee-arthroscopy-and-meniscal-repair", "knee-arthritis-or-meniscal-tear", "meniscal-tear", "knee-arthritis", "hip-knee-clinic", "fees-insurance"],
 },
 {
 "slug": "robotic-hip-and-knee-replacement",
@@ -318,6 +321,7 @@ PROCEDURES = [
 "body": """
 <h2>How it works</h2>
 <p>A CT scan before surgery creates a 3D model of your hip or knee, which I use to plan the size and position of the implants. During the operation I guide a robotic arm that helps prepare the bone and position the implants within the limits of that plan. The robot does not operate on its own.</p>
+<figure class="diagram photo"><img src="/assets/robotic-arm.jpg" width="720" height="720" alt="A robotic surgical arm holding a bone saw, used in robotic-assisted hip and knee replacement." loading="lazy"><figcaption>The robotic arm used in robotic-assisted joint replacement. I guide it throughout the operation.</figcaption></figure>
 
 <h2>What the evidence shows</h2>
 <p>Studies show that robotic assistance positions hip and knee implants more precisely and closer to the plan, and some earlier, smaller studies reported less pain and a quicker recovery in the first weeks after robotic knee replacement. Recent large studies have tested whether this leads to better results for patients:</p>
@@ -335,6 +339,6 @@ PROCEDURES = [
 <p class="small">Mako is a trademark of Stryker Corporation.</p>
 """ + COSTS,
 "sources": ["Domb BG et al. Comparison of robotic-assisted and conventional acetabular cup placement in THA: a matched-pair controlled study. Clin Orthop Relat Res 2014;472:329&ndash;36.", "Kayani B et al. Robotic-arm assisted total knee arthroplasty is associated with improved early functional recovery and reduced short-term inpatient length of stay compared with conventional jig-based total knee arthroplasty. Bone Joint J 2018;100-B:930&ndash;7.", RACER_KNEE, RASKAL, NJR_ROBOTIC, AOANJRR_2026, NICE_157],
-"related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "fees-insurance"],
+"related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "which-hip-replacement-implant", "partial-vs-total-knee-replacement", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "fees-insurance"],
 },
 ]
