@@ -89,7 +89,7 @@ PROCEDURES = [
 <p>Already had a hip replacement that is causing problems? See <a href="/revision-hip-replacement/">revision hip replacement</a>.</p>
 """,
 "sources": [NICE_157, NICE_226, NJR_REPORTS, BODDU_HIP23],
-"related": ["hip-arthritis", "hip-replacement-recovery", "how-long-do-hip-and-knee-replacements-last", "robotic-hip-and-knee-replacement", "revision-hip-replacement"],
+"related": ["which-hip-replacement-implant", "anterior-or-posterior-approach-hip-replacement", "preparing-for-hip-or-knee-replacement", "hip-replacement-recovery", "hip-replacement-exercises", "leg-length-and-limp-after-hip-replacement", "both-hips-need-replacing", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "hip-arthritis", "robotic-hip-and-knee-replacement", "revision-hip-replacement"],
 },
 {
 "slug": "revision-hip-replacement",
@@ -128,7 +128,7 @@ PROCEDURES = [
 <p>Recovery is usually slower than after a first hip replacement, and you may need to limit the weight you put on the leg for a time. The risks are similar to those of a first hip replacement but higher, particularly infection, dislocation and the need for further surgery. Results are generally good but less predictable, and I will give you a realistic picture for your own situation.</p>
 """ + REVISION_WHERE + REVISION_COSTS,
 "sources": [NJR_SITE, NICE_157],
-"related": ["problem-joint-replacement", "hip-replacement", "second-opinion", "fees-insurance"],
+"related": ["why-do-joint-replacements-fail", "problem-joint-replacement", "how-long-do-hip-and-knee-replacements-last", "hip-replacement", "second-opinion", "fees-insurance"],
 },
 {
 "slug": "knee-replacement",
@@ -184,7 +184,7 @@ PROCEDURES = [
 <p>Exercise and physiotherapy, weight loss where appropriate, anti-inflammatory gels and painkillers, and steroid injections for short-term relief can all help. See <a href="/knee-arthritis/">knee arthritis</a>.</p>
 """ + COSTS,
 "sources": [NICE_157, NICE_226, NJR_REPORTS, BESWICK, CHRASTEK_BODDU23],
-"related": ["partial-knee-replacement", "knee-replacement-recovery", "partial-vs-total-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis"],
+"related": ["partial-knee-replacement", "partial-vs-total-knee-replacement", "preparing-for-hip-or-knee-replacement", "knee-replacement-recovery", "knee-replacement-exercises", "pain-after-knee-replacement", "swelling-after-knee-replacement", "kneeling-and-bending-after-knee-replacement", "both-knees-replaced-at-the-same-time", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "robotic-hip-and-knee-replacement", "knee-arthritis"],
 },
 {
 "slug": "partial-knee-replacement",
@@ -224,7 +224,7 @@ PROCEDURES = [
 <p>Risks are similar to those of a total knee replacement, including infection, blood clots, stiffness and ongoing pain. Arthritis can also progress in the rest of the knee, which may lead to a total knee replacement in the future.</p>
 """ + COSTS,
 "sources": [NICE_157, TOPKAT, WILSON, LIDDLE, NJR_REPORTS, GILL_ZUK],
-"related": ["knee-replacement", "partial-vs-total-knee-replacement", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
+"related": ["partial-vs-total-knee-replacement", "knee-replacement", "preparing-for-hip-or-knee-replacement", "knee-replacement-recovery", "knee-replacement-exercises", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "robotic-hip-and-knee-replacement", "knee-arthritis", "fees-insurance"],
 },
 {
 "slug": "revision-knee-replacement",
@@ -261,7 +261,7 @@ PROCEDURES = [
 <p>Revision surgery is more complex than a first knee replacement. It often uses implants designed for revision, which give extra stability and fixation. Recovery is slower, and the risks, particularly infection, stiffness and further surgery, are higher. Results are generally good when there is a clear cause to correct.</p>
 """ + REVISION_WHERE + REVISION_COSTS,
 "sources": [NJR_SITE, NICE_157],
-"related": ["problem-joint-replacement", "knee-replacement", "second-opinion", "fees-insurance"],
+"related": ["why-do-joint-replacements-fail", "problem-joint-replacement", "pain-after-knee-replacement", "how-long-do-hip-and-knee-replacements-last", "knee-replacement", "second-opinion", "fees-insurance"],
 },
 {
 "slug": "knee-arthroscopy-meniscal-surgery",
@@ -301,7 +301,7 @@ PROCEDURES = [
 
 """ + COSTS,
 "sources": [NICE_226, BMJ_RR, FIDELITY],
-"related": ["meniscal-tear", "knee-arthritis", "hip-knee-clinic", "fees-insurance"],
+"related": ["recovery-after-knee-arthroscopy-and-meniscal-repair", "knee-arthritis-or-meniscal-tear", "meniscal-tear", "knee-arthritis", "hip-knee-clinic", "fees-insurance"],
 },
 {
 "slug": "robotic-hip-and-knee-replacement",
@@ -339,6 +339,6 @@ PROCEDURES = [
 <p class="small">Mako is a trademark of Stryker Corporation.</p>
 """ + COSTS,
 "sources": ["Domb BG et al. Comparison of robotic-assisted and conventional acetabular cup placement in THA: a matched-pair controlled study. Clin Orthop Relat Res 2014;472:329&ndash;36.", "Kayani B et al. Robotic-arm assisted total knee arthroplasty is associated with improved early functional recovery and reduced short-term inpatient length of stay compared with conventional jig-based total knee arthroplasty. Bone Joint J 2018;100-B:930&ndash;7.", RACER_KNEE, RASKAL, NJR_ROBOTIC, AOANJRR_2026, NICE_157],
-"related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "fees-insurance"],
+"related": ["hip-replacement", "knee-replacement", "partial-knee-replacement", "which-hip-replacement-implant", "partial-vs-total-knee-replacement", "how-long-do-hip-and-knee-replacements-last", "private-hip-and-knee-replacement-cost", "fees-insurance"],
 },
 ]
