@@ -56,6 +56,7 @@ PROCEDURES = [
 "body": """
 <h2>What is a hip replacement?</h2>
 <p>In a total hip replacement, the worn ball at the top of the thigh bone and the worn socket in the pelvis are replaced with artificial parts, usually made of metal and ceramic. The new joint is designed to move smoothly and without pain.</p>
+<figure class="diagram photo"><img src="/assets/hip-replacement-implant.jpg" width="720" height="720" alt="An assembled total hip replacement implant: a metal cup with a plastic liner, joined by a ball to a metal stem." loading="lazy"><figcaption>An example of a total hip replacement: a cup and liner for the socket, joined by a ball to a stem in the thigh bone. The implant is chosen to suit each patient.</figcaption></figure>
 
 <h2>Who might it help?</h2>
 <p>Surgery is worth considering when hip pain or stiffness has a real effect on your daily life, such as walking, sleeping, working or caring for others, and exercise, weight management and painkillers are no longer enough. Age, weight or other health conditions do not on their own rule you out, but they affect the balance of benefits and risks, which we will discuss together.</p>
@@ -149,6 +150,7 @@ PROCEDURES = [
 "body": """
 <h2>What is a knee replacement?</h2>
 <p>A total knee replacement resurfaces the worn ends of the thigh bone and shin bone with metal parts, with a smooth plastic insert between them. The back of the kneecap is rarely resurfaced. My own research, using National Joint Registry data, found that at 15 years knee replacements did equally well with or without resurfacing of the kneecap, although this can depend on the implant design.</p>
+<figure class="diagram photo"><img src="/assets/knee-replacement-implant.jpg" width="420" height="420" alt="A total knee replacement implant: a curved metal part for the thigh bone, a plastic insert and a metal tray for the shin bone." loading="lazy"><figcaption>An example of a total knee replacement: metal parts for the thigh bone and shin bone, with a plastic insert between them.</figcaption></figure>
 
 <h2>Is it right for you?</h2>
 <p>A knee replacement is usually considered when arthritis pain limits walking, sleep or daily life, and non-surgical treatments have stopped helping. If arthritis affects only one part of your knee, a <a href="/partial-knee-replacement/">partial knee replacement</a> may be an option, and national guidance recommends that suitable patients are offered that choice.</p>
@@ -202,6 +204,7 @@ PROCEDURES = [
 "body": """
 <h2>Who is suitable?</h2>
 <p>A partial knee replacement can be a good option when arthritis is limited to one compartment of the knee, most often the inner (medial) side, the knee ligaments are healthy and the knee bends and straightens well. I assess this with an examination and standing X-rays, and sometimes further X-rays or an MRI scan.</p>
+<figure class="diagram photo"><img src="/assets/partial-knee-implant.jpg" width="720" height="720" alt="A partial knee replacement implant: a small curved metal part, a plastic insert and a metal tray that replace one side of the knee only." loading="lazy"><figcaption>An example of a partial knee replacement, which resurfaces only the worn side of the knee.</figcaption></figure>
 
 <h2>Partial or total knee replacement?</h2>
 <p>National guidance recommends that people with arthritis in the inner part of the knee are offered the choice of a partial or a total knee replacement. A large UK trial (TOPKAT) found that patients did as well after a partial as after a total knee replacement at five years. A review of studies published in the BMJ found lower risks of complications, such as blood clots, heart attack, stroke and deep infection, after a partial than after a total knee replacement.</p>
@@ -318,6 +321,7 @@ PROCEDURES = [
 "body": """
 <h2>How it works</h2>
 <p>A CT scan before surgery creates a 3D model of your hip or knee, which I use to plan the size and position of the implants. During the operation I guide a robotic arm that helps prepare the bone and position the implants within the limits of that plan. The robot does not operate on its own.</p>
+<figure class="diagram photo"><img src="/assets/robotic-arm.jpg" width="720" height="720" alt="A robotic surgical arm holding a bone saw, used in robotic-assisted hip and knee replacement." loading="lazy"><figcaption>The robotic arm used in robotic-assisted joint replacement. I guide it throughout the operation.</figcaption></figure>
 
 <h2>What the evidence shows</h2>
 <p>Studies show that robotic assistance positions hip and knee implants more precisely and closer to the plan, and some earlier, smaller studies reported less pain and a quicker recovery in the first weeks after robotic knee replacement. Recent large studies have tested whether this leads to better results for patients:</p>
