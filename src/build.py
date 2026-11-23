@@ -155,7 +155,8 @@ def link_nuffield(main):
 
 def page_shell(title, description, slug, main, jsonld):
     main = link_nuffield(main)
-    robots = '<meta name="robots" content="noindex, nofollow">' if C.PREVIEW else ""
+    robots = ('<meta name="robots" content="noindex, nofollow">' if C.PREVIEW
+              else '<meta name="robots" content="max-image-preview:large">')
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in jsonld)
     return f"""<!DOCTYPE html>
 <html lang="en-GB">
@@ -248,6 +249,11 @@ def render_page(p):
                "about": {"@type": t, "name": name}, "author": {"@id": PHYSICIAN_ID}, "reviewedBy": {"@id": PHYSICIAN_ID},
                "inLanguage": "en-GB", "lastReviewed": reviewed_iso}
         jsonld.append(mwp)
+    if p["slug"] == "about":
+        jsonld.append({"@context": "https://schema.org", "@type": "ProfilePage", "url": url("about"),
+                       "mainEntity": {"@id": PHYSICIAN_ID},
+                       "primaryImageOfPage": {"@type": "ImageObject", "url": f"{C.BASE_URL}/assets/krishna-boddu-800.jpg",
+                                              "width": 800, "height": 1000}})
     if faq:
         jsonld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", fill(a))}}
