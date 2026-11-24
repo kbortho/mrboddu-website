@@ -360,6 +360,34 @@ CSP = ("default-src 'self'; img-src 'self' data:" + (" " + G + MS if C.GOOGLE_AD
 NETLIFY = """[build]
   publish = "site"
 
+# Old Top Doctors domain (now owned, 23 Nov 2026): one-page site, so every old URL goes to the homepage
+[[redirects]]
+  from = "https://mrkrishnaboddu.co.uk/*"
+  to = "https://www.mrboddu.co.uk/"
+  status = 301
+  force = true
+
+# Old Top Doctors domain (now owned, 23 Nov 2026): one-page site, so every old URL goes to the homepage
+[[redirects]]
+  from = "http://mrkrishnaboddu.co.uk/*"
+  to = "https://www.mrboddu.co.uk/"
+  status = 301
+  force = true
+
+# Old Top Doctors domain (now owned, 23 Nov 2026): one-page site, so every old URL goes to the homepage
+[[redirects]]
+  from = "https://www.mrkrishnaboddu.co.uk/*"
+  to = "https://www.mrboddu.co.uk/"
+  status = 301
+  force = true
+
+# Old Top Doctors domain (now owned, 23 Nov 2026): one-page site, so every old URL goes to the homepage
+[[redirects]]
+  from = "http://www.mrkrishnaboddu.co.uk/*"
+  to = "https://www.mrboddu.co.uk/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
